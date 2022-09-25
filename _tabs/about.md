@@ -34,6 +34,6 @@ I develop and maintain some little open source projects, find out more on my [**
 ### Contact me
 - [**GitHub**](https://github.com/antoniopelusi)
 - [**Twitter**](https://twitter.com/antopelusi)
-- [**LinkedIn**](https://www.linkedin.com/in/antonio-pelusi-1226a2214/)
+- [**LinkedIn**](https://www.linkedin.com/in/antoniopelusi/)
 - **Email**: antoniopelusi2000gmail.com
 
