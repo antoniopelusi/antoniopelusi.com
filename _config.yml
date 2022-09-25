@@ -23,7 +23,7 @@ timezone:
 
 title: Antonio Pelusi                          # the main title
 
-tagline: Welcome!   # it will display as the sub-title
+tagline: Hello!   # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
   Personal website, click About to find out more about me!
