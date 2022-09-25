@@ -10,11 +10,11 @@
   type: linkedin
   icon: 'fab fa-linkedin'   # icons powered by <https://fontawesome.com/>
   url:  'linkedin.com/in/antonio-pelusi-1226a2214'                  # Fill with your Linkedin homepage
- -
+-
   type: email
   icon: 'fas fa-envelope'
   noblank: true            # open link in current tab
- -
+-
   type: rss
   icon: 'fas fa-rss'
   noblank: true
