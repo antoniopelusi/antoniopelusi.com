@@ -10,7 +10,7 @@ I develop and maintain some little open source projects, find out more on my [**
 
 ---
 
-### Education:
+### Education
 - Degree in Computer Science at [**Unimore**](https://www.unimore.it/), Modena (IT)
 - Currently enrolled in the master's degree course in Computer Science at [**Unimore**](https://www.unimore.it/), Modena (IT)
 
