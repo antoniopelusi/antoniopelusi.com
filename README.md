@@ -1,2 +1,2 @@
-# antoniopelusi.github.io
-Personal website
+# antoniopelusi.com
+Developer blog
