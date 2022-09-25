@@ -5,7 +5,8 @@ order: 4
 ---
 
 I'm **Antonio Pelusi**, a Computer Science graduate at [**Unimore**](https://www.unimore.it/)
-I develop and maintain some open source projects, find out more on my [GitHub profile]()
+
+I develop and maintain some little open source projects, find out more on my [**GitHub profile**](https://github.com/antoniopelusi)
 
 ---
 
@@ -23,11 +24,16 @@ I develop and maintain some open source projects, find out more on my [GitHub pr
 - HTML/CSS
 - JavaScript
 - Django framework
+- Servlet-based Web Apps
 
 ---
 ### Work experiences
-
+- Internship in [**Liferay**](https://www.liferay.com/), in which I integrated a new payment method, [**Stripe**](https://stripe.com/), into [**Liferay Portal**](https://github.com/liferay/liferay-portal). Source code available [**here**](https://github.com/antoniopelusi/liferay-portal)
 
 ---
-### Testing
+### Contact me
+- [**GitHub**](https://github.com/antoniopelusi)
+- [**Twitter**](https://twitter.com/antopelusi)
+- [**LinkedIn**](https://www.linkedin.com/in/antonio-pelusi-1226a2214/)
+- **Email**: antoniopelusi2000gmail.com
 
