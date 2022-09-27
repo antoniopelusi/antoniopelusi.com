@@ -1,6 +1,6 @@
 ---
 title: File Splitter
-author: Antonio Pelusi
+author: antoniopelusi
 date: 2020-06-01 23:10:00 +0800
 categories: [Personal projects]
 tags: [java]
