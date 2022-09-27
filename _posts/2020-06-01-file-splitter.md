@@ -1,9 +1,9 @@
 ---
-title: File Splitter
+title: <span style="color:orange">●</span> File Splitter
 author: antoniopelusi
 date: 2020-06-01 23:10:00 +0800
 categories: [Personal projects]
-tags: [java]
+tags: [<span style="color:orange">●</span> java]
 render_with_liquid: false
 ---
 
