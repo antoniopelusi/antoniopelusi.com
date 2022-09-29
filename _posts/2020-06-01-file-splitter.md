@@ -1,5 +1,5 @@
 ---
-title: <span style="color:orange">●</span> File Splitter
+title: File Splitter
 author: antoniopelusi
 date: 2020-06-01 23:10:00 +0800
 categories: [Personal projects]
