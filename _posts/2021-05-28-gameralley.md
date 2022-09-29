@@ -3,19 +3,13 @@ title: GamerAlley
 author: antoniopelusi
 date: 2021-05-28 14:10:00 +0800
 categories: [Personal projects]
-tags: [<span style="color:SlateBlue">●</span> python, <span style="color:OrangeRed">●</span> HTML]
+tags: [<span style="color:blue">●</span> python, <span style="color:OrangeRed">●</span> HTML]
 render_with_liquid: false
 ---
 
 A videogames-based social network
 
 Source code available [**here**](https://github.com/antoniopelusi/GamerAlley)
-
-## `Specification`
-![](https://img.shields.io/badge/HTML-red)
-![](https://img.shields.io/badge/Python-blue)
-![](https://img.shields.io/badge/Javascript-yellow)
-![](https://img.shields.io/badge/CSS-purple)
 
 ![](https://img.shields.io/badge/Open_Source-GPL--3.0-darkgreen)
 
