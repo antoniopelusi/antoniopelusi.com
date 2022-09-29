@@ -141,7 +141,7 @@ collections:
 defaults:
   - scope:
       path: ''          # An empty string here means all files in the project
-      type: archives
+      type: page
     values:
       layout: archives
       comments: true    # Enable comments in posts.
