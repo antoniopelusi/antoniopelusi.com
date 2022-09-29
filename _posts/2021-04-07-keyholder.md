@@ -1,5 +1,5 @@
 ---
-title: <span style="color:orange">●</span> KeyHolder
+title: KeyHolder
 author: antoniopelusi
 date: 2021-04-07 11:12:00 +0800
 categories: [Personal projects]
