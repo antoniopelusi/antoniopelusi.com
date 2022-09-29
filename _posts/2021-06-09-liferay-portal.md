@@ -1,5 +1,5 @@
 ---
-title: Liferay Portal + Stripe  <span style="color:orange">●</span>
+title: <span style="color:orange">●</span> Liferay Portal + Stripe
 author: antoniopelusi
 date: 2021-06-09 11:12:00 +0800
 categories: [Jobs experience]
