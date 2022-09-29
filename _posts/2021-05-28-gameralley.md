@@ -1,5 +1,5 @@
 ---
-title: GamerAlley
+title: <span style="color:OrangeRed">●</span> GamerAlley
 author: antoniopelusi
 date: 2021-05-28 14:10:00 +0800
 categories: [Personal projects]
