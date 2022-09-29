@@ -1,5 +1,5 @@
 ---
-title: <span style="color:red">●</span> antoniopelusi.com
+title: antoniopelusi.com
 author: antoniopelusi
 date: 2022-09-25 13:10:00 +0800
 categories: [Personal projects]
