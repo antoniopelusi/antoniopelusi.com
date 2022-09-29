@@ -1,5 +1,5 @@
 ---
-title: antoniopelusi.com
+title: <span style="color:red">●</span> antoniopelusi.com
 author: antoniopelusi
 date: 2022-09-25 13:10:00 +0800
 categories: [Personal projects]
@@ -7,6 +7,6 @@ tags: [<span style="color:red">●</span> ruby, <span style="color:OrangeRed">�
 render_with_liquid: false
 ---
 
-Source code of this website ([antoniopelusi.com](https://www.antoniopelusi.com/))
+This website code ([antoniopelusi.com](https://www.antoniopelusi.com/))
 
 Source code available [**here**](https://github.com/antoniopelusi/antoniopelusi.com)
