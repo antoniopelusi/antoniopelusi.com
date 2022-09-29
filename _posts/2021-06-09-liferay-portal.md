@@ -1,11 +1,16 @@
 ---
-title: Liferay Portal + Stripe
+title: Liferay Portal + Stripe  <span style="color:orange">●</span>
 author: antoniopelusi
 date: 2021-06-09 11:12:00 +0800
 categories: [Jobs experience]
 tags: [<span style="color:orange">●</span> java]
 render_with_liquid: false
 ---
+
+## Specification
+**This fork contain the Stripe payment method implementation**
+
+Source code available [**here**](https://github.com/antoniopelusi/liferay-portal)
 
 ## The Liferay Development Team
 
@@ -29,7 +34,3 @@ SPDX-License-Identifier: LGPL-2.1-or-later
 *Liferay Portal Community Edition* is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU Lesser General Public License for more details.
 
 You should have received a copy of the GNU Lesser General Public License along with *Liferay Portal Community Edition*. If not, see [<https://www.gnu.org/licenses/>](https://www.gnu.org/licenses/)
-
-**This fork contain the Stripe payment method implementation**
-
-Source code available [**here**](https://github.com/antoniopelusi/liferay-portal)
