@@ -1,4 +1,12 @@
-# KeyHolder
+---
+title: <span style="color:orange">●</span> KeyHolder
+author: antoniopelusi
+date: 2021-04-07 11:12:00 +0800
+categories: [Personal projects]
+tags: [<span style="color:orange">●</span> java]
+render_with_liquid: false
+---
+
  Store password in an encrypted file locked with password
  
 [![Download KeyHolder](https://a.fsdn.com/con/app/sf-download-button)](https://sourceforge.net/projects/keyholder/files/latest/download)
