@@ -21,7 +21,7 @@ Source code available [**here**](https://github.com/antoniopelusi/Twitter-Analyz
 * `/database` &#8594; dump of the empty database
 * `/doc/log` &#8594; log of the activity
 * `/doc/presentation` &#8594; Twitter Analyzer presentation
-* `/doc/Sprint\ n` &#8594; documents
+* `/doc/Sprint` &#8594; documents
 * `/doc/JavaDoc` &#8594; javaDoc
 * `/out` &#8594; executable jar file (jre 16)
 * `/src/main/java` &#8594; source code
