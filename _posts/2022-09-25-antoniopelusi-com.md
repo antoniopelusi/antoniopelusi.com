@@ -3,7 +3,7 @@ title: antoniopelusi.com
 author: antoniopelusi
 date: 2022-09-25 13:10:00 +0800
 categories: [Personal projects]
-tags: [<span style="color:OrangeRed">●</span> HTML, <span style="color:darkRed">●</span> ruby]
+tags: [<span style="color:darkRed">●</span> ruby, <span style="color:OrangeRed">●</span> HTML]
 render_with_liquid: false
 ---
 
