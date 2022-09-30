@@ -39,9 +39,9 @@ order: 4
 
 <i class="fab fa-twitter" aria-hidden="true"></i> **Twitter**: [@antopelusi](https://twitter.com/antopelusi)
 
-<i class="fab fa-linkedin-square" aria-hidden="true"></i> **LinkedIn**: [@antoniopelusi](https://www.linkedin.com/in/antoniopelusi/)
+<i class="fab fa-linkedin" aria-hidden="true"></i> **LinkedIn**: [@antoniopelusi](https://www.linkedin.com/in/antoniopelusi/)
 
-<i class="fas fa-envelope" aria-hidden="true"></i> **Email**: [antoniopelusi2000gmail.com](mailto:antoniopelusi2000@gmail.com")
+<i class="fas fa-envelope" aria-hidden="true"></i> **Email**: [antoniopelusi2000@gmail.com](mailto:antoniopelusi2000@gmail.com")
       
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
      viewBox="0 200 1000 1000">
