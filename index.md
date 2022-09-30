@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: archives
 ---
 
 <div class="Box mt-4">
