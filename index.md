@@ -19,8 +19,6 @@ layout: page
 <p>   📫 How to reach me: <a href="mailto:antoniopelusi2000@gmail.com">antoniopelusi2000@gmail.com</a></p>
 
 
-</div>
-    </div>
       
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
      viewBox="0 0 1000 1000">
@@ -98,24 +96,24 @@ layout: page
                         gradientTransform="translate(3606.3 1026.18) rotate(-179.43)" xlink:href="#Dégradé_sans_nom_5"/>
         <radialGradient id="Dégradé_sans_nom" cx="-64.97" cy="1869.29" r="504.98"
                         gradientTransform="matrix(0.72, 0, 0, -0.45, 702.38, 1207.55)" gradientUnits="userSpaceOnUse">
-            <stop offset="0" stop-color="#14253a" stop-opacity="0.3"/>
-            <stop offset="0.14" stop-color="#192a3f" stop-opacity="0.31"/>
+            <stop offset="0" stop-color="#3d2e1a" stop-opacity="0.3"/>
+            <stop offset="0.14" stop-color="#3f3419" stop-opacity="0.31"/>
             <stop offset="0.27" stop-color="#2a394c" stop-opacity="0.34"/>
-            <stop offset="0.41" stop-color="#455363" stop-opacity="0.38"/>
-            <stop offset="0.55" stop-color="#6c7684" stop-opacity="0.45"/>
-            <stop offset="0.69" stop-color="#9da4ad" stop-opacity="0.53"/>
-            <stop offset="0.82" stop-color="#d9dcdf" stop-opacity="0.64"/>
+            <stop offset="0.41" stop-color="#4c452a" stop-opacity="0.38"/>
+            <stop offset="0.55" stop-color="#847a6c" stop-opacity="0.45"/>
+            <stop offset="0.69" stop-color="#ada99d" stop-opacity="0.53"/>
+            <stop offset="0.82" stop-color="#dddcd7" stop-opacity="0.64"/>
             <stop offset="0.9" stop-color="#fff" stop-opacity="0.7"/>
         </radialGradient>
         <linearGradient id="Dégradé_sans_nom_2" x1="443.16" y1="829.82" x2="874.22" y2="437.05"
                         gradientTransform="matrix(1, 0, 0, -1, 0, 1002)" gradientUnits="userSpaceOnUse">
             <stop offset="0" stop-color="#f5f5f5" stop-opacity="0.7"/>
-            <stop offset="1" stop-color="#0d0a3f" stop-opacity="0.3"/>
+            <stop offset="1" stop-color="#3f2e0a" stop-opacity="0.3"/>
         </linearGradient>
         <linearGradient id="Dégradé_sans_nom_3" x1="397.3" y1="635.5" x2="915.3" y2="635.5"
                         gradientTransform="matrix(1, 0, 0, -1, 0, 1002)" gradientUnits="userSpaceOnUse">
             <stop offset="0" stop-color="#f5f5f5" stop-opacity="0.5"/>
-            <stop offset="1" stop-color="#0d0a3f" stop-opacity="0.3"/>
+            <stop offset="1" stop-color="#3f2a0a" stop-opacity="0.3"/>
         </linearGradient>
         <clipPath id="clip-path">
             <polygon points="431.1 561.4 406.8 575.4 310.4 519.7 310.4 412.6 431.1 482.3 431.1 561.4" fill="none"/>
