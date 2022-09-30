@@ -3,18 +3,25 @@ layout: page
 ---
 
 
-<div class="Box mt-4">
-    <div class="Box-body p-4">
-<article class="markdown-body entry-content container-lg f5" itemprop="text"><p dir="auto">   <g-emoji class="g-emoji" alias="wave" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f44b.png"><img class="emoji" alt="wave" src="https://github.githubassets.com/images/icons/emoji/unicode/1f44b.png" width="20" height="20"></g-emoji> Hi, I am  <a href="https://github.com/antoniopelusi">@antoniopelusi</a></p>
-  <p dir="auto">   <g-emoji class="g-emoji" alias="mortar_board" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f393.png"><img class="emoji" alt="mortar_board" src="https://github.githubassets.com/images/icons/emoji/unicode/1f393.png" width="20" height="20"></g-emoji> I am a Computer Science graduate at <a href="https://www.unimore.it/" rel="nofollow">Unimore</a>, Modena (IT)</p>
-  <p dir="auto">   <g-emoji class="g-emoji" alias="seedling" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f331.png"><img class="emoji" alt="seedling" src="https://github.githubassets.com/images/icons/emoji/unicode/1f331.png" width="20" height="20"></g-emoji> Currently enrolled in the master's degree course in Computer Science at <a href="https://www.unimore.it/" rel="nofollow">Unimore</a>, Modena (IT)</p>
-  <p dir="auto">   <g-emoji class="g-emoji" alias="video_game" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f3ae.png"><img class="emoji" alt="video_game" src="https://github.githubassets.com/images/icons/emoji/unicode/1f3ae.png" width="20" height="20"></g-emoji> Videogames enthusiast</p>
-  <p dir="auto">   <g-emoji class="g-emoji" alias="mailbox" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f4eb.png"><img class="emoji" alt="mailbox" src="https://github.githubassets.com/images/icons/emoji/unicode/1f4eb.png" width="20" height="20"></g-emoji> How to reach me: <a href="mailto:antoniopelusi2000@gmail.com">antoniopelusi2000@gmail.com</a></p>
-  </article>
-      
+<h3>   👋 Hi, I am  <a href="https://github.com/antoniopelusi">@antoniopelusi</a></h3>
 
-</div class="Box mt-4">
-    </div class="Box-body p-4">
+<p>   🎓 I am a Computer Science graduate at <a href="https://www.unimore.it/">Unimore</a>, Modena (IT)</p>
+
+<p>   🌱 Currently enrolled in the master's degree course in Computer Science at <a href="https://www.unimore.it/">Unimore</a>, Modena (IT)</p>
+
+<p>   🎮 Videogames enthusiast</p>
+
+<p>   🎸 Guitar player</p>
+
+<p>   👾 Browse my projects in the Archives page</p>
+      
+<p>   🔎 Find more about me in the Info page!</p>
+
+<p>   📫 How to reach me: <a href="mailto:antoniopelusi2000@gmail.com">antoniopelusi2000@gmail.com</a></p>
+
+
+</div>
+    </div>
       
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
      viewBox="0 0 1000 1000">
@@ -26,8 +33,8 @@ layout: page
         </linearGradient>
         <linearGradient id="Dégradé_sans_nom_5" x1="-71.63" y1="1086.96" x2="-71.63" y2="1203.04"
                         gradientTransform="matrix(0.87, -0.5, 0, -1.15, 202.02, 1691.1)" gradientUnits="userSpaceOnUse">
-            <stop offset="0" stop-color="#3f3fc2"/>
-            <stop offset="0.09" stop-color="#3f3fc2"/>
+            <stop offset="0" stop-color="#e2b11d"/>
+            <stop offset="0.09" stop-color="#fc9505"/>
             <stop offset="0.69" stop-color="#fff"/>
         </linearGradient>
         <linearGradient id="Dégradé_sans_nom_6" x1="-117.26" y1="1087.6" x2="-117.26" y2="1178.79"
