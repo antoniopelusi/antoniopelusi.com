@@ -18,10 +18,7 @@ order: 4
       
 <p>   🔎  Find more about me in the <a href="https://www.antoniopelusi.com/about/">About</a> page!</p>
 
-<p>   📫  How to reach me: <a href="mailto:antoniopelusi2000@gmail.com">antoniopelusi2000@gmail.com</a></p>
-
 ---
-
 ## Skills and known programming languages
 - C
 - C++
