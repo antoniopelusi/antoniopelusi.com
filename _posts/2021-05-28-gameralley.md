@@ -3,7 +3,7 @@ title: GamerAlley
 author: antoniopelusi
 date: 2021-05-28 14:10:00 +0800
 categories: [Personal projects]
-tags: [<span style="color:OrangeRed">●</span> HTML, <span style="color:darkSlateBlue">●</span> python]
+tags: [<span style="color:OrangeRed">●</span> HTML, <span style="color:darkBlue">●</span> python]
 render_with_liquid: false
 ---
 
