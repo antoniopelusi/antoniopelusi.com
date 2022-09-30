@@ -40,7 +40,7 @@ order: 4
 ### Contact me
 <i class="fa fa-github" aria-hidden="true"></i> [**GitHub**](https://github.com/antoniopelusi)
 
-[**Twitter**](https://twitter.com/antopelusi)
+<i class="fas fa-play-circle"></i> [**Twitter**](https://twitter.com/antopelusi)
 
 [**LinkedIn**](https://www.linkedin.com/in/antoniopelusi/)
 
