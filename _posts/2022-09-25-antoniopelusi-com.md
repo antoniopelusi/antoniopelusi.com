@@ -7,6 +7,8 @@ tags: [<span style="color:red">‚óè</span> ruby, <span style="color:OrangeRed">‚ó
 render_with_liquid: false
 ---
 
-This website code ([antoniopelusi.com](https://www.antoniopelusi.com/))
+The repository of this website ([antoniopelusi.com](https://www.antoniopelusi.com/))
+
+Powered by [Jekyll](https://jekyllrb.com/) with [Chirpy theme](https://github.com/cotes2020/jekyll-theme-chirpy/) and [GitHub Pages](https://pages.github.com/)
 
 Source code available [**here**](https://github.com/antoniopelusi/antoniopelusi.com)
