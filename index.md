@@ -2,7 +2,7 @@
 layout: page
 ---
 
-<h3>   👋 Hi, I am  <a href="https://github.com/antoniopelusi">@antoniopelusi</a></h3>
+<h3>   👋 Hi, I am  <span style="color: #darkOrange">Antonio Pelusi</span></h3>
 
 <p>   🎓 I am a Computer Science graduate at <a href="https://www.unimore.it/">Unimore</a>, Modena (IT)</p>
 
