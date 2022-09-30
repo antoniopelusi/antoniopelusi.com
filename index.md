@@ -4,24 +4,24 @@ layout: page
 
 <h3>   👋 Hi, I am Antonio Pelusi</h3>
 
-<p>   🎓 I am a Computer Science graduate at <a href="https://www.unimore.it/">Unimore</a>, Modena (IT)</p>
+<p>   🎓  I am a Computer Science graduate at <a href="https://www.unimore.it/">Unimore</a>, Modena (IT)</p>
 
-<p>   🌱 Currently enrolled in the master's degree course in Computer Science at <a href="https://www.unimore.it/">Unimore</a>, Modena (IT)</p>
+<p>   🌱  Currently enrolled in the master's degree course in Computer Science at <a href="https://www.unimore.it/">Unimore</a>, Modena (IT)</p>
 
-<p>   🎮 Videogames enthusiast</p>
+<p>   🎮  Videogames enthusiast</p>
 
-<p>   🎸 Guitar player</p>
+<p>   🎸  Guitar player</p>
 
-<p>   👾 Browse my projects in the Archives page</p>
+<p>   👾  Browse my projects in the <a href="https://www.antoniopelusi.com/archives/">Archive</a></p>
       
-<p>   🔎 Find more about me in the Info page!</p>
+<p>   🔎  Find more about me in the <a href="https://www.antoniopelusi.com/about/">About</a> page!</p>
 
-<p>   📫 How to reach me: <a href="mailto:antoniopelusi2000@gmail.com">antoniopelusi2000@gmail.com</a></p>
+<p>   📫  How to reach me: <a href="mailto:antoniopelusi2000@gmail.com">antoniopelusi2000@gmail.com</a></p>
 
 
       
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-     viewBox="0 0 1000 1000">
+     viewBox="0 0 798.5 798.5">
     <defs>
         <linearGradient id="Dégradé_sans_nom_4" x1="397.3" y1="531.55" x2="398.77" y2="531.55"
                         gradientTransform="matrix(1, 0, 0, -1, 0, 1002)" gradientUnits="userSpaceOnUse">
