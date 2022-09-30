@@ -2,21 +2,21 @@
 layout: page
 ---
 
-<h2>   👋 Hi, I am Antonio Pelusi</h2>
+<h3>   👋 Hi, I am Antonio Pelusi</h3>
 
-<h4>   🎓 I am a Computer Science graduate at <a href="https://www.unimore.it/">Unimore</a>, Modena (IT)</h4>
+<p>   🎓 I am a Computer Science graduate at <a href="https://www.unimore.it/">Unimore</a>, Modena (IT)</p>
 
-<h4>   🌱 Currently enrolled in the master's degree course in Computer Science at <a href="https://www.unimore.it/">Unimore</a>, Modena (IT)</h4>
+<p>   🌱 Currently enrolled in the master's degree course in Computer Science at <a href="https://www.unimore.it/">Unimore</a>, Modena (IT)</p>
 
-<h4>   🎮 Videogames enthusiast</h4>
+<p>   🎮 Videogames enthusiast</p>
 
-<h4>   🎸 Guitar player</h4>
+<p>   🎸 Guitar player</p>
 
-<h4>   👾 Browse my projects in the Archives page</h4>
+<p>   👾 Browse my projects in the Archives page</p>
       
-<h4>   🔎 Find more about me in the Info page!</h4>
+<p>   🔎 Find more about me in the Info page!</p>
 
-<h4>   📫 How to reach me: <a href="mailto:antoniopelusi2000@gmail.com">antoniopelusi2000@gmail.com</a></h4>
+<p>   📫 How to reach me: <a href="mailto:antoniopelusi2000@gmail.com">antoniopelusi2000@gmail.com</a></p>
 
 
       
