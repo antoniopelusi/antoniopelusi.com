@@ -16,8 +16,6 @@ order: 4
 
 <p>   👾  Browse my projects in the <a href="https://www.antoniopelusi.com/archives/">Archive</a></p>
       
-<p>   🔎  Find more about me in the <a href="https://www.antoniopelusi.com/about/">About</a> page!</p>
-
 ---
 ## Skills and known programming languages
 - C
