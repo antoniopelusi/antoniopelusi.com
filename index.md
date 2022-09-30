@@ -1,6 +1,6 @@
-# ---
-# layout: home
-# Index page
-# ---
+---
+layout: home
+
+---
 
 ciao
