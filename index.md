@@ -2,7 +2,7 @@
 layout: page
 ---
 
-<h3>   👋 Hi, I am Antonio Pelusi</h3>
+<h1>   👋 Hi, I am Antonio Pelusi</h1>
 
 <p>   🎓  I am a Computer Science graduate at <a href="https://www.unimore.it/">Unimore</a>, Modena (IT)</p>
 
@@ -21,7 +21,7 @@ layout: page
 
       
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-     viewBox="0 0 1000 1000">
+     viewBox="0 200 1000 1000">
     <defs>
         <linearGradient id="Dégradé_sans_nom_4" x1="397.3" y1="531.55" x2="398.77" y2="531.55"
                         gradientTransform="matrix(1, 0, 0, -1, 0, 1002)" gradientUnits="userSpaceOnUse">
