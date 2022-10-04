@@ -29,7 +29,9 @@ description: >-                        # used by seo meta and the atom feed
   Developer blog
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
-url: 'https://antoniopelusi.github.io'
+url: 'https://antoniopelusi.com'
+plugins:
+  - jekyll-sitemap
 
 github:
   username: antoniopelusi             # change to your github username
