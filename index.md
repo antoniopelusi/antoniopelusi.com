@@ -7,7 +7,6 @@ layout: page
   <meta name="author" content="Antonio Pelusi">
   <meta name="keywords" content="Antonio, Pelusi, developer, blog">
 
-  {% include analytics.html %}
 </head>
 
 <h2>   👋 Hi, I am Antonio Pelusi</h2>
