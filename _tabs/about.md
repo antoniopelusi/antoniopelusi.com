@@ -4,6 +4,10 @@ icon: fas fa-info-circle
 order: 4
 ---
 
+<style>
+  h1 {color:#f47600;}
+</style>
+
 <h2>   👋 Hi, I am Antonio Pelusi</h2>
 
 <p>   🎓  I am a Computer Science graduate at <a href="https://www.unimore.it/">Unimore</a>, Modena (IT)</p>
