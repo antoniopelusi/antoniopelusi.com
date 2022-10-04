@@ -3,9 +3,9 @@ layout: page
 ---
 
 <head>
-  <meta name="description" content="Developer blog. Get contact info, browse personal projects."></meta>
-  <meta name="author" content="Antonio Pelusi"></meta>
-  <meta name="keywords" content="Antonio, Pelusi, developer, blog"></meta>
+  <meta name="description" content="Developer blog. Get contact info, browse personal projects.">
+  <meta name="author" content="Antonio Pelusi">
+  <meta name="keywords" content="Antonio, Pelusi, developer, blog">
 
 
 </head>
