@@ -2,7 +2,7 @@
 title: Liferay Portal + Stripe
 author: antoniopelusi
 date: 2021-06-09 11:12:00 +0800
-categories: [Jobs experience]
+categories: [Work experiences]
 tags: [<span style="color:orange">●</span> java]
 render_with_liquid: false
 ---
