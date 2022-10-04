@@ -2,6 +2,14 @@
 layout: page
 ---
 
+<head>
+  <meta name="description" content="Developer blog. Get contact info, browse personal projects."></meta>
+  <meta name="author" content="Antonio Pelusi"></meta>
+  <meta name="keywords" content="Antonio, Pelusi, developer, blog"></meta>
+
+
+</head>
+
 <h2>   👋 Hi, I am Antonio Pelusi</h2>
 
 <p>   🎓  I am a Computer Science graduate at <a href="https://www.unimore.it/">Unimore</a>, Modena (IT)</p>
