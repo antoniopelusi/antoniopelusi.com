@@ -5,20 +5,20 @@ order: 4
 ---
 
 <style>
-  a {color:#f47600; text-decoration:none}
+  a {color:#f47600;}
 </style>
 
 <h2>   👋 Hi, I am Antonio Pelusi</h2>
 
-<p>   🎓  I am a Computer Science graduate at <a href="https://www.unimore.it/">Unimore</a>, Modena (IT)</p>
+<p>   🎓  I am a Computer Science graduate at <a href="https://www.unimore.it/" style="text-decoration: none;">Unimore</a>, Modena (IT)</p>
 
-<p>   🌱  Currently enrolled in the Master's Degree course in Computer Science at <a href="https://www.unimore.it/">Unimore</a>, Modena (IT)</p>
+<p>   🌱  Currently enrolled in the Master's Degree course in Computer Science at <a href="https://www.unimore.it/" style="text-decoration: none;">Unimore</a>, Modena (IT)</p>
 
 <p>   🕹️  Videogames enthusiast</p>
 
 <p>   🎸  Guitar player</p>
 
-<p>   👾  Browse my projects in the <a href="https://www.antoniopelusi.com/archives/">Archive</a></p>
+<p>   👾  Browse my projects in the <a href="https://www.antoniopelusi.com/archives/" style="text-decoration: none;">Archive</a></p>
       
 ---
 ## Skills and known programming languages
