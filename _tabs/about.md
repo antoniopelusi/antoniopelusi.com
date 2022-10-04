@@ -5,7 +5,7 @@ order: 4
 ---
 
 <style>
-  a {color:#f47600;}
+  a {color:#f47600; text-decoration:none}
 </style>
 
 <h2>   👋 Hi, I am Antonio Pelusi</h2>
