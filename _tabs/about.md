@@ -14,7 +14,7 @@ order: 4
 
 <p>   🎸  Guitar player</p>
 
-<p>   👾  Browse my projects in the <a href="https://www.antoniopelusi.com/archives/" style="text-decoration: none;">Archive</a></p>
+<p>   👾  Browse my projects <a href="https://www.antoniopelusi.com/archives/">here</a></p>
       
 ---
 ## Skills and known programming languages
