@@ -23,8 +23,6 @@ layout: page
 <p>   🔎  Find more about me in the <a href="https://www.antoniopelusi.com/about/">About</a> page!</p>
 
 <p>   📫  How to reach me: <a href="mailto:antoniopelusi2000@gmail.com">antoniopelusi2000@gmail.com</a></p>
-
-
       
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
      viewBox="0 200 1000 1000" style="margin-left:auto; margin-right:auto; display:block;">
