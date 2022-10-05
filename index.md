@@ -18,9 +18,9 @@ layout: page
 
 <p>   🎸  Guitar player</p>
 
-<p>   👾  Browse my projects in the <a href="https://www.antoniopelusi.com/archives/">Archive</a></p>
+<p>   👾  Browse my projects <a href="https://www.antoniopelusi.com/archives/">here</a></p>
       
-<p>   🔎  Find more about me in the <a href="https://www.antoniopelusi.com/about/">About</a> page!</p>
+<p>   🔎  Find more about me in the <a href="https://www.antoniopelusi.com/about/">here</a></p>
 
 <p>   📫  How to reach me: <a href="mailto:antoniopelusi2000@gmail.com">antoniopelusi2000@gmail.com</a></p>
       
