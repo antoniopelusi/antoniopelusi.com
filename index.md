@@ -6,7 +6,6 @@ layout: page
   <meta name="description" content="Developer blog. Get contact info, browse personal projects.">
   <meta name="author" content="Antonio Pelusi">
   <meta name="keywords" content="Antonio, Pelusi, developer, blog">
-
 </head>
 
 <h2>   👋 Hi, I am Antonio Pelusi</h2>
@@ -152,6 +151,5 @@ layout: page
             </g>
         </g>
     </g>
-
 </svg>
 
