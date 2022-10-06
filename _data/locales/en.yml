@@ -3,7 +3,7 @@
 # ----- Commons label -----
 
 layout:
-  post: Post
+  posts: Post
   category: Category
   tag: Tag
 
