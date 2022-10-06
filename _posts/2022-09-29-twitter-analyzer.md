@@ -1,4 +1,4 @@
-A twitter scraper developed for **Project Software** exam at Unimore Computer Science Degree
+A twitter scraper developed for **Software Project** exam at Unimore Computer Science Degree
 
 Source code available [**here**](https://github.com/antoniopelusi/Twitter-Analyzer)
 
