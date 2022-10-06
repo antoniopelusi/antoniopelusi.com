@@ -1,5 +1,6 @@
 ---
 layout: page
+description: Developer blog. Get contact info, browse personal projects.
 ---
 
 <head>
