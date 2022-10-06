@@ -7,7 +7,9 @@ tags: [<span style="color:orange">●</span> java]
 render_with_liquid: false
 ---
 
-## Specification
+
+## Specification ![](/assets/img/posts_images/liferay-logo.png)
+
 **This fork contain the Stripe payment method implementation**
 
 Source code available [**here**](https://github.com/antoniopelusi/liferay-portal)

@@ -11,7 +11,10 @@ A videogames-based social network
 
 Source code available [**here**](https://github.com/antoniopelusi/GamerAlley)
 
-#### Full documentation about functionality and screenshots available on the [`Gameralley.pdf`](https://github.com/antoniopelusi/GamerAlley/blob/master/GamerAlley.pdf) file in this repository
+---
+
+## Documentation and screenshots
+[`Gameralley.pdf`](https://github.com/antoniopelusi/GamerAlley/blob/master/GamerAlley.pdf)
 
 ---
 ### Features:

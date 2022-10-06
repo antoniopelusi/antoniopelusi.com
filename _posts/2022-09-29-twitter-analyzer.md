@@ -1,4 +1,4 @@
-A twitter scraper developed for **Software Project** exam at Unimore Computer Science Degree
+A Twitter scraper developed for **Software Project** exam at Unimore Computer Science Degree
 
 Source code available [**here**](https://github.com/antoniopelusi/Twitter-Analyzer)
 
@@ -11,13 +11,13 @@ Source code available [**here**](https://github.com/antoniopelusi/Twitter-Analyz
 * Lorenzo Stigliano - project owner.<br>
 * Salvatore Bianco - tester, domain expert.<br>
 
-# Instruction
+## Instruction
 * Download the source code
 * Download [Java SE Development Kit 16.0.1](https://www.oracle.com/java/technologies/javase-jdk16-downloads.html)
 * `cd /path/to/repo/out/artifacts/g3_dev_jar/`
 * `/path/to/jdk-16.0.1/bin/java -jar g3_dev.jar`
 
-# SITEMAP REPOSITORY
+## Sitemap repository
 * `/database` &#8594; dump of the empty database
 * `/doc/log` &#8594; log of the activity
 * `/doc/presentation` &#8594; Twitter Analyzer presentation
@@ -29,3 +29,6 @@ Source code available [**here**](https://github.com/antoniopelusi/Twitter-Analyz
 * `/src/test/java` &#8594; test junit5 for every class
 * `/target/site/jacoco/` &#8594; report coverage from jacoco, read by sonarqube
 * `pom.xml` &#8594; maven file
+
+## Screenshots
+![](/assets/img/posts_images/twitteranalyzer.png)

@@ -35,3 +35,6 @@ Need Java virtual machine to start, available [**here**](https://www.java.com/en
 
 ## Documentation
 The documentation for this project is available in the **/doc** folder
+
+## Screenshots
+![](/assets/img/posts_images/filesplitter.png)
