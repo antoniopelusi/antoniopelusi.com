@@ -1,9 +1,9 @@
 ---
 title: antoniopelusi.com
 author: antoniopelusi
-date: 2022-09-25 13:10:00 +0800
+date: 2022-10-07 08:10:00 +0800
 categories: [Personal projects]
-tags: [<span style="color:OrangeRed">●</span> HTML, <span style="color:darkRed">●</span> ruby]
+tags: [<span style="color:OrangeRed">●</span> HTML, <span style="color:darkRed">●</span> ruby, <span style="color:darkSlateBlue">●</span> CSS]
 render_with_liquid: false
 ---
 
