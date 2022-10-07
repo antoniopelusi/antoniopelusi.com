@@ -31,7 +31,7 @@ layout: page
     <span class="date month small text-muted ml-1" data-ts="{{ ts }}" data-df="{{ df_dayjs_m }}">
       {{ post.date | date: df_strftime_m }}
     </span>
-    <a style="color:#fc9505;" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    <a style="color:#f66947;" href="{{ post.url | relative_url }}">{{ post.title }}</a>
   </li>
 
   {% if forloop.last %}</ul>{% endif %}
