@@ -4,46 +4,46 @@ icon: fas fa-info-circle
 order: 4
 ---
 <div style="font-size: 1rem;">
-    <h2>   👋 Hi, I am Antonio Pelusi</h2>
+  <h2>   👋 Hi, I am Antonio Pelusi</h2>
 
-    <p>   🎓  I am a Computer Science graduate at <a href="https://www.unimore.it/">Unimore</a>, Modena (IT)</p>
+  <p>   🎓  I am a Computer Science graduate at <a href="https://www.unimore.it/">Unimore</a>, Modena (IT)</p>
 
-    <p>   🌱  Currently enrolled in the Master's Degree course in Computer Science at <a href="https://www.unimore.it/">Unimore</a>, Modena (IT)</p>
+  <p>   🌱  Currently enrolled in the Master's Degree course in Computer Science at <a href="https://www.unimore.it/">Unimore</a>, Modena (IT)</p>
 
-    <p>   🕹️  Videogames enthusiast</p>
+  <p>   🕹️  Videogames enthusiast</p>
 
-    <p>   🎸  Guitar player</p>
+  <p>   🎸  Guitar player</p>
 
-    <p>   👾  Browse my projects <a href="https://www.antoniopelusi.com/archives/">here</a>!</p>
+  <p>   👾  Browse my projects <a href="https://www.antoniopelusi.com/archives/">here</a>!</p>
 
-    ---
-    ## 📚 Skills and known programming languages
-    - C
-    - C++
-    - Java
-    - Kotlin
-    - Python
-    - HTML/CSS/JavaScript
-    - Django framework
-    - Servlet-based Web Apps
+---
+## 📚 Skills and known programming languages
+- C
+- C++
+- Java
+- Kotlin
+- Python
+- HTML/CSS/JavaScript
+- Django framework
+- Servlet-based Web Apps
 
-    ---
-    ## 🔧 Work experiences
-    - Internship in [Liferay](https://www.liferay.com/), in which I integrated a new payment method, [Stripe](https://stripe.com/), into [Liferay Portal](https://github.com/liferay/liferay-portal).
-    Find more [here](https://www.antoniopelusi.com/posts/liferay-portal/)
+---
+## 🔧 Work experiences
+- Internship in [Liferay](https://www.liferay.com/), in which I integrated a new payment method, [Stripe](https://stripe.com/), into [Liferay Portal](https://github.com/liferay/liferay-portal).
+Find more [here](https://www.antoniopelusi.com/posts/liferay-portal/)
 
-    ---
-    ## 📇 Contact me
+---
+## 📇 Contact me
 
-    <i class="fas fa-envelope" aria-hidden="true"></i> **Email**: [antoniopelusi2000@gmail.com](mailto:antoniopelusi2000@gmail.com")
+<i class="fas fa-envelope" aria-hidden="true"></i> **Email**: [antoniopelusi2000@gmail.com](mailto:antoniopelusi2000@gmail.com")
 
-    <i class="fab fa-linkedin" aria-hidden="true"></i> **LinkedIn**: [@antoniopelusi](https://www.linkedin.com/in/antoniopelusi/)
+<i class="fab fa-linkedin" aria-hidden="true"></i> **LinkedIn**: [@antoniopelusi](https://www.linkedin.com/in/antoniopelusi/)
 
-    <i class="fab fa-twitter" aria-hidden="true"></i> **Twitter**: [@antopelusi](https://twitter.com/antopelusi)
+<i class="fab fa-twitter" aria-hidden="true"></i> **Twitter**: [@antopelusi](https://twitter.com/antopelusi)
 
-    <i class="fab fa-github" aria-hidden="true"></i> **GitHub**: [@antoniopelusi](https://github.com/antoniopelusi)
+<i class="fab fa-github" aria-hidden="true"></i> **GitHub**: [@antoniopelusi](https://github.com/antoniopelusi)
 
-    <p></p>
+<p></p>
 </div>
 
 
