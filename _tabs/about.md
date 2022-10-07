@@ -16,37 +16,40 @@ order: 4
 
   <p>   👾  Browse my projects <a href="https://www.antoniopelusi.com/archives/">here</a>!</p>
 
-  ---
-  ## 📚 Skills and known programming languages
-  - C
-  - C++
-  - Java
-  - Kotlin
-  - Python
-  - HTML/CSS/JavaScript
-  - Django framework
-  - Servlet-based Web Apps
+  <p>   📫  Reach me <a href="https://www.antoniopelusi.com/about/#contact-me">here</a>!</p>
 
-  ---
-  ## 🔧 Work experiences
-  - Internship in [Liferay](https://www.liferay.com/), in which I integrated a new payment method, [Stripe](https://stripe.com/), into [Liferay Portal](https://github.com/liferay/liferay-portal).
-  Find more [here](https://www.antoniopelusi.com/posts/liferay-portal/)
+---
+## 📚 Skills and known programming languages
+- C
+- C++
+- Java
+- Kotlin
+- Python
+- HTML/CSS/JavaScript
+- Django framework
+- Servlet-based Web Apps
 
-  ---
-  ## 📇 Contact me
+---
+## 🔧 Work experiences
+- Internship in [Liferay](https://www.liferay.com/), in which I integrated a new payment method, [Stripe](https://stripe.com/), into [Liferay Portal](https://github.com/liferay/liferay-portal).
+Find more [here](https://www.antoniopelusi.com/posts/liferay-portal/)
 
-  <i class="fas fa-envelope" aria-hidden="true"></i> **Email**: [antoniopelusi2000@gmail.com](mailto:antoniopelusi2000@gmail.com")
+---
+## 📇 Contact me
 
-  <i class="fab fa-linkedin" aria-hidden="true"></i> **LinkedIn**: [@antoniopelusi](https://www.linkedin.com/in/antoniopelusi/)
+<i class="fas fa-envelope" aria-hidden="true"></i> **Email**: [antoniopelusi2000@gmail.com](mailto:antoniopelusi2000@gmail.com")
 
-  <i class="fab fa-twitter" aria-hidden="true"></i> **Twitter**: [@antopelusi](https://twitter.com/antopelusi)
+<i class="fab fa-linkedin" aria-hidden="true"></i> **LinkedIn**: [@antoniopelusi](https://www.linkedin.com/in/antoniopelusi/)
 
-  <i class="fab fa-github" aria-hidden="true"></i> **GitHub**: [@antoniopelusi](https://github.com/antoniopelusi) 
+<i class="fab fa-twitter" aria-hidden="true"></i> **Twitter**: [@antopelusi](https://twitter.com/antopelusi)
+
+<i class="fab fa-github" aria-hidden="true"></i> **GitHub**: [@antoniopelusi](https://github.com/antoniopelusi)
+
 </div>
 
 
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-     viewBox="-250 200 1300 600" style="margin-left:auto; margin-right:auto; display:block;">
+     viewBox="-250 250 1300 600" style="margin-left:auto; margin-right:auto; display:block;">
     <defs>
         <linearGradient id="Dégradé_sans_nom_4" x1="397.3" y1="531.55" x2="398.77" y2="531.55"
                         gradientTransform="matrix(1, 0, 0, -1, 0, 1002)" gradientUnits="userSpaceOnUse">
