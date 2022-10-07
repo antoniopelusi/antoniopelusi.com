@@ -9,21 +9,24 @@ description: Developer blog. Get contact info, browse personal projects.
   <meta name="keywords" content="Antonio, Pelusi, developer, blog">
 </head>
 
-<h2>   👋 Hi, I am Antonio Pelusi</h2>
+<div style="font-size: 1rem;">
 
-<p>   🎓  I am a Computer Science graduate at <a href="https://www.unimore.it/">Unimore</a>, Modena (IT)</p>
+    <h2>   👋 Hi, I am Antonio Pelusi</h2>
 
-<p>   🌱  Currently enrolled in the Master's Degree course in Computer Science at <a href="https://www.unimore.it/">Unimore</a>, Modena (IT)</p>
+    <p>   🎓  I am a Computer Science graduate at <a href="https://www.unimore.it/">Unimore</a>, Modena (IT)</p>
 
-<p>   🕹️  Videogames enthusiast</p>
+    <p>   🌱  Currently enrolled in the Master's Degree course in Computer Science at <a href="https://www.unimore.it/">Unimore</a>, Modena (IT)</p>
 
-<p>   🎸  Guitar player</p>
+    <p>   🕹️  Videogames enthusiast</p>
 
-<p>   👾  Browse my projects <a href="https://www.antoniopelusi.com/archives/">here</a>!</p>
-      
-<p>   🔎  Find more about me <a href="https://www.antoniopelusi.com/about/">here</a>!</p>
+    <p>   🎸  Guitar player</p>
 
-<p>   📫  Reach me <a href="https://www.antoniopelusi.com/about/#contact-me">here</a>!</p>
+    <p>   👾  Browse my projects <a href="https://www.antoniopelusi.com/archives/">here</a>!</p>
+        
+    <p>   🔎  Find more about me <a href="https://www.antoniopelusi.com/about/">here</a>!</p>
+
+    <p>   📫  Reach me <a href="https://www.antoniopelusi.com/about/#contact-me">here</a>!</p>
+</div>
       
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
      viewBox="-50 250 1000 1000" style="margin-left:auto; margin-right:auto; display:block;">
