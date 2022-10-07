@@ -1,14 +1,14 @@
 ---
-# the default layout is 'page'
+layout: page
 icon: fas fa-info-circle
 order: 4
 ---
 
 <h2>   👋 Hi, I am Antonio Pelusi</h2>
 
-<p>   🎓  I am a Computer Science graduate at <a href="https://www.unimore.it/" style="text-decoration: none;">Unimore</a>, Modena (IT)</p>
+<p>   🎓  I am a Computer Science graduate at <a href="https://www.unimore.it/">Unimore</a>, Modena (IT)</p>
 
-<p>   🌱  Currently enrolled in the Master's Degree course in Computer Science at <a href="https://www.unimore.it/" style="text-decoration: none;">Unimore</a>, Modena (IT)</p>
+<p>   🌱  Currently enrolled in the Master's Degree course in Computer Science at <a href="https://www.unimore.it/">Unimore</a>, Modena (IT)</p>
 
 <p>   🕹️  Videogames enthusiast</p>
 
