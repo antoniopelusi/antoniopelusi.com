@@ -13,7 +13,7 @@ layout: page
   {% assign df_dayjs_m = '/ MM' %}
 {% endif %}
 
-<div id="archives" class="pl-xl-3" style="color:#fc9505;">
+<div id="archives" class="pl-xl-3">
 
 {% for post in site.posts %}
   {% capture cur_year %}{{ post.date | date: "%Y" }}{% endcapture %}
@@ -25,7 +25,7 @@ layout: page
     {% assign last_year = cur_year %}
   {% endif %}
 
-  <li>
+  <li style="color:#fc9505;">
   {% assign ts = post.date | date: '%s' %}
     <span class="date day" data-ts="{{ ts }}" data-df="DD">{{ post.date | date: "%d" }}</span>
     <span class="date month small text-muted ml-1" data-ts="{{ ts }}" data-df="{{ df_dayjs_m }}">
