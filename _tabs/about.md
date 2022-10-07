@@ -16,8 +16,6 @@ order: 4
 
     <p>   👾  Browse my projects <a href="https://www.antoniopelusi.com/archives/">here</a>!</p>
 
-    <p>   📫  Reach me <a href="https://www.antoniopelusi.com/about/#contact-me">here</a>!</p>
-
     ---
     ## 📚 Skills and known programming languages
     - C
@@ -45,6 +43,7 @@ order: 4
 
     <i class="fab fa-github" aria-hidden="true"></i> **GitHub**: [@antoniopelusi](https://github.com/antoniopelusi)
 
+    <p></p>
 </div>
 
 

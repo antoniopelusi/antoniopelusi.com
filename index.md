@@ -25,7 +25,6 @@ description: Developer blog. Get contact info, browse personal projects.
         
     <p>   🔎  Find more about me <a href="https://www.antoniopelusi.com/about/">here</a>!</p>
 
-    <p>   📫  Reach me <a href="https://www.antoniopelusi.com/about/#contact-me">here</a>!</p>
 </div>
       
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
