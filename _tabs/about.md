@@ -20,6 +20,7 @@ order: 4
 </div>
 
 
+<div style="font-size: 1rem;">
 ---
 ## 📚 Skills and known programming languages
 - C
@@ -46,6 +47,8 @@ Find more [here](https://www.antoniopelusi.com/posts/liferay-portal/)
 <i class="fab fa-twitter" aria-hidden="true"></i> **Twitter**: [@antopelusi](https://twitter.com/antopelusi)
 
 <i class="fab fa-github" aria-hidden="true"></i> **GitHub**: [@antoniopelusi](https://github.com/antoniopelusi)
+
+</div>
 
 
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
