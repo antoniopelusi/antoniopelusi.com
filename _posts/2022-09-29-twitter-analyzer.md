@@ -1,3 +1,12 @@
+---
+title: Twitter Analyzer
+author: antoniopelusi
+date: 2022-09-28 14:10:00 +0800
+categories: [Personal projects]
+tags: [<span style="color:orange">●</span> java, <span style="color:darkSlateBlue">●</span> CSS]
+render_with_liquid: false
+---
+
 A Twitter scraper developed for **Software Project** exam at Unimore Computer Science Degree
 
 Source code available [**here**](https://github.com/antoniopelusi/Twitter-Analyzer)
