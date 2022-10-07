@@ -3,19 +3,20 @@ layout: page
 icon: fas fa-info-circle
 order: 4
 ---
+<div style="font-size: 1rem;">
+  <h2>   👋 Hi, I am Antonio Pelusi</h2>
 
-<h2>   👋 Hi, I am Antonio Pelusi</h2>
+  <p>   🎓  I am a Computer Science graduate at <a href="https://www.unimore.it/">Unimore</a>, Modena (IT)</p>
 
-<p>   🎓  I am a Computer Science graduate at <a href="https://www.unimore.it/">Unimore</a>, Modena (IT)</p>
+  <p>   🌱  Currently enrolled in the Master's Degree course in Computer Science at <a href="https://www.unimore.it/">Unimore</a>, Modena (IT)</p>
 
-<p>   🌱  Currently enrolled in the Master's Degree course in Computer Science at <a href="https://www.unimore.it/">Unimore</a>, Modena (IT)</p>
+  <p>   🕹️  Videogames enthusiast</p>
 
-<p>   🕹️  Videogames enthusiast</p>
+  <p>   🎸  Guitar player</p>
 
-<p>   🎸  Guitar player</p>
+  <p>   👾  Browse my projects <a href="https://www.antoniopelusi.com/archives/">here</a>!</p>
+</div>
 
-<p>   👾  Browse my projects <a href="https://www.antoniopelusi.com/archives/">here</a>!</p>
-      
 ---
 ## Skills and known programming languages
 - C
