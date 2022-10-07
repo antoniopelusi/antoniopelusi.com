@@ -8,13 +8,15 @@ render_with_liquid: false
 ---
 
 
-## Specification ![](/assets/img/posts_images/liferay-logo.png)
+## Specification
 
 **This fork contain the Stripe payment method implementation**
 
 Source code available [**here**](https://github.com/antoniopelusi/liferay-portal)
 
-## The Liferay Development Team
+Documentation available [**here**](https://github.com/antoniopelusi/liferay-portal/blob/COMMERCE-6756/doc.pdf)
+
+## The Liferay Development Team ![](/assets/img/posts_images/liferay-logo.png)
 
 Liferay Portal is produced by the worldwide Liferay engineering team, and
 involves many hours of development, testing, writing documentation, and working
