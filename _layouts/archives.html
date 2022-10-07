@@ -25,13 +25,13 @@ layout: page
     {% assign last_year = cur_year %}
   {% endif %}
 
-  <li style="color:#fc9505;">
+  <li>
   {% assign ts = post.date | date: '%s' %}
     <span class="date day" data-ts="{{ ts }}" data-df="DD">{{ post.date | date: "%d" }}</span>
     <span class="date month small text-muted ml-1" data-ts="{{ ts }}" data-df="{{ df_dayjs_m }}">
       {{ post.date | date: df_strftime_m }}
     </span>
-    <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    <a href="{{ post.url | relative_url }}">{{ post.title }} style="color:#fc9505;"</a>
   </li>
 
   {% if forloop.last %}</ul>{% endif %}
