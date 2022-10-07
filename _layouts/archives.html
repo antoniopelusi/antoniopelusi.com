@@ -20,7 +20,7 @@ layout: page
 
   {% if cur_year != last_year %}
     {% unless forloop.first %}</ul>{% endunless %}
-    <div class="year lead">{{ cur_year }}</div>
+    <div style="color:#f66947;" class="year lead">{{ cur_year }}</div>
     <ul class="list-unstyled">
     {% assign last_year = cur_year %}
   {% endif %}
@@ -31,7 +31,7 @@ layout: page
     <span class="date month small text-muted ml-1" data-ts="{{ ts }}" data-df="{{ df_dayjs_m }}">
       {{ post.date | date: df_strftime_m }}
     </span>
-    <a style="color:#f66947;" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    <a style="color:#FFFFFF;" href="{{ post.url | relative_url }}">{{ post.title }}</a>
   </li>
 
   {% if forloop.last %}</ul>{% endif %}

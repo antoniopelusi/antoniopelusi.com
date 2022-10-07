@@ -20,7 +20,7 @@ order: 4
 </div>
 
 ---
-## Skills and known programming languages
+## 📚 Skills and known programming languages
 - C
 - C++
 - Java
@@ -31,12 +31,12 @@ order: 4
 - Servlet-based Web Apps
 
 ---
-## Work experiences
+## 🔧 Work experiences
 - Internship in [Liferay](https://www.liferay.com/), in which I integrated a new payment method, [Stripe](https://stripe.com/), into [Liferay Portal](https://github.com/liferay/liferay-portal).
 Find more [here](https://www.antoniopelusi.com/posts/liferay-portal/)
 
 ---
-## Contact me
+## 📇 Contact me
 
 <i class="fas fa-envelope" aria-hidden="true"></i> **Email**: [antoniopelusi2000@gmail.com](mailto:antoniopelusi2000@gmail.com")
 
