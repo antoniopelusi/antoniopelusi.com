@@ -47,7 +47,7 @@ Find more [here](https://www.antoniopelusi.com/posts/liferay-portal/)
 
 
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-     viewBox="-50 230 1000 1000" style="margin-left:auto; margin-right:auto; display:block;">
+     viewBox="-250 200 1300 600" style="margin-left:auto; margin-right:auto; display:block;">
     <defs>
         <linearGradient id="Dégradé_sans_nom_4" x1="397.3" y1="531.55" x2="398.77" y2="531.55"
                         gradientTransform="matrix(1, 0, 0, -1, 0, 1002)" gradientUnits="userSpaceOnUse">
