@@ -16,9 +16,11 @@ order: 4
 
   <p>   👾  Browse my projects <a href="https://www.antoniopelusi.com/archives/">here</a>!</p>
 
+  <p>   📫  Reach me <a href="https://www.antoniopelusi.com/about/#contact-me">here</a>!</p>
+</div>
 
 ---
-## 📚 Skills and known programming languages
+## Skills and known programming languages
 - C
 - C++
 - Java
@@ -29,12 +31,12 @@ order: 4
 - Servlet-based Web Apps
 
 ---
-## 🔧 Work experiences
+## Work experiences
 - Internship in [Liferay](https://www.liferay.com/), in which I integrated a new payment method, [Stripe](https://stripe.com/), into [Liferay Portal](https://github.com/liferay/liferay-portal).
 Find more [here](https://www.antoniopelusi.com/posts/liferay-portal/)
 
 ---
-## 📇 Contact me
+## Contact me
 
 <i class="fas fa-envelope" aria-hidden="true"></i> **Email**: [antoniopelusi2000@gmail.com](mailto:antoniopelusi2000@gmail.com")
 
@@ -44,11 +46,8 @@ Find more [here](https://www.antoniopelusi.com/posts/liferay-portal/)
 
 <i class="fab fa-github" aria-hidden="true"></i> **GitHub**: [@antoniopelusi](https://github.com/antoniopelusi)
 
-</div>
-
-
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-     viewBox="-250 200 1300 600" style="margin-left:auto; margin-right:auto; display:block;">
+     viewBox="-50 230 1000 1000" style="margin-left:auto; margin-right:auto; display:block;">
     <defs>
         <linearGradient id="Dégradé_sans_nom_4" x1="397.3" y1="531.55" x2="398.77" y2="531.55"
                         gradientTransform="matrix(1, 0, 0, -1, 0, 1002)" gradientUnits="userSpaceOnUse">
