@@ -40,7 +40,7 @@ layout: page
         <i class="far fa-folder{% if sub_categories_size > 0 %}-open{% endif %} fa-fw"></i>
 
         {% capture _category_url %}/categories/{{ category_name | slugify | url_encode }}/{% endcapture %}
-        <a href="{{ _category_url | relative_url }}" class="ml-1 mr-2">{{ category_name }}</a>
+        <a style="color:#F66947;" href="{{ _category_url | relative_url }}" class="ml-1 mr-2">{{ category_name }}</a>
 
         <!-- content count -->
         {% assign top_posts_size = site.categories[category_name] | size %}
