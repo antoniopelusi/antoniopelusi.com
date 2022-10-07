@@ -14,7 +14,7 @@ layout: page
   <ul class="post-content pl-0">
     {% for post in page.posts %}
     <li class="d-flex justify-content-between pl-md-3 pr-md-3">
-      <a style="color:#5d646c;" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      <a style="color:#F66947;" href="{{ post.url | relative_url }}">{{ post.title }}</a>
       <span class="dash flex-grow-1"></span>
       {% include datetime.html date=post.date wrap='span' class='text-muted small' %}
     </li>
