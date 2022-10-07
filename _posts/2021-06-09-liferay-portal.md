@@ -3,7 +3,7 @@ title: Liferay Portal + Stripe
 author: antoniopelusi
 date: 2021-06-09 11:12:00 +0800
 categories: [Work experiences]
-tags: [<span style="color:orange">●</span> java]
+tags: [<span style="color:orange">●</span> java, <span style="color:#ffff33">●</span> javascript <span style="color:OrangeRed">●</span> HTML, <span style="color:darkSlateBlue">●</span> CSS]
 render_with_liquid: false
 ---
 
