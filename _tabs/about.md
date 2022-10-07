@@ -15,6 +15,8 @@ order: 4
   <p>   🎸  Guitar player</p>
 
   <p>   👾  Browse my projects <a href="https://www.antoniopelusi.com/archives/">here</a>!</p>
+
+  <p>   📫  Reach me <a href="https://www.antoniopelusi.com/about/#contact-me">here</a>!</p>
 </div>
 
 ---
@@ -30,7 +32,8 @@ order: 4
 
 ---
 ## Work experiences
-- Internship in [Liferay](https://www.liferay.com/), in which I integrated a new payment method, [Stripe](https://stripe.com/), into [Liferay Portal](https://github.com/liferay/liferay-portal). Find more [here](https://www.antoniopelusi.com/posts/liferay-portal/)
+- Internship in [Liferay](https://www.liferay.com/), in which I integrated a new payment method, [Stripe](https://stripe.com/), into [Liferay Portal](https://github.com/liferay/liferay-portal).
+Find more [here](https://www.antoniopelusi.com/posts/liferay-portal/)
 
 ---
 ## Contact me
