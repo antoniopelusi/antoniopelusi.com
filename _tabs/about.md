@@ -15,8 +15,6 @@ order: 4
   <p>   🎸  Guitar player</p>
 
   <p>   👾  Browse my projects <a href="https://www.antoniopelusi.com/archives/">here</a>!</p>
-
-  <p>   📫  Reach me <a href="https://www.antoniopelusi.com/about/#contact-me">here</a>!</p>
 </div>
 
 
