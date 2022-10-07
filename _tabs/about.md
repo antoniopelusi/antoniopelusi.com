@@ -17,6 +17,8 @@ order: 4
   <p>   👾  Browse my projects <a href="https://www.antoniopelusi.com/archives/">here</a>!</p>
 
   <p>   📫  Reach me <a href="https://www.antoniopelusi.com/about/#contact-me">here</a>!</p>
+</div>
+
 
 ---
 ## 📚 Skills and known programming languages
@@ -45,7 +47,6 @@ Find more [here](https://www.antoniopelusi.com/posts/liferay-portal/)
 
 <i class="fab fa-github" aria-hidden="true"></i> **GitHub**: [@antoniopelusi](https://github.com/antoniopelusi)
 
-</div>
 
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
      viewBox="-50 230 1000 1000" style="margin-left:auto; margin-right:auto; display:block;">
