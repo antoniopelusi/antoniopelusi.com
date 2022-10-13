@@ -26,3 +26,24 @@ Download stylesheet [**here**](https://github.com/antoniopelusi/JavaFX-Dark-Them
   ```
 ## CSS preview example
 ![image](https://user-images.githubusercontent.com/35381371/195473344-540e090e-da60-45d8-9cc4-f676db4b4523.png)
+
+## List of JavaFX elements recolored:
+- Label
+- Pane
+- GridPane
+- TextField
+- ComboBox
+- ListCell
+- ListView
+- Button
+- CheckBox
+- TextArea
+- ScrollBar
+- Menu
+- ProgressBar
+- Slider
+- TreeView
+- Tab
+- TitledPane
+- TableView
+- Tooltip
