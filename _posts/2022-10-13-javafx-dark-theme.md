@@ -7,7 +7,6 @@ tags: [<span style="color:darkSlateBlue">●</span> CSS]
 render_with_liquid: false
 ---
 
-# JavaFX-Dark-Theme
 A complete CSS stylesheet to set a dark theme in your JavaFX UI.
 
 Download stylesheet [**here**](https://github.com/antoniopelusi/JavaFX-Dark-Theme)!
