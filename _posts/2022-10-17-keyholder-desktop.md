@@ -7,11 +7,10 @@ tags: [<span style="color:orange">●</span> java, <span style="color:darkSlateB
 render_with_liquid: false
 ---
 
-# Keyholder desktop 🔒
 [![](https://img.shields.io/badge/Version-1.0-white)]()
 [![](https://img.shields.io/badge/Open_Source-GPL--3.0-informational)]()
 
-Store your passwords in an offline encrypted file!
+Store your passwords in an offline encrypted file! 🔒
 <br>
 
 Need a JDK to run, download it [here](https://www.oracle.com/java/technologies/downloads/)!
