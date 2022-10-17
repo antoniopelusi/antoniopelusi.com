@@ -14,7 +14,7 @@ render_with_liquid: false
 Store your passwords in an offline encrypted file!
 <br>
 
-Need a JDK to run, download it [**here**](https://www.oracle.com/java/technologies/downloads/)!
+Need a JDK to run, download it [here](https://www.oracle.com/java/technologies/downloads/)!
 
 - Written in [Java 11](https://dev.java/) ♨️
 - [JavaFX](https://openjfx.io/) GUI with [JavaFX-Dark-Theme](https://github.com/antoniopelusi/JavaFX-Dark-Theme) 🌘
