@@ -12,14 +12,14 @@ render_with_liquid: false
 [![](https://img.shields.io/badge/Open_Source-GPL--3.0-informational)]()
 
 Store your password in an offline encrypted file!
-<br></br>
+<br>
 
 Need a JDK to run, download it [**here**](https://www.oracle.com/java/technologies/downloads/)!
 
 - Written in [Java 11](https://dev.java/) ♨️
 - [JavaFX](https://openjfx.io/) GUI with [JavaFX-Dark-Theme](https://github.com/antoniopelusi/JavaFX-Dark-Theme) 🌘
 - Source code available [here](https://github.com/antoniopelusi/KeyHolder-desktop) 📦
-<br></br>
+<br>
 
 ## Download 📂
 Check the [GitHub release](https://github.com/antoniopelusi/KeyHolder-desktop/releases) section to download the executable file available in the following formats:
@@ -35,14 +35,14 @@ Feel free to compile it yourself and edit the source code:
 ```mvn clean javafx:run```
 - To create the jar bundle:
 ```mvn clean compile package```
-<br></br>
+<br>
 
 ## Features ✨
 - Create an offline encrypted database to securely store your account data
 - Choose a Master Password to encrypt the entire database
 - Easily add, edit and remove accounts
 - Several keyboard shortcuts available, check the help section to find out more!
-<br></br>
+<br>
 
 ## Specification ⚙️
 - Use *AES* encryption
@@ -50,7 +50,7 @@ Feel free to compile it yourself and edit the source code:
 - *CSV* database format
 - GUI developed with *JavaFX Scene Builder*
 - *Maven* support for dependencies and automation
-<br></br>
+<br>
 
 ## Sreenshots 🖼️
 Login view:
