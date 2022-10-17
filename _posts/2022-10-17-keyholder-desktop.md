@@ -22,7 +22,7 @@ Need a JDK to run, download it [here](https://www.oracle.com/java/technologies/d
 <br>
 
 ## Download 📂
-Check the [GitHub release](https://github.com/antoniopelusi/KeyHolder-desktop/releases) section to download the executable file available in the following formats:
+Check the [GitHub releases](https://github.com/antoniopelusi/KeyHolder-desktop/releases) section to download the executable file available in the following formats:
 - `.exe`: Windows
 - `.deb`: Linux (Debian Package Manager)
 - `.rpm`: Linux (Red Hat Package Manager)
