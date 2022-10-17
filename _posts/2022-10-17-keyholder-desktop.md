@@ -23,11 +23,11 @@ Need a JDK to run, download it [here](https://www.oracle.com/java/technologies/d
 
 ## Download 📂
 Check the [GitHub release](https://github.com/antoniopelusi/KeyHolder-desktop/releases) section to download the executable file available in the following formats:
-- **.exe**: Windows
-- **.deb**: Linux (Debian Package Manager)
-- **.rpm**: Linux (Red Hat Package Manager)
-- **.appimage**: Linux
-- **.jar**: Windows, Linux and MacOS
+- `.exe`: Windows
+- `.deb`: Linux (Debian Package Manager)
+- `.rpm`: Linux (Red Hat Package Manager)
+- `.appimage`: Linux
+- `.jar`: Windows, Linux and MacOS
 
 Feel free to compile it yourself and edit the source code:
 - Download the source code [here](https://github.com/antoniopelusi/KeyHolder-desktop)
