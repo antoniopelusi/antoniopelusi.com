@@ -25,6 +25,7 @@ order: 4
 - Kotlin
 - Python
 - HTML/CSS/JavaScript
+- JavaFX
 - Django framework
 - Servlet-based Web Apps
 
