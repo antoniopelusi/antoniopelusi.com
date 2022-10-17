@@ -28,6 +28,13 @@ Check the [GitHub release](https://github.com/antoniopelusi/KeyHolder-desktop/re
 - **.rpm**: Linux (Red Hat Package Manager)
 - **.appimage**: Linux
 - **.jar**: Windows, Linux and MacOS
+
+Feel free to compile it yourself and edit the source code:
+- Download the source code
+- To compile and run:
+```mvn clean javafx:run```
+- To create the jar bundle:
+```mvn clean compile package```
 <br></br>
 
 ## Features ✨
@@ -36,7 +43,6 @@ Check the [GitHub release](https://github.com/antoniopelusi/KeyHolder-desktop/re
 - Easily add, edit and remove accounts
 - Several keyboard shortcuts available, check the help section to find out more!
 <br></br>
-<br></br>
 
 ## Specification ⚙️
 - Use *AES* encryption
@@ -44,7 +50,6 @@ Check the [GitHub release](https://github.com/antoniopelusi/KeyHolder-desktop/re
 - *CSV* database format
 - GUI developed with *JavaFX Scene Builder*
 - *Maven* support for dependencies and automation
-<br></br>
 <br></br>
 
 ## Sreenshots 🖼️
