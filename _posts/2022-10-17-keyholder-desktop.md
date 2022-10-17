@@ -32,9 +32,13 @@ Check the [GitHub release](https://github.com/antoniopelusi/KeyHolder-desktop/re
 Feel free to compile it yourself and edit the source code:
 - Download the source code
 - To compile and run:
-```mvn clean javafx:run```
+```
+mvn clean javafx:run
+```
 - To create the jar bundle:
-```mvn clean compile package```
+```
+mvn clean compile package
+```
 <br>
 
 ## Features ✨
