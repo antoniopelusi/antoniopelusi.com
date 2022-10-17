@@ -30,7 +30,7 @@ Check the [GitHub release](https://github.com/antoniopelusi/KeyHolder-desktop/re
 - **.jar**: Windows, Linux and MacOS
 
 Feel free to compile it yourself and edit the source code:
-- Download the source code
+- Download the source code [here](https://github.com/antoniopelusi/KeyHolder-desktop)
 - To compile and run:
 ```
 mvn clean javafx:run
