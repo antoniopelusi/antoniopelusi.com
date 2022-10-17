@@ -20,6 +20,14 @@ Need a JDK to run, download it [**here**](https://www.oracle.com/java/technologi
 - [JavaFX](https://openjfx.io/) GUI with [JavaFX-Dark-Theme](https://github.com/antoniopelusi/JavaFX-Dark-Theme) 🌘
 - Source code available [here](https://github.com/antoniopelusi/KeyHolder-desktop) 📦
 <br></br>
+
+## Download 📂
+Check the [GitHub release](https://github.com/antoniopelusi/KeyHolder-desktop/releases) section to download the executable file available in the following formats:
+- **.exe**: Windows
+- **.deb**: Linux (Debian Package Manager)
+- **.rpm**: Linux (Red Hat Package Manager)
+- **.appimage**: Linux
+- **.jar**: Windows, Linux and MacOS
 <br></br>
 
 ## Features ✨
