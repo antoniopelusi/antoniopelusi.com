@@ -17,8 +17,7 @@ Download the .jar bundle [**here**](https://github.com/antoniopelusi/File-Splitt
 ***USE 16-DIGIT PASSWORD TO ENCRYPT***
 
 ## `Specification`
-[![Download File Splitter](https://img.shields.io/badge/Version-1.5-yellow)]()
-[![Download File Splitter](https://img.shields.io/badge/Language-Java_8-orange)]()
+[![Download File Splitter](https://img.shields.io/badge/Version-1.0-white)]()
 [![Download File Splitter](https://img.shields.io/badge/Open_Source-GPL--3.0-informational)]()
 
 #### Written in Java 8 with Eclipse IDE, can be run on all the operating systems
