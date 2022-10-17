@@ -16,7 +16,7 @@ Download stylesheet [**here**](https://github.com/antoniopelusi/JavaFX-Dark-Them
 
 
   Add `stylesheets="@style.css"` to the top-level FXML tag.
-<br></br>
+<br>
 
 - **Load via Java:**
   Add the following code:
@@ -25,7 +25,7 @@ Download stylesheet [**here**](https://github.com/antoniopelusi/JavaFX-Dark-Them
   scene.getStylesheets().add(style.toURI().toURL().toExternalForm());
   ```
 ## CSS preview example
-![image](https://user-images.githubusercontent.com/35381371/195473344-540e090e-da60-45d8-9cc4-f676db4b4523.png)
+See this theme in action [here](https://github.com/antoniopelusi/KeyHolder-desktop)!
 
 ## List of JavaFX recolored elements:
 - Label
