@@ -31,6 +31,8 @@ Download stylesheet [**here**](https://github.com/antoniopelusi/JavaFX-Dark-Them
 ## CSS preview example
 See this theme in action [here](https://github.com/antoniopelusi/KeyHolder-desktop)!
 
+Download stylesheet [**here**](https://github.com/antoniopelusi/JavaFX-Dark-Theme)
+
 <br>
 
 ## List of JavaFX recolored elements
