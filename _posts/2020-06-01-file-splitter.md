@@ -16,7 +16,8 @@ Download the .jar bundle [**here**](https://github.com/antoniopelusi/File-Splitt
 
 ***USE 16-DIGIT PASSWORD TO ENCRYPT***
 
-## `Specification`
+## Specification
+
 [![Download File Splitter](https://img.shields.io/badge/Version-1.0-white)]()
 [![Download File Splitter](https://img.shields.io/badge/Open_Source-GPL--3.0-informational)]()
 
