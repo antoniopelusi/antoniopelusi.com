@@ -11,7 +11,7 @@ render_with_liquid: false
 [![](https://img.shields.io/badge/Version-1.0-white)]()
 [![](https://img.shields.io/badge/Open_Source-GPL--3.0-informational)]()
 
-Store your password in an offline encrypted file!
+Store your passwords in an offline encrypted file!
 <br>
 
 Need a JDK to run, download it [**here**](https://www.oracle.com/java/technologies/downloads/)!
@@ -42,10 +42,10 @@ mvn clean compile package
 <br>
 
 ## Features ✨
-- Create an offline encrypted database to securely store your account data
+- Create an offline encrypted database to securely store your accounts data
 - Choose a Master Password to encrypt the entire database
-- Easily add, edit and remove accounts
-- Several keyboard shortcuts available, check the help section to find out more!
+- Easily add, edit and remove the accounts
+- Several keyboard shortcuts available, check the in app *help* section to find out more!
 <br>
 
 ## Specification ⚙️
