@@ -63,3 +63,7 @@ Login view:
 Database view:
 
 ![](https://raw.githubusercontent.com/antoniopelusi/KeyHolder-desktop/main/database.png)
+<br>
+
+## Flow diagram 🧭
+![](https://raw.githubusercontent.com/antoniopelusi/KeyHolder-desktop/main/flow.png)
