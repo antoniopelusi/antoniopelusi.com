@@ -4,7 +4,6 @@ description: Developer blog. Get contact info, browse personal projects.
 ---
 
 <head>
-  <meta name="description" content="Developer blog. Get contact info, browse personal projects.">
   <meta name="author" content="Antonio Pelusi">
   <meta name="keywords" content="Antonio, Pelusi, developer, blog">
 </head>
