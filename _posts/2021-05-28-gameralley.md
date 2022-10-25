@@ -2,10 +2,13 @@
 title: GamerAlley
 author: antoniopelusi
 date: 2021-05-28 14:10:00 +0800
-categories: [Personal projects]
+categories: [University projects]
 tags: [<span style="color:OrangeRed">●</span> HTML, <span style="color:SteelBlue">●</span> python, <span style="color:#ffff33">●</span> javascript, <span style="color:darkSlateBlue">●</span> CSS]
 render_with_liquid: false
 ---
+
+> this project was developed for an university exam.
+{: .prompt-info }
 
 A videogames-based social network
 
