@@ -1,6 +1,7 @@
 ---
 icon: fas fa-info-circle
 order: 4
+layout: page
 ---
 <div style="font-size: 1rem;">
   <h2>   👋 Hi, I am Antonio Pelusi</h2>
