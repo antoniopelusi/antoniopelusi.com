@@ -48,8 +48,8 @@ mvn clean compile package
 <br>
 
 ## Specification ⚙️
-- Use *AES* encryption
-- *SHA* hash to normalize passwords
+- Use *AES/ECB/PKCS5PADDING* encryption
+- *SHA-1* hash to normalize password size
 - *CSV* database format
 - GUI developed with *JavaFX Scene Builder*
 - *Maven* support for dependencies and automation
