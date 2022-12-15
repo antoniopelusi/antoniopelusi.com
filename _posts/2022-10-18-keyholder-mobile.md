@@ -13,7 +13,8 @@ render_with_liquid: false
 [![](https://img.shields.io/badge/Language-CSS-purple)]()
 [![](https://img.shields.io/badge/Open_Source-GPL--3.0-informational)]()
 
-> In developement. {: .prompt-warning }
+> In developement.
+{: .prompt-warning }
 
 Store your passwords in an offline encrypted file!
 <br></br>
