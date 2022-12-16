@@ -3,7 +3,7 @@ title: youtube-classification
 author: antoniopelusi
 date: 2022-12-06 23:29:00 +0800
 categories: [University projects]
-tags: [<span style="color:chocolate">●</span> jupyter notebook]
+tags: [<span style="color:SteelBlue">●</span> python, <span style="color:chocolate">●</span> jupyter notebook]
 render_with_liquid: false
 ---
 
