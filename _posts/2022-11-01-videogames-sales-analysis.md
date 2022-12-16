@@ -1,7 +1,7 @@
 ---
 title: videogames-sales-analysis
 author: antoniopelusi
-date: 2022-11-18 23:29:00 +0800
+date: 2022-11-01 23:29:00 +0800
 categories: [University projects]
 tags: [<span style="color:chocolate">●</span> jupyter notebook]
 render_with_liquid: false
