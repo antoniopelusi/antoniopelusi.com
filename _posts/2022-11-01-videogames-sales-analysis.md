@@ -7,7 +7,8 @@ tags: [<span style="color:chocolate">●</span> jupyter notebook]
 render_with_liquid: false
 ---
 
-# videogames-sales-analysis
+> this project was developed for an university exam.
+{: .prompt-info }
 
 Exploratory analysis and correlation between sales of video games and consoles in the world.
 
