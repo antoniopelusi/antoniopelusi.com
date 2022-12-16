@@ -10,8 +10,6 @@ render_with_liquid: false
 > this project was developed for an university exam.
 {: .prompt-info }
 
-# openstreetmap-neo4j
-
  App that implement different graph operation on Neo4j database that contain Open Street Map nodes. 
  
 ## Installation
