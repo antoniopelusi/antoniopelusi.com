@@ -16,11 +16,11 @@ render_with_liquid: false
 [![](https://img.shields.io/badge/Open_Source-GPL--3.0-informational)]()
 
 Store your passwords in an offline encrypted file!
-<br></br>
+<br>
 
 - Written in [Java 11](https://dev.java/) ♨️
 - [JavaFX](https://openjfx.io/) GUI with [JavaFX-Dark-Theme](https://github.com/antoniopelusi/JavaFX-Dark-Theme) 🌘
-<br></br>
+<br>
 
 ## Download 📂
 Check the [GitHub releases](https://github.com/antoniopelusi/KeyHolder-desktop/releases) section to download the executable file available in the following formats:
