@@ -25,7 +25,7 @@ Store your passwords in an offline encrypted file!
 ## Download 📂
 Check the [GitHub releases](https://github.com/antoniopelusi/KeyHolder-desktop/releases) section to download the executable file available in the following formats:
 - `.apk`: Android
-- desktop version available [here](https://github.com/antoniopelusi/KeyHolder-desktop)!
+- desktop version available [here](https://www.antoniopelusi.com/posts/keyholder-desktop)!
 
 Feel free to compile it yourself and edit the source code:
 - Download the source code
@@ -37,7 +37,7 @@ mvn clean javafx:run
 ```
 mvn clean compile package
 ```
-<br></br>
+<br>
 
 ## Features ✨
 - Create an offline encrypted database to securely store your accounts data
