@@ -62,4 +62,4 @@ Database view:
 ![](database.png)
 
 ## Flow diagram 🧭
-![](https://raw.githubusercontent.com/antoniopelusi/KeyHolder-desktop/main/flow.png)
+![](https://raw.githubusercontent.com/antoniopelusi/KeyHolder-mobile/main/flow.png)
