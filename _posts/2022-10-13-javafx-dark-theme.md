@@ -9,6 +9,8 @@ render_with_liquid: false
 
 A complete CSS stylesheet to set a dark theme in your JavaFX UI. 🌘
 
+Built on top of the default JavaFX theme (Modena)
+
 Download stylesheet [**here**](https://github.com/antoniopelusi/JavaFX-Dark-Theme)!
 
 <br>
