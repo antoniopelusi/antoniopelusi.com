@@ -11,8 +11,6 @@ render_with_liquid: false
 {: .prompt-warning }
 
 [![](https://img.shields.io/badge/Version-1.1-white)]()
-[![](https://img.shields.io/badge/Language-Java-yellow)]()
-[![](https://img.shields.io/badge/Language-CSS-purple)]()
 [![](https://img.shields.io/badge/Open_Source-GPL--3.0-informational)]()
 
 Store your passwords in an offline encrypted file!
