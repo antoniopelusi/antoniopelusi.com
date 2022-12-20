@@ -10,7 +10,7 @@ render_with_liquid: false
 > In developement.
 {: .prompt-warning }
 
-[![](https://img.shields.io/badge/Version-1.0-white)]()
+[![](https://img.shields.io/badge/Version-1.1-white)]()
 [![](https://img.shields.io/badge/Language-Java-yellow)]()
 [![](https://img.shields.io/badge/Language-CSS-purple)]()
 [![](https://img.shields.io/badge/Open_Source-GPL--3.0-informational)]()
