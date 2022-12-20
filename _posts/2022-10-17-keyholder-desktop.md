@@ -27,7 +27,6 @@ Check the [GitHub releases](https://github.com/antoniopelusi/KeyHolder-desktop/r
 - `.rpm`: Linux (Red Hat Package Manager)
 - `.appimage`: Linux
 - `.jar`: Windows, Linux and MacOS
-- mobile version available [here](https://www.antoniopelusi.com/posts/keyholder-mobile)!
 
 Feel free to compile it yourself and edit the source code:
 - Download the source code [here](https://github.com/antoniopelusi/KeyHolder-desktop)
