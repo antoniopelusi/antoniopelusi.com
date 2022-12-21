@@ -32,6 +32,7 @@ layout: page
 - Databases (relational, graph based, document based)
 - Data Analytics
 - Text mining
+
 ---
 ## 🔧 Work experiences
 - Internship in [Liferay](https://www.liferay.com/), in which I integrated a new payment method, [Stripe](https://stripe.com/), into [Liferay Portal](https://github.com/liferay/liferay-portal).
