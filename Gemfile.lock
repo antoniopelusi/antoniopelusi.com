@@ -16,7 +16,7 @@ GEM
     html-proofer (3.19.4)
       addressable (~> 2.3)
       mercenary (~> 0.3)
-      nokogiri (~> 1.13)
+      nokogiri (~> 1.13.10)
       parallel (~> 1.10)
       rainbow (~> 3.0)
       typhoeus (~> 1.3)
