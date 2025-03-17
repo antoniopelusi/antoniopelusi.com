@@ -19,11 +19,12 @@
 @font-face {
 	font-family: "Pixelify Sans";
 	src: url("../font/PixelifySans-VariableFont_wght.ttf") format("truetype");
+	font-display: swap;
 }
 
 body {
 	color: var(--white);
-	font-family: "Pixelify Sans";
+	font-family: "Pixelify Sans", monospace;
 	font-size: 17px;
 	background-color: var(--background);
 	height: 100dvh;
