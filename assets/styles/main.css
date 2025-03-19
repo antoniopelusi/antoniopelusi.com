@@ -25,7 +25,7 @@
 body {
 	color: var(--white);
 	font-family: "Pixelify Sans", monospace;
-	font-size: 17px;
+	font-size: 19px;
 	background-color: var(--background);
 	height: 100dvh;
 }
@@ -58,6 +58,26 @@ main h2 {
 
 main br {
 	margin-bottom: 35px;
+}
+
+img.normal {
+	width: 40px;
+	max-width: 40px;
+	min-width: 40px;
+	height: 40px;
+	max-height: 40px;
+	min-height: 40px;
+    object-fit: cover;
+}
+
+img.small {
+	width: 32px;
+	max-width: 32px;
+	min-width: 32px;
+	height: 32px;
+	max-height: 32px;
+	min-height: 32px;
+    object-fit: cover;
 }
 
 .content {
@@ -242,6 +262,7 @@ main br {
 	align-items: center;
 	justify-content: center;
 	transition: background-color 0.3s;
+	padding: 5px;
 }
 
 .icon-container:hover {
@@ -249,7 +270,7 @@ main br {
 }
 
 .icon-footer-label {
-	font-size: 14px;
+	font-size: 16px;
 	color: var(--white);
 	text-align: center;
 	padding-top: 5px;
