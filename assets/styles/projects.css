@@ -43,7 +43,7 @@ main {
 	text-decoration: none;
 	width: 100%;
 	text-align: left;
-	font-size: 17px;
+	font-size: 0.9em;
 	color: var(--white);
 	transition:
 		color 0.1s ease,
@@ -71,7 +71,7 @@ main {
 	color: white;
 	padding: 5px 8px;
 	border-radius: 4px;
-	font-size: 12px;
+	font-size: 0.7em;
 	white-space: nowrap;
 	transform: translate(-50%, 0);
 	pointer-events: none;

@@ -25,7 +25,7 @@
 body {
 	color: var(--white);
 	font-family: "Pixelify Sans", monospace;
-	font-size: 19px;
+	font-size: 1.2em;
 	background-color: var(--background);
 	height: 100dvh;
 }
@@ -88,7 +88,7 @@ img.small {
 }
 
 #name {
-	font-size: 20pt;
+	font-size: 1.4em;
 	color: var(--vintage);
 	display: inline-block;
 	white-space: nowrap;
@@ -99,11 +99,6 @@ img.small {
 	width: 200px;
 	height: 30px;
 	text-align: center;
-}
-
-#location {
-	font-size: 18pt;
-	color: var(--vintage);
 }
 
 #sidebar {
@@ -160,7 +155,7 @@ img.small {
 	right: 20px;
 	background: none;
 	border: none;
-	font-size: 30px;
+	font-size: 1.7em;
 	color: var(--white);
 	cursor: pointer;
 	opacity: 0;
@@ -176,7 +171,7 @@ img.small {
 	left: 20px;
 	transition: opacity 0.3s ease;
 	transition: color 0.3s ease;
-	font-size: 20px;
+	font-size: 1.1em;
 	text-align: center;
 	opacity: 0;
 	background: none;
@@ -203,7 +198,7 @@ img.small {
 #pageTitle {
 	color: var(--vintage);
 	text-align: center;
-	font-size: 28px;
+	font-size: 1.4em;
 	font-weight: normal;
 }
 
@@ -270,7 +265,7 @@ img.small {
 }
 
 .icon-footer-label {
-	font-size: 16px;
+	font-size: 0.8em;
 	color: var(--white);
 	text-align: center;
 	padding-top: 5px;

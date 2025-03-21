@@ -35,7 +35,7 @@ left img {
 }
 
 left h2 {
-	font-size: 26.5px;
+	font-size: 1.4em;
 	font-weight: 500;
 	color: var(--white);
 }
@@ -43,7 +43,7 @@ left h2 {
 left a,
 left p {
 	text-decoration: none;
-	font-size: 21px;
+	font-size: 1.1em;
 	color: var(--white);
 	opacity: 0.8;
 }
