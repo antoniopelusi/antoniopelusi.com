@@ -40,8 +40,8 @@ document.addEventListener("DOMContentLoaded", () => {
 			image.style.minWidth = "22px";
 			image.style.maxWidth = "22px";
 			image.style.height = "50px";
-			image.style.minWidth = "50px";
-			image.style.maxWidth = "50px";
+			image.style.minHeight = "50px";
+			image.style.maxHeight = "50px";
 
 			const link = document.createElement("a");
 			link.href = repo.html_url;
