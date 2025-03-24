@@ -27,10 +27,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
 			if (index === 0) {
 				image.src = "/assets/icons/listicon/listStart.webp";
+				image.alt = "List start"
 			} else if (index === repos.length - 1) {
 				image.src = "/assets/icons/listicon/listEnd.webp";
+				image.alt = "List end"
 			} else {
 				image.src = "/assets/icons/listicon/listItem.webp";
+				image.alt = "List item"
 			}
 
 			image.style.width = "22px";
