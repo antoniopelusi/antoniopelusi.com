@@ -33,9 +33,12 @@ document.addEventListener("DOMContentLoaded", () => {
 				image.src = "/assets/icons/listicon/listItem.webp";
 			}
 
-			image.style.height = "50px";
+			image.style.width = "22px";
 			image.style.minWidth = "22px";
 			image.style.maxWidth = "22px";
+			image.style.height = "50px";
+			image.style.minWidth = "50px";
+			image.style.maxWidth = "50px";
 
 			const link = document.createElement("a");
 			link.href = repo.html_url;
