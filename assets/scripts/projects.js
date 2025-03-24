@@ -26,11 +26,11 @@ document.addEventListener("DOMContentLoaded", () => {
 			const image = document.createElement("img");
 
 			if (index === 0) {
-				image.src = "/assets/icons/listicon/listStart.png";
+				image.src = "/assets/icons/listicon/listStart.webp";
 			} else if (index === repos.length - 1) {
-				image.src = "/assets/icons/listicon/listEnd.png";
+				image.src = "/assets/icons/listicon/listEnd.webp";
 			} else {
-				image.src = "/assets/icons/listicon/listItem.png";
+				image.src = "/assets/icons/listicon/listItem.webp";
 			}
 
 			image.style.height = "50px";
