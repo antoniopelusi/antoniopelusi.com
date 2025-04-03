@@ -5,14 +5,6 @@ document.addEventListener("DOMContentLoaded", () => {
 	const images = document.querySelectorAll("left img");
 	const indexseparator = document.getElementById("indexseparator");
 
-	typingElements.forEach((el) => {
-		el.style.visibility = "hidden";
-	});
-
-	images.forEach((img) => {
-		img.style.visibility = "hidden";
-	});
-
 	setTimeout(() => {
 		typingElements.forEach((el, index) => {
 			const text = el.textContent.trim();
@@ -20,6 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
 			el.setAttribute("data-text", text);
 			el.classList.add("typing");
 			el.style.visibility = "visible";
+			el.style.opacity = "1";
 
 			setTimeout(() => {
 				typeText(el, text);
@@ -43,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
 				img.classList.add("visible");
 			}, delay);
 		});
-		
+
 		setTimeout(() => {
 			indexseparator.style.opacity = 1;
 		}, 2700);

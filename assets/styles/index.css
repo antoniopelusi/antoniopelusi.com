@@ -86,3 +86,8 @@ img.big {
 	white-space: nowrap;
 	border-right: 2px solid var(--lightgray) !important;
 }
+
+main left div p, main left div a, main left div h2, left img {
+	visibility: hidden;
+	opacity: 0;
+}
