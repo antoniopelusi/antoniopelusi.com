@@ -15,19 +15,24 @@ document.addEventListener("DOMContentLoaded", () => {
 					.then((page) => {
 						const viewport = page.getViewport({ scale: 3 });
 						const canvas = document.createElement("canvas");
-						const context = canvas.getContext("2d");
+						const context = canvas.getContext("2d", { alpha: true });
 
 						canvas.id = `pdf-canvas-${pageNumber}`;
+						canvas.classList.add("pdf-canvas");
 						container.appendChild(canvas);
 
 						canvas.width = viewport.width;
 						canvas.height = viewport.height;
 						canvas.style.width = "100%";
-						canvas.style.marginBottom = "0px";
 
-						page.render({
+						const renderContext = {
 							canvasContext: context,
 							viewport: viewport,
+							background: "transparent",
+						};
+
+						page.render(renderContext).promise.then(() => {
+							canvas.classList.add("fade-in");
 						});
 					})
 					.catch((error) => {

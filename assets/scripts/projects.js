@@ -8,6 +8,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
 		const repoList = document.getElementById("repo-list");
 		repoList.innerHTML = "";
+		repoList.style.opacity = "0";
+		repoList.classList.add("fade-in");
 
 		repos.forEach((repo, index) => {
 			const listItem = document.createElement("li");
@@ -27,13 +29,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
 			if (index === 0) {
 				image.src = "/assets/icons/listicon/listStart.webp";
-				image.alt = "List start"
+				image.alt = "List start";
 			} else if (index === repos.length - 1) {
 				image.src = "/assets/icons/listicon/listEnd.webp";
-				image.alt = "List end"
+				image.alt = "List end";
 			} else {
 				image.src = "/assets/icons/listicon/listItem.webp";
-				image.alt = "List item"
+				image.alt = "List item";
 			}
 
 			image.style.width = "22px";
@@ -68,9 +70,7 @@ document.addEventListener("DOMContentLoaded", () => {
 			});
 
 			document.querySelectorAll(".language-dot").forEach((dot) => {
-				// Funzione per mostrare il tooltip
 				function showTooltip(event) {
-					// Rimuovi eventuali tooltip aperti
 					hideTooltip();
 
 					const tooltip = document.createElement("div");
@@ -81,12 +81,7 @@ document.addEventListener("DOMContentLoaded", () => {
 					const rect = event.target.getBoundingClientRect();
 					tooltip.style.left = `${rect.left + window.scrollX + rect.width / 2}px`;
 					tooltip.style.top = `${rect.top + window.scrollY - rect.height - 20}px`;
-
-					// Aggiungi la classe `show` dopo un breve ritardo per la transizione
-					setTimeout(() => {
-						tooltip.classList.add("show");
-					}, 0);
-
+					tooltip.classList.add("show");
 					event.target.dataset.tooltip = tooltip;
 				}
 

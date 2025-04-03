@@ -12,12 +12,19 @@ main {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	filter: invert(0.9) sepia(0.2) hue-rotate(200deg);
-	width: 80%;
+	filter: invert(0.8) sepia(0.1);
+	width: 100%;
+	max-width: 1400px;
 }
 
-@media (max-width: 768px) {
-	#cvContainer {
-		width: 100%;
-	}
+.pdf-canvas {
+	opacity: 0;
+	transform: translateY(10px);
+	transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+	background: none;
+}
+
+.pdf-canvas.fade-in {
+	opacity: 1;
+	transform: translateY(0);
 }

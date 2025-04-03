@@ -21,6 +21,10 @@ main {
 	padding: 0;
 	padding-left: 35px;
 	padding-right: 35px;
+	opacity: 0;
+	transform: translateY(10px);
+	transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+	background: none;
 }
 
 .repo-list li {
@@ -81,6 +85,11 @@ main {
 
 .tooltip.show {
 	opacity: 1;
+}
+
+.repo-list.fade-in {
+	opacity: 1 !important;
+	transform: translateY(0);
 }
 
 @media (max-width: 768px) {
