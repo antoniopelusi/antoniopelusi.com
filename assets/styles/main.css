@@ -40,6 +40,10 @@ main {
 	width: 100%;
 }
 
+img {
+	font-size: 0;
+}
+
 main div {
 	width: 100%;
 	display: flex;
@@ -50,7 +54,6 @@ main div {
 
 main img {
 	padding-right: 10px;
-	font-size: 0;
 }
 
 main h2 {
