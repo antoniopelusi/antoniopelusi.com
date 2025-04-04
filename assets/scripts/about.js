@@ -3,11 +3,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
 	const url = "/assets/data/cv.pdf";
 	const container = document.getElementById("cvContainer");
+	const loader = document.getElementById("loader");
+	const loaderText = document.getElementById("loader-text");
 
 	pdfjsLib
 		.getDocument(url)
 		.promise.then((pdf) => {
 			const numPages = pdf.numPages;
+			let renderedPages = 0;
 
 			for (let pageNumber = 1; pageNumber <= numPages; pageNumber++) {
 				pdf
@@ -33,6 +36,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
 						page.render(renderContext).promise.then(() => {
 							canvas.classList.add("fade-in");
+							renderedPages++;
+
+							if (renderedPages === numPages) {
+								loader.style.display = "none";
+								loaderText.style.display = "none";
+							}
 						});
 					})
 					.catch((error) => {
@@ -45,5 +54,6 @@ document.addEventListener("DOMContentLoaded", () => {
 		})
 		.catch((error) => {
 			console.error("Errore durante il caricamento del PDF:", error);
+			loader.textContent = "Errore nel caricamento del PDF.";
 		});
 });

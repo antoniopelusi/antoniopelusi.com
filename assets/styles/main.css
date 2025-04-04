@@ -18,7 +18,8 @@
 
 @font-face {
 	font-family: "Pixelify Sans";
-	src: url("/assets/font/PixelifySans-VariableFont_wght.ttf") format("truetype");
+	src: url("/assets/font/PixelifySans-VariableFont_wght.ttf")
+		format("truetype");
 	font-display: block;
 }
 
@@ -360,6 +361,32 @@ centered {
 
 a {
 	text-decoration: none;
+}
+
+#loader-text {
+	color: var(--gray);
+}
+
+#loader {
+	width: 32px;
+	height: 32px;
+	display: inline-block;
+	position: relative;
+	background: var(--gray);
+	box-sizing: border-box;
+	animation: flipX 1s linear infinite;
+}
+
+@keyframes flipX {
+	0% {
+		transform: perspective(200px) rotateX(0deg) rotateY(0deg);
+	}
+	50% {
+		transform: perspective(200px) rotateX(-180deg) rotateY(0deg);
+	}
+	100% {
+		transform: perspective(200px) rotateX(-180deg) rotateY(-180deg);
+	}
 }
 
 @media (max-width: 768px) {
