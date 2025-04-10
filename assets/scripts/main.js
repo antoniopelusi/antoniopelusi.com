@@ -104,4 +104,27 @@ document.addEventListener("DOMContentLoaded", function () {
 		canvas.width = window.innerWidth;
 		canvas.height = window.innerHeight;
 	});
+
+	main.classList.add("fade-in");
+
+	document.querySelectorAll("a[href]").forEach((link) => {
+		const isInternal = link.hostname === window.location.hostname;
+
+		if (isInternal) {
+			link.addEventListener("click", (e) => {
+				const target = link.getAttribute("target");
+				const href = link.getAttribute("href");
+
+				if (target === "_blank" || href.startsWith("#")) return;
+
+				e.preventDefault();
+				main.classList.remove("fade-in");
+				main.classList.add("fade-out");
+
+				setTimeout(() => {
+					window.location.href = href;
+				}, 200);
+			});
+		}
+	});
 });

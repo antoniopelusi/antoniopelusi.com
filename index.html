@@ -3,7 +3,14 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="preload" importance="high" href="/assets/font/PixelifySans-VariableFont_wght.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+		<link
+			rel="preload"
+			importance="high"
+			href="/assets/font/PixelifySans-VariableFont_wght.ttf"
+			as="font"
+			type="font/ttf"
+			crossorigin="anonymous"
+		/>
 		<meta
 			name="description"
 			content="Personal website and projects archive"
@@ -32,6 +39,10 @@
 		<link rel="stylesheet" href="/assets/styles/index.css" />
 		<noscript>
 			<style>
+				main {
+					opacity: 1;
+				}
+
 				left img {
 					opacity: 1;
 				}
@@ -131,6 +142,17 @@
 
 			<button id="openBtn">&#9776;</button>
 			<main>
+				<noscript>
+					<style>
+						main left div p,
+						main left div a,
+						main left div h2,
+						left img {
+							visibility: visible;
+							opacity: 1;
+						}
+					</style>
+				</noscript>
 				<left>
 					<div id="nameFront">
 						<h1 id="pageTitle" class="hidden">Home</h1>
