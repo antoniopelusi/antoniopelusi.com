@@ -3,11 +3,15 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="preload" importance="high" href="/assets/font/PixelifySans-VariableFont_wght.ttf" as="font" type="font/ttf" crossorigin="anonymous">
-		<meta
-			name="description"
-			content="Project archive"
+		<link
+			rel="preload"
+			importance="high"
+			href="/assets/font/PixelifySans-VariableFont_wght.ttf"
+			as="font"
+			type="font/ttf"
+			crossorigin="anonymous"
 		/>
+		<meta name="description" content="Project archive" />
 		<title>C:\projects</title>
 		<link
 			rel="icon"
@@ -43,7 +47,11 @@
 			<div id="sidebarMenu">
 				<ul>
 					<li>
-						<a href="/" class="rounded-link">
+						<a
+							href="/"
+							onclick="setFromLink()"
+							class="rounded-link"
+						>
 							<span>Home</span>
 							<img
 								src="/assets/icons/w98_desktop_w95.webp"
@@ -51,9 +59,14 @@
 								class="normal"
 							/>
 						</a>
+						<script>
+							function setFromLink() {
+								sessionStorage.setItem("fromLink", "true");
+							}
+						</script>
 					</li>
 					<li>
-						<a href="/projects" class="rounded-link active">
+						<a class="rounded-link active">
 							<span>Projects</span>
 							<img
 								src="/assets/icons/w98_catalog.webp"

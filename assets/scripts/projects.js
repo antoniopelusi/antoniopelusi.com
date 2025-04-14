@@ -159,4 +159,8 @@ document.addEventListener("DOMContentLoaded", () => {
 	}
 
 	window.onload = fetchGitHubRepos;
+
+	function setFromLink() {
+		sessionStorage.setItem("fromLink", "true");
+	}
 });

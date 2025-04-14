@@ -56,4 +56,8 @@ document.addEventListener("DOMContentLoaded", () => {
 			console.error("Errore durante il caricamento del PDF:", error);
 			loader.textContent = "Errore nel caricamento del PDF.";
 		});
+	
+	function setFromLink() {
+   	sessionStorage.setItem("fromLink", "true");
+	}
 });

@@ -38,7 +38,6 @@
 		<link rel="manifest" href="/assets/icons/favicon/site.webmanifest" />
 		<link rel="stylesheet" href="/assets/styles/main.css" />
 		<link rel="stylesheet" href="/assets/styles/404.css" />
-
 	</head>
 	<body>
 		<div id="sidebar">
@@ -52,7 +51,11 @@
 			<div id="sidebarMenu">
 				<ul>
 					<li>
-						<a href="/" class="rounded-link">
+						<a
+							href="/"
+							onclick="setFromLink()"
+							class="rounded-link"
+						>
 							<span>Home</span>
 							<img
 								src="/assets/icons/w98_desktop_w95.webp"
@@ -60,6 +63,11 @@
 								class="normal"
 							/>
 						</a>
+						<script>
+							function setFromLink() {
+								sessionStorage.setItem("fromLink", "true");
+							}
+						</script>
 					</li>
 					<li>
 						<a href="/projects" class="rounded-link">
@@ -146,7 +154,20 @@
 							<div>
 								If this is the first time you're seeing this
 								error,
-								<a id="go-back-home" href="/">go back home</a>.
+								<a
+									id="go-back-home"
+									href="/"
+									onclick="setFromLink()"
+									>go back home</a
+								>.
+								<script>
+									function setFromLink() {
+										sessionStorage.setItem(
+											"fromLink",
+											"true",
+										);
+									}
+								</script>
 							</div>
 							<br /><br />
 							<div>
