@@ -137,6 +137,7 @@ document.addEventListener("DOMContentLoaded", () => {
 			Rust: "#dea584",
 			"C#": "#178701",
 			Cuda: "#3b4e3a",
+		 GLSL: "#5686a5",
 			Java: "#af7219",
 			Kotlin: "#a97bff",
 			Python: "#3573a6",
