@@ -18,6 +18,14 @@
         ]
     },
     {
+        "created_at": "2025-07-07T22:13:05Z",
+        "name": "blob-cli",
+        "html_url": "https://github.com/antoniopelusi/blob-cli",
+        "languages": [
+            "Python"
+        ]
+    },
+    {
         "created_at": "2023-04-22T21:16:31Z",
         "name": "CA-hash",
         "html_url": "https://github.com/antoniopelusi/CA-hash",
@@ -31,7 +39,8 @@
         "html_url": "https://github.com/antoniopelusi/cli-race",
         "languages": [
             "C",
-            "Makefile"
+            "Makefile",
+            "Shell"
         ]
     },
     {
@@ -270,7 +279,8 @@
             "JavaScript",
             "CSS",
             "HTML",
-            "Python"
+            "Python",
+            "Makefile"
         ]
     },
     {
@@ -286,6 +296,31 @@
         "created_at": "2022-11-11T08:09:21Z",
         "name": "vg-sales-analysis",
         "html_url": "https://github.com/antoniopelusi/vg-sales-analysis",
+        "languages": [
+            "Jupyter Notebook",
+            "Python"
+        ]
+    },
+    {
+        "created_at": "2022-11-11T10:32:46Z",
+        "name": "vgchartzScrape",
+        "html_url": "https://github.com/antoniopelusi/vgchartzScrape",
+        "languages": [
+            "Python"
+        ]
+    },
+    {
+        "created_at": "2023-09-28T13:51:35Z",
+        "name": "water-consumption-ml",
+        "html_url": "https://github.com/antoniopelusi/water-consumption-ml",
+        "languages": [
+            "Jupyter Notebook"
+        ]
+    },
+    {
+        "created_at": "2022-12-06T15:48:08Z",
+        "name": "youtube-classification",
+        "html_url": "https://github.com/antoniopelusi/youtube-classification",
         "languages": [
             "Jupyter Notebook",
             "Python"
