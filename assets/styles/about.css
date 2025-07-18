@@ -1,30 +1,32 @@
 main {
-	display: block;
-	overflow-y: auto;
-	height: 100dvh;
-	width: 100%;
-	padding: 0px !important;
+    display: block;
+    overflow-y: auto;
+    height: 100dvh;
+    width: 100%;
+    padding: 0px !important;
 }
 
 #cvContainer {
-	z-index: 10;
-	display: block;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	filter: invert(0.8) sepia(0.1);
-	width: 100%;
-	max-width: 1400px;
+    z-index: 10;
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    filter: invert(0.8) sepia(0.1);
+    width: clamp(70%, 10vw + 70%, 100%);
+    max-width: 1400px;
 }
 
 .pdf-canvas {
-	opacity: 0;
-	transform: translateY(10px);
-	transition: opacity 0.5s ease-out, transform 0.5s ease-out;
-	background: none;
+    opacity: 0;
+    transform: translateY(10px);
+    transition:
+        opacity 0.5s ease-out,
+        transform 0.5s ease-out;
+    background: none;
 }
 
 .pdf-canvas.fade-in {
-	opacity: 1;
-	transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
 }
