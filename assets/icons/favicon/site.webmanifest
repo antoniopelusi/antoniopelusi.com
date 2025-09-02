@@ -1,0 +1,21 @@
+{
+  "name": "antoniopelusi.com",
+  "short_name": "antoniopelusi.com",
+  "icons": [
+    {
+      "src": "/assets/icons/favicon/web-app-manifest-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/assets/icons/favicon/web-app-manifest-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "theme_color": "#111828",
+  "background_color": "#111828",
+  "display": "standalone"
+}
