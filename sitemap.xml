@@ -8,12 +8,4 @@
 	  <loc>https://www.antoniopelusi.com/</loc>
 	  <priority>1.00</priority>
 	</url>
-	<url>
-	  <loc>https://www.antoniopelusi.com/projects</loc>
-	  <priority>0.80</priority>
-	</url>
-	<url>
-	  <loc>https://www.antoniopelusi.com/about</loc>
-	  <priority>0.80</priority>
-	</url>
 </urlset>

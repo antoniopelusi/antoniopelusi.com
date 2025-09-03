@@ -1,5 +1,4 @@
 Site: antoniopelusi.com
 Developer: Antonio Pelusi
 Email: antoniopelusi2000@gmail.com
-
 Languages: HTML, CSS, JS

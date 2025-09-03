@@ -1,3 +1,3 @@
 # antoniopelusi.com
 
-Personal website
+Responsive Dev Portfolio made in pure HTML, CSS & JS
