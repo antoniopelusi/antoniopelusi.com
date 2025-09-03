@@ -175,6 +175,24 @@ class NavigationHighlighter {
     }
 }
 
+// ===== ABOUT LINK HANDLER =====
+class AboutLinkHandler {
+    constructor() {
+        const aboutLink = document.querySelector('aside nav a[href="#"]');
+        if (aboutLink) {
+            aboutLink.addEventListener("click", (e) => {
+                e.preventDefault();
+                window.history.replaceState(
+                    null,
+                    null,
+                    window.location.origin + window.location.pathname,
+                );
+                window.scrollTo({ top: 0, behavior: "smooth" });
+            });
+        }
+    }
+}
+
 // ===== MAIN INITIALIZATION =====
 async function loadConfig() {
     try {
@@ -191,6 +209,8 @@ async function init() {
     const config = await loadConfig();
 
     new ThemeToggle();
+
+    new AboutLinkHandler();
 
     if (config?.typing?.phrases && config?.typing?.options) {
         new TypingAnimation(config.typing.phrases, config.typing.options);
