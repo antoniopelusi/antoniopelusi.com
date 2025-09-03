@@ -352,7 +352,6 @@ body::after {
     header nav {
         display: flex;
         flex-direction: column;
-        gap: var(--space-xs);
         margin-top: var(--space-l);
         margin-bottom: var(--space);
         width: fit-content;
@@ -361,12 +360,14 @@ body::after {
     header nav a {
         color: var(--text);
         text-decoration: none;
-        font-size: var(--h6);
-        font-weight: 400;
+        font-size: calc(var(--body) * 0.85);
+        letter-spacing: 1.5px;
+        font-weight: 800;
         padding: var(--space-xs) 0;
         position: relative;
         transition: all 0.2s ease;
         padding-left: calc(var(--space-s) + var(--space-xs));
+        opacity: 0.5;
     }
 
     header nav a::before {
@@ -393,9 +394,8 @@ body::after {
     }
 
     header nav a[data-active="true"] {
-        color: var(--header);
         padding-left: calc(var(--space) + var(--space-xs));
-        font-weight: 600;
+        opacity: 1;
     }
 
     header nav a[data-active="true"]::before {
