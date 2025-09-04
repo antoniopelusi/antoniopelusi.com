@@ -246,11 +246,14 @@ h4 img {
 
 aside footer a {
     display: inline-block;
-    margin-right: var(--space-s);
     transition:
         opacity 0.2s ease,
         transform 0.1s ease;
     position: relative;
+}
+
+aside footer a:not(:last-child) {
+    margin-right: var(--space-s);
 }
 
 /* ===== ANIMATIONS ===== */
@@ -306,13 +309,19 @@ body::after {
         transform: translate(0, 0) rotate(0deg);
     }
     25% {
-        transform: translate(10px, -15px) rotate(1deg);
+        transform: translate(clamp(20px, 4vw, 60px), clamp(-30px, -6vw, -80px))
+            rotate(3deg);
     }
     50% {
-        transform: translate(-5px, 10px) rotate(-1deg);
+        transform: translate(clamp(-15px, -3vw, -40px), clamp(25px, 5vw, 70px))
+            rotate(-2deg);
     }
     75% {
-        transform: translate(-10px, -5px) rotate(0.5deg);
+        transform: translate(
+                clamp(-25px, -5vw, -50px),
+                clamp(-15px, -3vw, -30px)
+            )
+            rotate(1.5deg);
     }
 }
 
@@ -348,59 +357,77 @@ body::after {
         position: fixed;
     }
 
-    /* Navigation */
-    header nav {
+    /* Desktop Navigation */
+    aside header nav {
+        position: static;
+        top: auto;
+        left: auto;
+        right: auto;
+        z-index: auto;
+        background-color: transparent;
+        border-bottom: none;
+        padding: 0;
+        margin-bottom: var(--space);
         display: flex;
         flex-direction: column;
         margin-top: var(--space-l);
-        margin-bottom: var(--space);
         width: fit-content;
+        opacity: 1;
+        max-height: none;
+        overflow: visible;
+        transition: opacity 0.3s ease;
+        gap: 0;
+        justify-content: flex-start;
     }
 
-    header nav a {
+    aside header nav a {
         color: var(--text);
         text-decoration: none;
-        font-size: calc(var(--body) * 0.85);
+        font-size: calc(var(--body) * 0.8);
         letter-spacing: 1.5px;
         font-weight: 800;
         padding: var(--space-xs) 0;
         position: relative;
         transition: all 0.2s ease;
-        padding-left: calc(var(--space-s) + var(--space-xs));
+        padding-left: calc(2 * (var(--space-s) + var(--space-xs)));
         opacity: 0.5;
+        border-radius: 0;
+        white-space: normal;
+        flex-shrink: 1;
     }
 
-    header nav a::before {
+    aside header nav a::before {
         content: "";
         position: absolute;
         left: 0;
         top: 50%;
         transform: translateY(-50%);
-        width: var(--space-s);
+        width: calc(2 * var(--space-s));
         height: 1px;
         background-color: var(--text);
         transition: all 0.2s ease;
         border-radius: 1px;
     }
 
-    header nav a:hover {
+    aside header nav a:hover {
+        padding-left: calc(2 * var(--space));
         color: var(--header);
-        padding-left: var(--space);
+        background-color: transparent;
     }
 
-    header nav a:hover::before {
+    aside header nav a:hover::before {
         background-color: var(--header);
-        width: calc(var(--space) * 0.75);
+        width: calc(2 * var(--space-s) * 1.5);
     }
 
-    header nav a[data-active="true"] {
-        padding-left: calc(var(--space) + var(--space-xs));
+    aside header nav a[data-active="true"] {
+        padding-left: calc(2 * (var(--space) + var(--space-xs)));
         opacity: 1;
     }
 
-    header nav a[data-active="true"]::before {
+    aside header nav a[data-active="true"]::before {
         background-color: var(--header);
-        width: var(--space);
+        width: calc(2 * var(--space-s) * 2);
     }
 
     body:has(aside footer a:hover) aside footer a:not(:hover) {
@@ -445,5 +472,20 @@ body::after {
     }
     [data-toggle="theme"]:hover img {
         transform: rotate(180deg);
+    }
+
+    /* ===== SHORT SCREEN LAYOUT ===== */
+    @media (min-width: 1024px) and (max-height: 700px) {
+        aside header nav {
+            opacity: 0;
+            max-height: 0;
+            margin-top: 0;
+            margin-bottom: 0;
+            overflow: hidden;
+            transition:
+                opacity 0.3s ease,
+                max-height 0.3s ease,
+                margin 0.3s ease;
+        }
     }
 }
