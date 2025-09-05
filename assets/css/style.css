@@ -16,8 +16,10 @@
 /* ===== CSS VARIABLES ===== */
 :root {
     --h1: clamp(2.25rem, 4vw, 3rem);
-    --h4: clamp(1.1875rem, 2.5vw, 1.25rem);
-    --h6: clamp(0.9375rem, 1.75vw, 1rem);
+    --h2: clamp(0.9375rem, 1.75vw, 1rem);
+    --h3: clamp(1.1875rem, 2.5vw, 1.25rem);
+    --h4: clamp(0.9375rem, 2vw, 1rem);
+    --h5: calc(var(--body) * 1.1);
     --body: clamp(0.9375rem, 2vw, 1rem);
 
     --space-xs: clamp(0.25rem, 1vw, 0.5rem);
@@ -97,12 +99,12 @@ h1 {
 }
 
 h2 {
-    font-size: var(--h6);
+    font-size: var(--h2);
     font-weight: 400;
 }
 
 h3 {
-    font-size: var(--h4);
+    font-size: var(--h3);
     display: flex;
     align-items: center;
     gap: var(--space-xs);
@@ -116,15 +118,16 @@ h3 {
     margin-bottom: var(--space-xs);
 }
 
-h5 {
-    font-size: calc(var(--body) * 1.1);
+h4 {
+    font-size: var(--h4);
     font-weight: 600;
     margin-bottom: var(--space-xs);
 }
 
-h6 {
-    font-size: var(--h6);
-    font-weight: 400;
+h5 {
+    font-size: var(--h5);
+    font-weight: 600;
+    margin-bottom: var(--space-xs);
 }
 
 b {
@@ -186,7 +189,7 @@ main {
 main footer {
     font-size: 0.8em;
     margin-top: var(--space-xl);
-    opacity: 0.6;
+    opacity: 0.7;
     text-align: center;
 }
 
@@ -402,7 +405,7 @@ main article div:last-child {
     padding-left: 0;
 }
 
-main article div h5 {
+main article div h4 {
     display: flex;
     align-items: center;
     gap: var(--space-xs);
@@ -423,7 +426,7 @@ main article div:last-child p:last-child {
     margin-bottom: 0;
 }
 
-main article div:last-child h5:has(img) {
+main article div:last-child h4:has(img) {
     display: flex;
     align-items: center;
     gap: var(--space-xs);
@@ -432,13 +435,13 @@ main article div:last-child h5:has(img) {
     margin-bottom: var(--space-xs);
 }
 
-main article div:last-child h5:has(img) img {
+main article div:last-child h4:has(img) img {
     width: 1.3em;
     height: 1.3em;
 }
 
 /* ===== DATE STYLING (LEFT COLUMN) ===== */
-main article div:first-child h5 {
+main article div:first-child h4 {
     font-size: calc(var(--body) * 0.9);
     font-weight: 400;
     color: var(--text);
@@ -513,7 +516,7 @@ main article div:first-child h5 {
         position: relative;
         transition: all 0.2s ease;
         padding-left: calc(2 * (var(--space-s) + var(--space-xs)));
-        opacity: 0.6;
+        opacity: 0.7;
         border-radius: 0;
         white-space: normal;
         flex-shrink: 1;
