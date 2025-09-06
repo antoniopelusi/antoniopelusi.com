@@ -1,51 +1,103 @@
+// ===== UTILITIES =====
+const Utils = {
+    // DOM element selector with existence check
+    select(selector) {
+        return document.querySelector(selector);
+    },
+
+    selectAll(selector) {
+        return document.querySelectorAll(selector);
+    },
+
+    // Throttle function for performance optimization
+    throttle(func, delay) {
+        let timeoutId;
+        let lastExecTime = 0;
+
+        return function (...args) {
+            const currentTime = Date.now();
+            const timeSinceLastExec = currentTime - lastExecTime;
+
+            if (timeSinceLastExec > delay) {
+                func.apply(this, args);
+                lastExecTime = currentTime;
+            } else {
+                clearTimeout(timeoutId);
+                timeoutId = setTimeout(() => {
+                    func.apply(this, args);
+                    lastExecTime = Date.now();
+                }, delay - timeSinceLastExec);
+            }
+        };
+    },
+};
+
 // ===== THEME TOGGLE =====
 class ThemeToggle {
     constructor() {
-        this.toggleLink = document.querySelector('[data-toggle="theme"]');
+        this.toggleButton = Utils.select('[data-toggle="theme"]');
         this.currentTheme = localStorage.getItem("theme") || "dark";
 
-        if (this.toggleLink) {
-            this.toggleLink.addEventListener("click", (e) => {
-                e.preventDefault();
-                this.toggleTheme();
-            });
-        }
+        this.init();
     }
 
-    toggleTheme() {
+    init() {
+        if (!this.toggleButton) return;
+
+        this.toggleButton.addEventListener("click", (e) => {
+            e.preventDefault();
+            this.toggle();
+        });
+    }
+
+    toggle() {
         this.currentTheme = this.currentTheme === "dark" ? "light" : "dark";
-        this.applyTheme(this.currentTheme);
+        this.apply(this.currentTheme);
         localStorage.setItem("theme", this.currentTheme);
     }
 
-    applyTheme(theme) {
+    apply(theme) {
         document.documentElement.setAttribute("data-theme", theme);
     }
 }
 
 // ===== TYPING ANIMATION =====
 class TypingAnimation {
-    constructor(phrases, options) {
-        this.phrases = phrases;
-        this.options = options;
+    constructor(phrases, options = {}) {
+        this.phrases = phrases || [];
+        this.options = {
+            typingSpeed: 100,
+            deletingSpeed: 50,
+            pauseAfterTyping: 2000,
+            pauseAfterDeleting: 500,
+            initialDelay: 1000,
+            ...options,
+        };
+
         this.phraseIndex = 0;
         this.charIndex = 0;
         this.isDeleting = false;
-        this.textElement = document.querySelector(
-            "header p span:not([data-cursor])",
-        );
-        this.cursorElement = document.querySelector(
-            "header p span[data-cursor]",
-        );
 
-        if (this.textElement && this.cursorElement) {
-            this.cursorElement.style.display = "inline";
-            setTimeout(() => this.type(), this.options.initialDelay);
-        }
+        this.textElement = Utils.select("header p span:not([data-cursor])");
+        this.cursorElement = Utils.select("header p span[data-cursor]");
+
+        this.init();
+    }
+
+    init() {
+        if (
+            !this.textElement ||
+            !this.cursorElement ||
+            this.phrases.length === 0
+        )
+            return;
+
+        this.cursorElement.style.display = "inline";
+        setTimeout(() => this.type(), this.options.initialDelay);
     }
 
     type() {
-        const phrase = this.phrases[this.phraseIndex];
+        const currentPhrase = this.phrases[this.phraseIndex];
 
         if (this.isDeleting) {
             this.charIndex--;
@@ -55,7 +107,7 @@ class TypingAnimation {
             }
         } else {
             this.charIndex++;
-            if (this.charIndex > phrase.length) {
+            if (this.charIndex > currentPhrase.length) {
                 setTimeout(() => {
                     this.isDeleting = true;
                     this.type();
@@ -64,7 +116,10 @@ class TypingAnimation {
             }
         }
 
-        this.textElement.textContent = phrase.substring(0, this.charIndex);
+        this.textElement.textContent = currentPhrase.substring(
+            0,
+            this.charIndex,
+        );
 
         const delay = this.isDeleting
             ? this.options.deletingSpeed
@@ -84,20 +139,24 @@ class TypingAnimation {
 class NavigationHighlighter {
     constructor() {
         this.sections = this.mapSections();
-        if (this.sections.length > 0) {
-            this.handleScroll = this.throttle(
-                this.updateActiveSection.bind(this),
-                100,
-            );
-            window.addEventListener("scroll", this.handleScroll, {
-                passive: true,
-            });
-            this.updateActiveSection();
-        }
+        this.threshold = window.innerHeight * 0.3;
+
+        this.init();
+    }
+
+    init() {
+        if (this.sections.length === 0) return;
+
+        this.handleScroll = Utils.throttle(
+            this.updateActiveSection.bind(this),
+            100,
+        );
+        window.addEventListener("scroll", this.handleScroll, { passive: true });
+        this.updateActiveSection();
     }
 
     mapSections() {
-        const navLinks = document.querySelectorAll("aside nav a");
+        const navLinks = Utils.selectAll("aside nav a");
         const sections = [];
 
         navLinks.forEach((link) => {
@@ -122,19 +181,18 @@ class NavigationHighlighter {
 
     updateActiveSection() {
         const scrollTop = window.pageYOffset;
-        const windowHeight = window.innerHeight;
-        const threshold = windowHeight * 0.3;
-
         let activeSection = null;
 
-        if (scrollTop < threshold) {
+        // Check if we're at the top (About section)
+        if (scrollTop < this.threshold) {
             activeSection = this.sections.find((s) => s.isAbout);
         } else {
+            // Find the current section based on scroll position
             for (let i = this.sections.length - 1; i >= 0; i--) {
                 const section = this.sections[i];
                 if (!section.isAbout) {
                     const rect = section.element.getBoundingClientRect();
-                    if (rect.top <= threshold) {
+                    if (rect.top <= this.threshold) {
                         activeSection = section;
                         break;
                     }
@@ -142,81 +200,98 @@ class NavigationHighlighter {
             }
         }
 
+        // Update active states
         this.sections.forEach((section) => {
-            if (section === activeSection) {
+            const isActive = section === activeSection;
+
+            if (isActive) {
                 section.link.setAttribute("data-active", "true");
             } else {
                 section.link.removeAttribute("data-active");
             }
         });
     }
-
-    throttle(func, delay) {
-        let timeoutId;
-        let lastExecTime = 0;
-
-        return function (...args) {
-            const currentTime = Date.now();
-
-            if (currentTime - lastExecTime > delay) {
-                func.apply(this, args);
-                lastExecTime = currentTime;
-            } else {
-                clearTimeout(timeoutId);
-                timeoutId = setTimeout(
-                    () => {
-                        func.apply(this, args);
-                        lastExecTime = Date.now();
-                    },
-                    delay - (currentTime - lastExecTime),
-                );
-            }
-        };
-    }
 }
 
 // ===== ABOUT LINK HANDLER =====
 class AboutLinkHandler {
     constructor() {
-        const aboutLink = document.querySelector('aside nav a[href="#"]');
-        if (aboutLink) {
-            aboutLink.addEventListener("click", (e) => {
-                e.preventDefault();
-                window.history.replaceState(
-                    null,
-                    null,
-                    window.location.origin + window.location.pathname,
-                );
-                window.scrollTo({ top: 0, behavior: "smooth" });
-            });
+        this.aboutLink = Utils.select('aside nav a[href="#"]');
+        this.init();
+    }
+
+    init() {
+        if (!this.aboutLink) return;
+
+        this.aboutLink.addEventListener("click", this.handleClick.bind(this));
+    }
+
+    handleClick(e) {
+        e.preventDefault();
+
+        // Clean URL
+        const cleanUrl = window.location.origin + window.location.pathname;
+        window.history.replaceState(null, null, cleanUrl);
+
+        // Smooth scroll to top
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+}
+
+// ===== CONFIG LOADER =====
+class ConfigLoader {
+    static async load() {
+        try {
+            const response = await fetch("/assets/config.json");
+            return response.ok ? await response.json() : null;
+        } catch (error) {
+            console.warn("Could not load config.json:", error.message);
+            return null;
         }
     }
 }
 
-// ===== MAIN INITIALIZATION =====
-async function loadConfig() {
-    try {
-        const response = await fetch("/assets/config.json");
-        return response.ok ? await response.json() : null;
-    } catch {
-        return null;
+// ===== APP INITIALIZATION =====
+class App {
+    constructor() {
+        this.components = [];
+    }
+
+    async init() {
+        // Mark body as JS-enabled
+        document.body.setAttribute("data-js", "");
+
+        // Load configuration
+        const config = await ConfigLoader.load();
+
+        // Initialize components
+        this.initializeComponents(config);
+    }
+
+    initializeComponents(config) {
+        // Theme toggle
+        this.components.push(new ThemeToggle());
+
+        // About link handler
+        this.components.push(new AboutLinkHandler());
+
+        // Typing animation (if config available)
+        if (config?.typing?.phrases && config?.typing?.options) {
+            this.components.push(
+                new TypingAnimation(
+                    config.typing.phrases,
+                    config.typing.options,
+                ),
+            );
+        }
+
+        // Navigation highlighter
+        this.components.push(new NavigationHighlighter());
     }
 }
 
-async function init() {
-    document.body.setAttribute("data-js", "");
-
-    const config = await loadConfig();
-
-    new ThemeToggle();
-
-    new AboutLinkHandler();
-
-    if (config?.typing?.phrases && config?.typing?.options) {
-        new TypingAnimation(config.typing.phrases, config.typing.options);
-    }
-
-    new NavigationHighlighter();
-}
-
-document.addEventListener("DOMContentLoaded", init);
+// ===== BOOTSTRAP =====
+document.addEventListener("DOMContentLoaded", () => {
+    const app = new App();
+    app.init();
+});

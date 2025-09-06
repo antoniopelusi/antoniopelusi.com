@@ -1,478 +1,418 @@
 <!doctype html>
 <html lang="en" data-theme="dark">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Antonio Pelusi</title>
-        <meta
-            name="description"
-            content="Antonio Pelusi - Ph.D. student in Computer Science and software developer.
-            Portfolio showcasing research projects, education and open-source contributions."
-        />
-        <link
-            rel="icon"
-            type="image/png"
-            href="/assets/icons/favicon/favicon-96x96.png"
-            sizes="96x96"
-        />
-        <link
-            rel="icon"
-            type="image/svg+xml"
-            href="/assets/icons/favicon/favicon.svg"
-        />
-        <link rel="shortcut icon" href="/assets/icons/favicon/favicon.ico" />
-        <link
-            rel="apple-touch-icon"
-            sizes="180x180"
-            href="/assets/icons/favicon/apple-touch-icon.png"
-        />
-        <meta name="apple-mobile-web-app-title" content="antoniopelusi.com" />
-        <link rel="manifest" href="/assets/icons/favicon/site.webmanifest" />
-        <script>
-            const savedTheme = localStorage.getItem("theme");
-            if (savedTheme) {
-                document.documentElement.setAttribute("data-theme", savedTheme);
-            } else {
-                localStorage.setItem("theme", "dark");
-            }
-        </script>
-        <link rel="stylesheet" href="/assets/css/style.css" />
-        <script src="/assets/js/scripts.js" defer></script>
-    </head>
-    <body>
-        <aside>
-            <header>
-                <h1>Antonio Pelusi</h1>
-                <h2>Ph.D. student in Computer Science</h2>
-                <p><span></span><span data-cursor="true">|</span></p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-                <nav>
-                    <a href="#">ABOUT</a>
-                    <a href="#experience">EXPERIENCE</a>
-                    <a href="#education">EDUCATION</a>
-                    <a href="#publications">PUBLICATIONS</a>
-                    <a href="#projects">PROJECTS</a>
-                    <a href="#awards">AWARDS</a>
-                </nav>
-            </header>
+    <!-- Page Info -->
+    <title>Antonio Pelusi</title>
+    <meta name="description" content="Antonio Pelusi - Ph.D. student in Computer Science and software developer. Portfolio showcasing research projects, education and open-source contributions.">
+    <meta name="author" content="Antonio Pelusi">
 
-            <footer>
-                <a
-                    href="mailto:antoniopelusi2000@gmail.com"
-                    data-tooltip="Email"
-                >
-                    <img src="/assets/icons/links/email.svg" alt="Email" />
-                </a>
-                <a
-                    href="https://linkedin.com/in/antoniopelusi"
-                    data-tooltip="LinkedIn"
-                >
-                    <img
-                        src="/assets/icons/links/linkedin.svg"
-                        alt="LinkedIn"
-                    />
-                </a>
-                <a
-                    href="https://github.com/antoniopelusi"
-                    data-tooltip="GitHub"
-                >
-                    <img src="/assets/icons/links/github.svg" alt="GitHub" />
-                </a>
-            </footer>
-        </aside>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/assets/icons/favicon/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/svg+xml" href="/assets/icons/favicon/favicon.svg">
+    <link rel="shortcut icon" href="/assets/icons/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/favicon/apple-touch-icon.png">
+    <link rel="manifest" href="/assets/icons/favicon/site.webmanifest">
+    <meta name="apple-mobile-web-app-title" content="antoniopelusi.com">
 
-        <main>
-            <!---------------------------------ABOUT--------------------------------->
+    <!-- SEO & Social -->
+    <link rel="canonical" href="https://antoniopelusi.com">
+    <meta property="og:title" content="Antonio Pelusi - Ph.D. Computer Science">
+    <meta property="og:description" content="Ph.D. student in Computer Science and software developer. Portfolio showcasing research projects, education and open-source contributions.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://antoniopelusi.com">
+
+    <!-- Theme Script (inline for performance) -->
+    <script>
+        const savedTheme = localStorage.getItem("theme");
+        if (savedTheme) {
+            document.documentElement.setAttribute("data-theme", savedTheme);
+        } else {
+            localStorage.setItem("theme", "dark");
+        }
+    </script>
+
+    <!-- Styles & Scripts -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <script src="/assets/js/scripts.js" defer></script>
+</head>
+
+<body>
+    <!-- Sidebar -->
+    <aside>
+        <header>
+            <h1>Antonio Pelusi</h1>
+            <h2>Ph.D. student in Computer Science</h2>
+            <p><span></span><span data-cursor="true">|</span></p>
+
+            <nav>
+                <a href="#">ABOUT</a>
+                <a href="#experience">EXPERIENCE</a>
+                <a href="#education">EDUCATION</a>
+                <a href="#publications">PUBLICATIONS</a>
+                <a href="#projects">PROJECTS</a>
+                <a href="#awards">AWARDS</a>
+            </nav>
+        </header>
+
+        <footer>
+            <a href="mailto:antoniopelusi2000@gmail.com" data-tooltip="Email">
+                <img src="/assets/icons/links/email.svg" alt="Email">
+            </a>
+            <a href="https://linkedin.com/in/antoniopelusi" data-tooltip="LinkedIn">
+                <img src="/assets/icons/links/linkedin.svg" alt="LinkedIn">
+            </a>
+            <a href="https://github.com/antoniopelusi" data-tooltip="GitHub">
+                <img src="/assets/icons/links/github.svg" alt="GitHub">
+            </a>
+        </footer>
+    </aside>
+
+    <!-- Main Content -->
+    <main>
+        <!-- About Section -->
+        <section id="about-section">
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                Duis aute irure dolor in reprehenderit in voluptate velit
+                esse cillum dolore eu fugiat nulla pariatur.
             </p>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                Duis aute irure dolor in reprehenderit in voluptate velit
+                esse cillum dolore eu fugiat nulla pariatur.
             </p>
             <p>
                 Read the full CV
-                <a href="/assets/CV_AntonioPelusi.pdf" target="_blank"
-                    >here &#8599;</a
-                >
+                <a href="/assets/CV_AntonioPelusi.pdf" target="_blank">here &#8599;</a>
             </p>
-            <!---------------------------------EXPERIENCE--------------------------------->
-            <h3 id="experience">
-                <img
-                    src="/assets/icons/sections/experience.svg"
-                    alt="Experience"
-                />
-                Experience
-            </h3>
-            <section id="experience-section">
-                <article>
-                    <div>
-                        <h4>may 2024 → Present</h4>
-                    </div>
-                    <div>
-                        <h4>
-                            <img
-                                src="/assets/icons/articles/randompower.svg"
-                                alt="Random Power"
-                            />
-                            Random Power &bull; Startup
-                        </h4>
-                        <h4>Full Stack Developer &bull; Remote</h4>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit. Sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua. Ut enim ad minim veniam, quis
-                            nostrud exercitation ullamco laboris nisi ut aliquip
-                            ex ea commodo consequat. Duis aute irure dolor in
-                            reprehenderit in voluptate velit esse cillum dolore
-                            eu fugiat nulla pariatur.
-                        </p>
-                    </div>
-                </article>
-                <article>
-                    <div>
-                        <h4>sep. 2024 → jul. 2024</h4>
-                    </div>
-                    <div>
-                        <h4>
-                            <img
-                                src="/assets/icons/articles/school.svg"
-                                alt="A. Paradisi High School"
-                            />
-                            A. Paradisi &bull; High School
-                        </h4>
-                        <h4>Computer Science Teacher &bull; Vignola, Italy</h4>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit. Sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua. Ut enim ad minim veniam, quis
-                            nostrud exercitation ullamco laboris nisi ut aliquip
-                            ex ea commodo consequat. Duis aute irure dolor in
-                            reprehenderit in voluptate velit esse cillum dolore
-                            eu fugiat nulla pariatur.
-                        </p>
-                    </div>
-                </article>
-                <article>
-                    <div>
-                        <h4>sep. 2024 → dec. 2024</h4>
-                    </div>
-                    <div>
-                        <h4>
-                            <img
-                                src="/assets/icons/articles/unimore.svg"
-                                alt="University of Modena and Reggio Emilia"
-                            />
-                            University of Modena and Reggio Emilia
-                        </h4>
-                        <h4>
-                            Computer Science University Tutor &bull; Modena,
-                            Italy
-                        </h4>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit. Sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua. Ut enim ad minim veniam, quis
-                            nostrud exercitation ullamco laboris nisi ut aliquip
-                            ex ea commodo consequat. Duis aute irure dolor in
-                            reprehenderit in voluptate velit esse cillum dolore
-                            eu fugiat nulla pariatur.
-                        </p>
-                    </div>
-                </article>
-                <article>
-                    <div>
-                        <h4>may 2021 &rarr; jul. 2021</h4>
-                    </div>
-                    <div>
-                        <h4>
-                            <img
-                                src="/assets/icons/articles/liferay.svg"
-                                alt="Liferay"
-                            />
-                            Liferay
-                        </h4>
-                        <h4>Junior Backend Software Developer &bull; Remote</h4>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit. Sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua. Ut enim ad minim veniam, quis
-                            nostrud exercitation ullamco laboris nisi ut aliquip
-                            ex ea commodo consequat. Duis aute irure dolor in
-                            reprehenderit in voluptate velit esse cillum dolore
-                            eu fugiat nulla pariatur.
-                        </p>
-                    </div>
-                </article>
-            </section>
-            <!---------------------------------EDUCATION--------------------------------->
-            <h3 id="education">
-                <img
-                    src="/assets/icons/sections/education.svg"
-                    alt="Education"
-                />
-                Education
-            </h3>
-            <section id="education-section">
-                <article>
-                    <div>
-                        <h4>nov. 2024 &rarr; Present</h4>
-                    </div>
-                    <div>
-                        <h4>
-                            <img
-                                src="/assets/icons/articles/uninsubria.svg"
-                                alt="University of Insubria"
-                            />
-                            University of Insubria
-                        </h4>
-                        <h4>
-                            Ph.D. in Computer Science and Mathematics of
-                            Computation
-                        </h4>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit. Sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua. Ut enim ad minim veniam, quis
-                            nostrud exercitation ullamco laboris nisi ut aliquip
-                            ex ea commodo consequat. Duis aute irure dolor in
-                            reprehenderit in voluptate velit esse cillum dolore
-                            eu fugiat nulla pariatur.
-                        </p>
-                    </div>
-                </article>
-                <article>
-                    <div>
-                        <h4>sep. 2022 &rarr; apr. 2024</h4>
-                    </div>
-                    <div>
-                        <h4>
-                            <img
-                                src="/assets/icons/articles/unimore.svg"
-                                alt="University of Modena and Reggio Emilia"
-                            />
-                            University of Modena and Reggio Emilia
-                        </h4>
-                        <h4>
-                            Master's Degree in Computer Science &bull; 110/110
-                        </h4>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit. Sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua. Ut enim ad minim veniam, quis
-                            nostrud exercitation ullamco laboris nisi ut aliquip
-                            ex ea commodo consequat. Duis aute irure dolor in
-                            reprehenderit in voluptate velit esse cillum dolore
-                            eu fugiat nulla pariatur.
-                        </p>
-                    </div>
-                </article>
-                <article>
-                    <div>
-                        <h4>feb. 2023 &rarr; jun. 2023</h4>
-                    </div>
-                    <div>
-                        <h4>
-                            <img
-                                src="/assets/icons/articles/unibo.svg"
-                                alt="University of Bologna"
-                            />
-                            University of Bologna
-                        </h4>
-                        <h4>Post Graduate Degree CBI.Attract &bull; 30L</h4>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit. Sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua. Ut enim ad minim veniam, quis
-                            nostrud exercitation ullamco laboris nisi ut aliquip
-                            ex ea commodo consequat. Duis aute irure dolor in
-                            reprehenderit in voluptate velit esse cillum dolore
-                            eu fugiat nulla pariatur.
-                        </p>
-                    </div>
-                </article>
-                <article>
-                    <div>
-                        <h4>sep. 2018 &rarr; apr. 2022</h4>
-                    </div>
-                    <div>
-                        <h4>
-                            <img
-                                src="/assets/icons/articles/unimore.svg"
-                                alt="University of Modena and Reggio Emilia"
-                            />
-                            University of Modena and Reggio Emilia
-                        </h4>
-                        <h4>Bachelor's Degree in Computer Science</h4>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit. Sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua. Ut enim ad minim veniam, quis
-                            nostrud exercitation ullamco laboris nisi ut aliquip
-                            ex ea commodo consequat. Duis aute irure dolor in
-                            reprehenderit in voluptate velit esse cillum dolore
-                            eu fugiat nulla pariatur.
-                        </p>
-                    </div>
-                </article>
-            </section>
-            <!---------------------------------PUBLICATIONS--------------------------------->
-            <h3 id="publications">
-                <img
-                    src="/assets/icons/sections/publications.svg"
-                    alt="Publications"
-                />
-                Publications
-            </h3>
-            <section id="publications-section">
-                <article>
-                    <div>
-                        <h4>apr. 2024</h4>
-                    </div>
-                    <div>
-                        <h4>
-                            <img
-                                src="/assets/icons/articles/unimore.svg"
-                                alt="University of Modena and Reggio Emilia"
-                            />
-                            Privacy Preservation in Data Sharing: A Study on
-                            Differential Privacy
-                        </h4>
-                        <h4>Master's thesis</h4>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit. Sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua. Ut enim ad minim veniam, quis
-                            nostrud exercitation ullamco laboris nisi ut aliquip
-                            ex ea commodo consequat. Duis aute irure dolor in
-                            reprehenderit in voluptate velit esse cillum dolore
-                            eu fugiat nulla pariatur.
-                        </p>
-                        <p>
-                            Read the full thesis
-                            <a
-                                href="https://doi.org/10.6084/m9.figshare.26411314"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                here &#8599;
-                            </a>
-                        </p>
-                    </div>
-                </article>
-            </section>
-            <!---------------------------------PROJECTS--------------------------------->
-            <h3 id="projects">
-                <img src="/assets/icons/sections/projects.svg" alt="Projects" />
-                Projects
-            </h3>
-            <section id="projects-section">
-                <article>
-                    <div>
-                        <h4>In development</h4>
-                    </div>
-                    <div>
-                        <h4>
-                            <img
-                                src="/assets/icons/articles/ldp.svg"
-                                alt="LDP-lib"
-                            />
-                            LDP-lib
-                        </h4>
-                        <h4>Local Differential Privacy Library</h4>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit. Sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua. Ut enim ad minim veniam, quis
-                            nostrud exercitation ullamco laboris nisi ut aliquip
-                            ex ea commodo consequat. Duis aute irure dolor in
-                            reprehenderit in voluptate velit esse cillum dolore
-                            eu fugiat nulla pariatur.
-                        </p>
-                    </div>
-                </article>
-            </section>
-            <!---------------------------------AWARDS--------------------------------->
-            <h3 id="awards">
-                <img src="/assets/icons/sections/awards.svg" alt="Awards" />
-                Awards
-            </h3>
-            <section id="awards-section">
-                <article>
-                    <div>
-                        <h4>sep. 2023</h4>
-                    </div>
-                    <div>
-                        <h4>
-                            <img
-                                src="/assets/icons/articles/unimore.svg"
-                                alt="Green & Digital Transformation two‑day Hackathon"
-                            />
-                            Winner of Green & Digital Transformation Hackathon
-                        </h4>
-                        <h4>
-                            University of Modena and Reggio Emilia &bull;
-                            Mantua, Italy
-                        </h4>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit. Sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua. Ut enim ad minim veniam, quis
-                            nostrud exercitation ullamco laboris nisi ut aliquip
-                            ex ea commodo consequat. Duis aute irure dolor in
-                            reprehenderit in voluptate velit esse cillum dolore
-                            eu fugiat nulla pariatur.
-                        </p>
-                    </div>
-                </article>
-            </section>
-            <footer>
-                <span>
-                    <button
-                        type="button"
-                        data-toggle="theme"
-                        aria-label="Switch theme"
-                    >
-                        Switch theme:
-                        <img
-                            src="/assets/icons/footer/theme.svg"
-                            alt="Switch theme"
-                        />
-                    </button>
-                </span>
-                <p>
-                    Built with
-                    <img src="/assets/icons/footer/html.svg" alt="HTML" /> HTML,
-                    <img src="/assets/icons/footer/css.svg" alt="CSS" /> CSS,
-                    <img src="/assets/icons/footer/js.svg" alt="JS" /> JS
-                </p>
-                <p>
-                    Typography:
-                    <a href="https://rsms.me/inter/">Inter</a>
-                    &bull; Icons:
-                    <a
-                        href="https://github.com/PapirusDevelopmentTeam/papirus-icon-theme/"
-                    >
-                        Papirus</a
-                    >
-                    &bull; Source:
-                    <a
-                        href="https://github.com/antoniopelusi/antoniopelusi.com"
-                    >
-                        GitHub
-                    </a>
-                </p>
-                <p>&copy; Antonio Pelusi. All rights reserved.</p>
-            </footer>
-        </main>
-    </body>
+        </section>
+
+        <!-- Experience Section -->
+        <h3 id="experience">
+            <img src="/assets/icons/sections/experience.svg" alt="Experience">
+            Experience
+        </h3>
+        <section id="experience-section">
+            <article>
+                <div>
+                    <h4>may 2024 &rarr; Present</h4>
+                </div>
+                <div>
+                    <h4>
+                        <img src="/assets/icons/articles/randompower.svg" alt="Random Power">
+                        Random Power &bull; Startup
+                    </h4>
+                    <h4>Full Stack Developer &bull; Remote</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit. Sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud exercitation ullamco laboris nisi ut aliquip
+                        ex ea commodo consequat. Duis aute irure dolor in
+                        reprehenderit in voluptate velit esse cillum dolore
+                        eu fugiat nulla pariatur.
+                    </p>
+                </div>
+            </article>
+
+            <article>
+                <div>
+                    <h4>sep. 2024 &rarr; jul. 2025</h4>
+                </div>
+                <div>
+                    <h4>
+                        <img src="/assets/icons/articles/school.svg" alt="A. Paradisi High School">
+                        A. Paradisi &bull; High School
+                    </h4>
+                    <h4>Computer Science Teacher &bull; Vignola, Italy</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit. Sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud exercitation ullamco laboris nisi ut aliquip
+                        ex ea commodo consequat. Duis aute irure dolor in
+                        reprehenderit in voluptate velit esse cillum dolore
+                        eu fugiat nulla pariatur.
+                    </p>
+                </div>
+            </article>
+
+            <article>
+                <div>
+                    <h4>sep. 2024 &rarr; dec. 2024</h4>
+                </div>
+                <div>
+                    <h4>
+                        <img src="/assets/icons/articles/unimore.svg" alt="University of Modena and Reggio Emilia">
+                        University of Modena and Reggio Emilia
+                    </h4>
+                    <h4>Computer Science University Tutor &bull; Modena, Italy</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit. Sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud exercitation ullamco laboris nisi ut aliquip
+                        ex ea commodo consequat. Duis aute irure dolor in
+                        reprehenderit in voluptate velit esse cillum dolore
+                        eu fugiat nulla pariatur.
+                    </p>
+                </div>
+            </article>
+
+            <article>
+                <div>
+                    <h4>may 2021 &rarr; jul. 2021</h4>
+                </div>
+                <div>
+                    <h4>
+                        <img src="/assets/icons/articles/liferay.svg" alt="Liferay">
+                        Liferay
+                    </h4>
+                    <h4>Junior Backend Software Developer &bull; Remote</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit. Sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud exercitation ullamco laboris nisi ut aliquip
+                        ex ea commodo consequat. Duis aute irure dolor in
+                        reprehenderit in voluptate velit esse cillum dolore
+                        eu fugiat nulla pariatur.
+                    </p>
+                </div>
+            </article>
+        </section>
+
+        <!-- Education Section -->
+        <h3 id="education">
+            <img src="/assets/icons/sections/education.svg" alt="Education">
+            Education
+        </h3>
+        <section id="education-section">
+            <article>
+                <div>
+                    <h4>nov. 2024 &rarr; Present</h4>
+                </div>
+                <div>
+                    <h4>
+                        <img src="/assets/icons/articles/uninsubria.svg" alt="University of Insubria">
+                        University of Insubria
+                    </h4>
+                    <h4>Ph.D. in Computer Science and Mathematics of Computation</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit. Sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud exercitation ullamco laboris nisi ut aliquip
+                        ex ea commodo consequat. Duis aute irure dolor in
+                        reprehenderit in voluptate velit esse cillum dolore
+                        eu fugiat nulla pariatur.
+                    </p>
+                </div>
+            </article>
+
+            <article>
+                <div>
+                    <h4>sep. 2022 &rarr; apr. 2024</h4>
+                </div>
+                <div>
+                    <h4>
+                        <img src="/assets/icons/articles/unimore.svg" alt="University of Modena and Reggio Emilia">
+                        University of Modena and Reggio Emilia
+                    </h4>
+                    <h4>Master's Degree in Computer Science &bull; 110/110</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit. Sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud exercitation ullamco laboris nisi ut aliquip
+                        ex ea commodo consequat. Duis aute irure dolor in
+                        reprehenderit in voluptate velit esse cillum dolore
+                        eu fugiat nulla pariatur.
+                    </p>
+                </div>
+            </article>
+
+            <article>
+                <div>
+                    <h4>feb. 2023 &rarr; jun. 2023</h4>
+                </div>
+                <div>
+                    <h4>
+                        <img src="/assets/icons/articles/unibo.svg" alt="University of Bologna">
+                        University of Bologna
+                    </h4>
+                    <h4>Post Graduate Degree CBI.Attract &bull; 30L</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit. Sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud exercitation ullamco laboris nisi ut aliquip
+                        ex ea commodo consequat. Duis aute irure dolor in
+                        reprehenderit in voluptate velit esse cillum dolore
+                        eu fugiat nulla pariatur.
+                    </p>
+                </div>
+            </article>
+
+            <article>
+                <div>
+                    <h4>sep. 2018 &rarr; apr. 2022</h4>
+                </div>
+                <div>
+                    <h4>
+                        <img src="/assets/icons/articles/unimore.svg" alt="University of Modena and Reggio Emilia">
+                        University of Modena and Reggio Emilia
+                    </h4>
+                    <h4>Bachelor's Degree in Computer Science</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit. Sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud exercitation ullamco laboris nisi ut aliquip
+                        ex ea commodo consequat. Duis aute irure dolor in
+                        reprehenderit in voluptate velit esse cillum dolore
+                        eu fugiat nulla pariatur.
+                    </p>
+                </div>
+            </article>
+        </section>
+
+        <!-- Publications Section -->
+        <h3 id="publications">
+            <img src="/assets/icons/sections/publications.svg" alt="Publications">
+            Publications
+        </h3>
+        <section id="publications-section">
+            <article>
+                <div>
+                    <h4>apr. 2024</h4>
+                </div>
+                <div>
+                    <h4>
+                        <img src="/assets/icons/articles/unimore.svg" alt="University of Modena and Reggio Emilia">
+                        Privacy Preservation in Data Sharing: A Study on Differential Privacy
+                    </h4>
+                    <h4>Master's thesis</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit. Sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud exercitation ullamco laboris nisi ut aliquip
+                        ex ea commodo consequat. Duis aute irure dolor in
+                        reprehenderit in voluptate velit esse cillum dolore
+                        eu fugiat nulla pariatur.
+                    </p>
+                    <p>
+                        Read the full thesis
+                        <a href="https://doi.org/10.6084/m9.figshare.26411314" target="_blank" rel="noopener noreferrer">
+                            here &#8599;
+                        </a>
+                    </p>
+                </div>
+            </article>
+        </section>
+
+        <!-- Projects Section -->
+        <h3 id="projects">
+            <img src="/assets/icons/sections/projects.svg" alt="Projects">
+            Projects
+        </h3>
+        <section id="projects-section">
+            <article>
+                <div>
+                    <h4>In development</h4>
+                </div>
+                <div>
+                    <h4>
+                        <img src="/assets/icons/articles/ldp.svg" alt="LDP-lib">
+                        LDP-lib
+                    </h4>
+                    <h4>Local Differential Privacy Library</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit. Sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud exercitation ullamco laboris nisi ut aliquip
+                        ex ea commodo consequat. Duis aute irure dolor in
+                        reprehenderit in voluptate velit esse cillum dolore
+                        eu fugiat nulla pariatur.
+                    </p>
+                </div>
+            </article>
+
+            <p></p>
+                Explore all my projects
+                <a href="https://github.com/antoniopelusi" target="_blank" rel="noopener noreferrer">
+                    here &#8599;
+                </a>
+            </p>
+        </section>
+
+        <!-- Awards Section -->
+        <h3 id="awards">
+            <img src="/assets/icons/sections/awards.svg" alt="Awards">
+            Awards
+        </h3>
+        <section id="awards-section">
+            <article>
+                <div>
+                    <h4>sep. 2023</h4>
+                </div>
+                <div>
+                    <h4>
+                        <img src="/assets/icons/articles/unimore.svg" alt="Green & Digital Transformation two‑day Hackathon">
+                        Winner of Green & Digital Transformation Hackathon
+                    </h4>
+                    <h4>University of Modena and Reggio Emilia &bull; Mantua, Italy</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit. Sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud exercitation ullamco laboris nisi ut aliquip
+                        ex ea commodo consequat. Duis aute irure dolor in
+                        reprehenderit in voluptate velit esse cillum dolore
+                        eu fugiat nulla pariatur.
+                    </p>
+                </div>
+            </article>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <span></span>
+                <button type="button" data-toggle="theme" aria-label="Switch theme">
+                    Switch theme:
+                    <img src="/assets/icons/footer/theme.svg" alt="Switch theme">
+                </button>
+            </span>
+
+            <p>
+                Built with
+                <img src="/assets/icons/footer/html.svg" alt="HTML"> HTML,
+                <img src="/assets/icons/footer/css.svg" alt="CSS"> CSS,
+                <img src="/assets/icons/footer/js.svg" alt="JS"> JS
+            </p>
+
+            <p>
+                Typography:
+                <a href="https://rsms.me/inter/">Inter</a>
+                &bull; Icons:
+                <a href="https://github.com/PapirusDevelopmentTeam/papirus-icon-theme/">Papirus</a>
+                &bull; Source:
+                <a href="https://github.com/antoniopelusi/antoniopelusi.com">GitHub</a>
+            </p>
+
+            <p>&copy; Antonio Pelusi. All rights reserved.</p>
+        </footer>
+    </main>
+</body>
 </html>
