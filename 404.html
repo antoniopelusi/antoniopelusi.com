@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>404 | Not Found - Antonio Pelusi</title>
+        <meta name="description" content="Page not found - Antonio Pelusi" />
+        <meta name="author" content="Antonio Pelusi" />
+
+        <!-- Favicon -->
+        <link
+            rel="icon"
+            type="image/png"
+            href="/assets/icons/favicon/favicon-96x96.png"
+            sizes="96x96"
+        />
+        <link
+            rel="icon"
+            type="image/svg+xml"
+            href="/assets/icons/favicon/favicon.svg"
+        />
+        <link rel="shortcut icon" href="/assets/icons/favicon/favicon.ico" />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="/assets/icons/favicon/apple-touch-icon.png"
+        />
+        <link rel="manifest" href="/assets/icons/favicon/site.webmanifest" />
+        <meta name="apple-mobile-web-app-title" content="antoniopelusi.com" />
+        <script>
+            const savedTheme = localStorage.getItem("theme");
+            if (savedTheme) {
+                document.documentElement.setAttribute("data-theme", savedTheme);
+            } else {
+                localStorage.setItem("theme", "dark");
+            }
+        </script>
+        <style>
+            @font-face {
+                font-family: "Inter";
+                src: url("/assets/fonts/Inter-Regular.woff2") format("woff2");
+                font-weight: 400;
+                font-style: normal;
+                font-display: swap;
+            }
+
+            @font-face {
+                font-family: "Inter";
+                src: url("/assets/fonts/Inter-Bold.woff2") format("woff2");
+                font-weight: 700;
+                font-style: normal;
+                font-display: swap;
+            }
+
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            html {
+                height: 100%;
+            }
+
+            body {
+                height: 100%;
+                font-family:
+                    "Inter",
+                    system-ui,
+                    -apple-system,
+                    "Segoe UI",
+                    sans-serif;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 1.5rem;
+                line-height: 1.2;
+                transition:
+                    background-color 0.2s ease,
+                    color 0.2s ease;
+            }
+
+            h1 {
+                font-size: clamp(1.5rem, 4vw, 2.5rem);
+                font-weight: 400;
+                margin: 0;
+            }
+
+            h1 span:first-child {
+                font-weight: 700;
+            }
+
+            body::before {
+                content: "";
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: clamp(150px, 20vw, 300px);
+                height: clamp(150px, 20vw, 300px);
+                border-radius: 50%;
+                filter: blur(75px);
+                opacity: 0.08;
+                z-index: -1;
+                pointer-events: none;
+            }
+
+            a {
+                font-size: clamp(0.9rem, 2vw, 1rem);
+                font-weight: 400;
+                text-decoration: underline;
+                transition: text-decoration-color 0.2s ease;
+            }
+
+            /* Theme Variables */
+            [data-theme="dark"] {
+                --bg: #111828;
+                --header: #e2e8f0;
+                --text: #a2afc1;
+                --bubble: #739bd0;
+            }
+
+            [data-theme="light"] {
+                --bg: #e2e8f0;
+                --header: #111828;
+                --text: #2d323d;
+                --bubble: #485470;
+            }
+
+            body {
+                background-color: var(--bg, #111828);
+            }
+
+            body::before {
+                background-color: var(--bubble, #739bd0);
+            }
+
+            h1 span:first-child {
+                color: var(--header, #e2e8f0);
+            }
+
+            h1 span:last-child {
+                color: var(--text, #a2afc1);
+            }
+
+            a {
+                color: var(--header, #e2e8f0);
+            }
+
+            a:hover {
+                text-decoration-color: var(--header, #e2e8f0);
+            }
+        </style>
+    </head>
+    <body>
+        <h1><span>404</span> <span>| Not Found</span></h1>
+        <a href="/">← Back to Home</a>
+    </body>
+</html>
