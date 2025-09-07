@@ -1,11 +1,19 @@
 /* ===== FONT & RESET ===== */
 @font-face {
-    font-family: "Inter Local";
-    src: url("/assets/fonts/Inter-VariableFont_opsz,wght.ttf")
-        format("truetype-variations");
-    font-weight: 100 900;
+    font-family: "Inter";
+    src: url("/assets/fonts/Inter-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
     font-display: swap;
-    font-stretch: normal;
+    unicode-range: U+0000-00FF, U+00A9, U+2011, U+2022, U+2192, U+2197;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("/assets/fonts/Inter-Bold.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
     unicode-range: U+0000-00FF, U+00A9, U+2011, U+2022, U+2192, U+2197;
 }
 
@@ -70,7 +78,7 @@ html {
 body {
     background: var(--bg);
     font-family:
-        "Inter Local",
+        "Inter",
         system-ui,
         -apple-system,
         "Segoe UI",
@@ -94,7 +102,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-weight: 600;
+    font-weight: 700;
     line-height: 1.2;
     color: var(--header);
     margin-bottom: var(--space-s);
@@ -127,13 +135,13 @@ h3 {
 
 h4 {
     font-size: var(--h4);
-    font-weight: 600;
+    font-weight: 700;
     margin-bottom: var(--space-xs);
 }
 
 h5 {
     font-size: var(--h5);
-    font-weight: 600;
+    font-weight: 700;
     margin-bottom: var(--space-xs);
 }
 
@@ -161,7 +169,7 @@ li > ol {
 /* ===== LINKS ===== */
 a {
     color: var(--header);
-    font-weight: 500;
+    font-weight: 700;
     text-decoration: underline;
     text-decoration-color: transparent;
 }
@@ -274,7 +282,7 @@ main article div:last-child h4 {
     gap: var(--space-xs);
     color: var(--text);
     font-size: calc(var(--body) * 0.9);
-    font-weight: 600;
+    font-weight: 700;
     margin-bottom: var(--space-s);
     line-height: 1.3;
     text-align: left;
@@ -497,7 +505,7 @@ body::after {
         text-decoration: none;
         font-size: calc(var(--body) * 0.8);
         letter-spacing: 1.5px;
-        font-weight: 800;
+        font-weight: 700;
         padding: var(--space-xs) 0;
         position: relative;
         transition: all 0.2s ease;
