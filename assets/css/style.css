@@ -5,6 +5,8 @@
         format("truetype-variations");
     font-weight: 100 900;
     font-display: swap;
+    font-stretch: normal;
+    unicode-range: U+0000-00FF, U+00A9, U+2011, U+2022, U+2192, U+2197;
 }
 
 * {
@@ -67,7 +69,12 @@ html {
 
 body {
     background: var(--bg);
-    font-family: "Inter Local", sans-serif;
+    font-family:
+        "Inter Local",
+        system-ui,
+        -apple-system,
+        "Segoe UI",
+        sans-serif;
     font-size: var(--body);
     line-height: 1.6;
     color: var(--text);
