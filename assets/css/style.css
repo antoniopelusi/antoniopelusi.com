@@ -225,6 +225,11 @@ main section p {
     font-size: calc(var(--body) * 0.9);
 }
 
+main section p:last-child {
+    margin-top: var(--space-s);
+    margin-bottom: 0;
+}
+
 main article {
     display: flex;
     flex-direction: column;
