@@ -1,6 +1,6 @@
 /* ===== FONT & RESET ===== */
 @font-face {
-    font-family: "Inter";
+    font-family: "Inter Local";
     src: url("/assets/fonts/Inter-Regular.woff2") format("woff2");
     font-weight: 400;
     font-style: normal;
@@ -9,7 +9,7 @@
 }
 
 @font-face {
-    font-family: "Inter";
+    font-family: "Inter Local";
     src: url("/assets/fonts/Inter-Bold.woff2") format("woff2");
     font-weight: 700;
     font-style: normal;
@@ -78,7 +78,7 @@ html {
 body {
     background: var(--bg);
     font-family:
-        "Inter",
+        "Inter Local",
         system-ui,
         -apple-system,
         "Segoe UI",
@@ -153,12 +153,12 @@ p,
 ul,
 ol,
 li {
-    margin-bottom: var(--space-s);
+    margin-bottom: 0;
 }
 
 ul,
 ol {
-    margin-left: 1.5em;
+    margin-left: 1em;
 }
 
 li > ul,
@@ -221,6 +221,10 @@ header p span[data-cursor="true"] {
 }
 
 /* ===== ARTICLES ===== */
+main section p {
+    font-size: calc(var(--body) * 0.9);
+}
+
 main article {
     display: flex;
     flex-direction: column;
@@ -270,6 +274,7 @@ main article div:first-child h4 {
     font-weight: 400;
     color: var(--text);
     opacity: 0.8;
+    margin-bottom: var(--space-s);
 }
 
 main article div:last-child {
@@ -300,11 +305,17 @@ main article div:last-child h4:has(img) img {
 }
 
 main article div:last-child p {
+    margin-top: var(--space-s);
+    margin-bottom: 0;
+    font-size: calc(var(--body) * 0.9);
+}
+
+main article div:last-child li {
     margin-bottom: var(--space-s);
     font-size: calc(var(--body) * 0.9);
 }
 
-main article div:last-child p:last-child {
+main article div:last-child li:last-child {
     margin-bottom: 0;
 }
 
