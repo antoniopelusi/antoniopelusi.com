@@ -225,9 +225,13 @@ main section p {
     font-size: calc(var(--body) * 0.9);
 }
 
-main section p:last-child {
+main section p {
     margin-top: var(--space-s);
     margin-bottom: 0;
+}
+
+main section p:last-child {
+    margin-top: var(--space);
 }
 
 main article {
