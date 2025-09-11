@@ -129,7 +129,7 @@ h3 {
     padding: var(--space-s) 0;
     background-color: var(--bg);
     z-index: 10;
-    margin-top: var(--space-xl);
+    margin-top: calc(var(--space-xl) * 1.5);
     margin-bottom: var(--space-xs);
 }
 
@@ -484,6 +484,10 @@ body::after {
 @media (min-width: 1024px) {
     body {
         flex-direction: row;
+    }
+
+    h3 {
+        margin-top: var(--space-xl);
     }
 
     /* Links */
