@@ -1,358 +1,563 @@
 <!doctype html>
 <html lang="en" data-theme="dark">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Page Info -->
-    <title>Antonio Pelusi</title>
-    <meta name="description" content="Antonio Pelusi - Ph.D. student in Computer Science and software developer. Portfolio showcasing research projects, education and open-source contributions.">
-    <meta name="author" content="Antonio Pelusi">
+        <!-- Page Info -->
+        <title>Antonio Pelusi</title>
+        <meta
+            name="description"
+            content="Antonio Pelusi - Ph.D. student in Computer Science and software developer. Portfolio showcasing research projects, education and open-source contributions."
+        />
+        <meta name="author" content="Antonio Pelusi" />
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="/assets/icons/favicon/favicon-96x96.png" sizes="96x96">
-    <link rel="icon" type="image/svg+xml" href="/assets/icons/favicon/favicon.svg">
-    <link rel="shortcut icon" href="/assets/icons/favicon/favicon.ico">
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/favicon/apple-touch-icon.png">
-    <link rel="manifest" href="/assets/icons/favicon/site.webmanifest">
-    <meta name="apple-mobile-web-app-title" content="antoniopelusi.com">
+        <!-- Favicon -->
+        <link
+            rel="icon"
+            type="image/png"
+            href="/assets/icons/favicon/favicon-96x96.png"
+            sizes="96x96"
+        />
+        <link
+            rel="icon"
+            type="image/svg+xml"
+            href="/assets/icons/favicon/favicon.svg"
+        />
+        <link rel="shortcut icon" href="/assets/icons/favicon/favicon.ico" />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="/assets/icons/favicon/apple-touch-icon.png"
+        />
+        <link rel="manifest" href="/assets/icons/favicon/site.webmanifest" />
+        <meta name="apple-mobile-web-app-title" content="antoniopelusi.com" />
 
-    <!-- SEO & Social -->
-    <link rel="canonical" href="https://antoniopelusi.com">
-    <meta property="og:title" content="Antonio Pelusi - Ph.D. Computer Science">
-    <meta property="og:description" content="Ph.D. student in Computer Science and software developer. Portfolio showcasing research projects, education and open-source contributions.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://antoniopelusi.com">
+        <!-- SEO & Social -->
+        <link rel="canonical" href="https://antoniopelusi.com" />
+        <meta
+            property="og:title"
+            content="Antonio Pelusi - Ph.D. Computer Science"
+        />
+        <meta
+            property="og:description"
+            content="Ph.D. student in Computer Science and software developer. Portfolio showcasing research projects, education and open-source contributions."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://antoniopelusi.com" />
 
-    <!-- Theme Script (inline for performance) -->
-    <script>
-        const savedTheme = localStorage.getItem("theme");
-        if (savedTheme) {
-            document.documentElement.setAttribute("data-theme", savedTheme);
-        } else {
-            localStorage.setItem("theme", "dark");
-        }
-    </script>
+        <!-- Theme Script (inline for performance) -->
+        <script>
+            const savedTheme = localStorage.getItem("theme");
+            if (savedTheme) {
+                document.documentElement.setAttribute("data-theme", savedTheme);
+            } else {
+                localStorage.setItem("theme", "dark");
+            }
+        </script>
 
-    <!-- Styles -->
-    <link rel="stylesheet" href="/assets/css/style.css">
+        <!-- Styles -->
+        <link rel="stylesheet" href="/assets/css/style.css" />
 
-    <!-- Scripts -->
-    <script src="/assets/js/scripts.js" defer></script>
-</head>
+        <!-- Scripts -->
+        <script src="/assets/js/scripts.js" defer></script>
+    </head>
 
-<body>
-    <!-- Sidebar -->
-    <aside>
-        <header>
-            <h1>Antonio Pelusi</h1>
-            <h2>Ph.D. student in Computer Science</h2>
-            <p><span></span><span data-cursor="true">|</span></p>
+    <body>
+        <!-- Sidebar -->
+        <aside>
+            <header>
+                <h1>Antonio Pelusi</h1>
+                <h2>Ph.D. student in Computer Science</h2>
+                <p><span></span><span data-cursor="true">|</span></p>
 
-            <nav>
-                <a href="#">ABOUT</a>
-                <a href="#experience">EXPERIENCE</a>
-                <a href="#education">EDUCATION</a>
-                <a href="#publications">PUBLICATIONS</a>
-                <a href="#projects">PROJECTS</a>
-                <a href="#awards">AWARDS</a>
-            </nav>
-        </header>
+                <nav>
+                    <a href="#">ABOUT</a>
+                    <a href="#experience">EXPERIENCE</a>
+                    <a href="#education">EDUCATION</a>
+                    <a href="#publications">PUBLICATIONS</a>
+                    <a href="#projects">PROJECTS</a>
+                    <a href="#awards">AWARDS</a>
+                </nav>
+            </header>
 
-        <footer>
-            <a href="mailto:antoniopelusi2000@gmail.com" data-tooltip="Email">
-                <img src="/assets/icons/links/email.svg" alt="Email">
-            </a>
-            <a href="https://linkedin.com/in/antoniopelusi" data-tooltip="LinkedIn">
-                <img src="/assets/icons/links/linkedin.svg" alt="LinkedIn">
-            </a>
-            <a href="https://github.com/antoniopelusi" data-tooltip="GitHub">
-                <img src="/assets/icons/links/github.svg" alt="GitHub">
-            </a>
-        </footer>
-    </aside>
-
-    <!-- Main Content -->
-    <main>
-        <!-- About Section -->
-        <section id="about-section">
-            <p>
-                Ph.D. researcher and software developer focused on Differential Privacy optimization using quantum random number generation, synthetic data generation, and privacy-preserving Machine Learning systems.
-            </p>
-            <p>
-                Combines theoretical privacy research with practical system development, including production QRNG platforms and standardized entropy distribution APIs.
-            </p>
-            <p> 
-                Academic credentials include Master's with distinction, CERN research collaboration, and ongoing industry-academia partnership investigating true randomness impact on privacy mechanisms.
-            </p>
-            <p>
-                Specialized in bridging fundamental research with enterprise-grade technological solutions.
-            </p>
-            <p>
-                Read the full CV
-                <a href="/assets/CV_AntonioPelusi.pdf" target="_blank">here &#8599;</a>
-            </p>
-        </section>
-
-        <!-- Experience Section -->
-        <h3 id="experience">
-            <img src="/assets/icons/sections/experience.svg" alt="Experience">
-            Experience
-        </h3>
-        <section id="experience-section">
-            <article>
-                <div>
-                    <h4>may 2024 &rarr; Present</h4>
-                </div>
-                <div>
-                    <h4>
-                        <img src="/assets/icons/articles/randompower.svg" alt="Random Power">
-                        Random Power &bull; Startup
-                    </h4>
-                    <h4>Full Stack Developer &bull; Remote</h4>
-                    <ul>
-                        <li>Developed comprehensive Django-based web client (backend and frontend) for Random Power’s 64x Multi‑Generator Board quantum hardware platform, enabling secure access to true quantum randomness generation.</li>
-                        <li>Built secure user authentication and session management supporting multiple concurrent users.</li>
-                        <li>Built Palo Alto QRNG API-compliant Entropy-as-a-Service platform supporting 1Gbit/s quantum random bit distribution with automated quality assurance and real-time compliance monitoring.</li>
-                        <li>Collaborated on C-based scheduler and TEE components for secure random bit distribution.</li>
-                        <li>Designed and maintained communication interfaces between hardware and software components, ensuring reliable and secure data exchange.</li>
-                    </ul>
-                </div>
-            </article>
-
-            <article>
-                <div>
-                    <h4>sep. 2024 &rarr; jul. 2025</h4>
-                </div>
-                <div>
-                    <h4>
-                        <img src="/assets/icons/articles/school.svg" alt="A. Paradisi High School">
-                        A. Paradisi &bull; High School
-                    </h4>
-                    <h4>Computer Science Teacher &bull; Vignola, Italy</h4>
-                    <ul>
-                        <li>Introduced 75+ high school students to programming, algorithms, and fundamental computer concepts using practical exercises and projects.</li>
-                    </ul>
-                </div>
-            </article>
-
-            <article>
-                <div>
-                    <h4>sep. 2024 &rarr; dec. 2024</h4>
-                </div>
-                <div>
-                    <h4>
-                        <img src="/assets/icons/articles/unimore.svg" alt="University of Modena and Reggio Emilia">
-                        University of Modena and Reggio Emilia
-                    </h4>
-                    <h4>Computer Science University Tutor &bull; Modena, Italy</h4>
-                    <ul>
-                        <li>Conducted laboratory sessions, guiding 50+ undergraduate students in programming, algorithms, and data structures.</li>
-                        <li>Provided hands-on support during labs, assisted with debugging, and facilitated practical understanding of theoretical concepts.</li>
-                    </ul>
-                </div>
-            </article>
-
-            <article>
-                <div>
-                    <h4>may 2021 &rarr; jul. 2021</h4>
-                </div>
-                <div>
-                    <h4>
-                        <img src="/assets/icons/articles/liferay.svg" alt="Liferay">
-                        Liferay Inc.
-                    </h4>
-                    <h4>Junior Backend Developer &bull; Remote</h4>
-                    <ul>
-                        <li>Integrated Stripe payment functionality into the open-source Liferay Portal.</li>
-                    </ul>
-                </div>
-            </article>
-        </section>
-
-        <!-- Education Section -->
-        <h3 id="education">
-            <img src="/assets/icons/sections/education.svg" alt="Education">
-            Education
-        </h3>
-        <section id="education-section">
-            <article>
-                <div>
-                    <h4>nov. 2024 &rarr; Present</h4>
-                </div>
-                <div>
-                    <h4>
-                        <img src="/assets/icons/articles/uninsubria.svg" alt="University of Insubria">
-                        University of Insubria
-                    </h4>
-                    <h4>Ph.D. in Computer Science and Mathematics of Computation</h4>
-                    <ul>
-                        <li>Researched Differential Privacy frameworks analyzing how quantum vs. pseudo-random number generation impacts privacy mechanism effectiveness.</li>
-                        <li>Investigated synthetic data generation algorithms with DP guarantees, optimizing the privacy-utility trade-off for machine learning applications on sensitive datasets.</li>
-                    </ul>
-                </div>
-            </article>
-
-            <article>
-                <div>
-                    <h4>sep. 2022 &rarr; apr. 2024</h4>
-                </div>
-                <div>
-                    <h4>
-                        <img src="/assets/icons/articles/unimore.svg" alt="University of Modena and Reggio Emilia">
-                        University of Modena and Reggio Emilia
-                    </h4>
-                    <h4>Master's Degree in Computer Science &bull; 110/110</h4>
-                    <ul>
-                        <li>Big Data & Machine Learning: Focus on predictive modeling, large-scale data analysis, and advanced machine learning methods.</li>
-                        <li>Cybersecurity & Cryptography: Exploration of theoretical and applied aspects of data security and cryptographic protocols.</li>
-                    </ul>
-                </div>
-            </article>
-
-            <article>
-                <div>
-                    <h4>feb. 2023 &rarr; jun. 2023</h4>
-                </div>
-                <div>
-                    <h4>
-                        <img src="/assets/icons/articles/unibo.svg" alt="University of Bologna">
-                        University of Bologna
-                    </h4>
-                    <h4>Post Graduate Degree CBI.Attract &bull; 30/30 with Honors</h4>
-                    <ul>
-                        <li>Participated in research collaborations at CERN and AGH University, funded by the EU Attract Project, contributing to joint investigations on emerging technologies.</li>
-                        <li>Explored technological opportunities through Design Thinking–based prototyping and testing.</li>
-                    </ul>
-                </div>
-            </article>
-
-            <article>
-                <div>
-                    <h4>sep. 2018 &rarr; apr. 2022</h4>
-                </div>
-                <div>
-                    <h4>
-                        <img src="/assets/icons/articles/unimore.svg" alt="University of Modena and Reggio Emilia">
-                        University of Modena and Reggio Emilia
-                    </h4>
-                    <h4>Bachelor's Degree in Computer Science</h4>
-                    <ul>
-                        <li>Computer Science Foundations: Algorithms, data structures, programming languages, computer architecture, and operating systems.</li>
-                        <li>Mathematical Foundations: Discrete mathematics, calculus, statistics, and linear algebra.</li>
-                    </ul>
-                </div>
-            </article>
-        </section>
-
-        <!-- Publications Section -->
-        <h3 id="publications">
-            <img src="/assets/icons/sections/publications.svg" alt="Publications">
-            Publications
-        </h3>
-        <section id="publications-section">
-            <article>
-                <div>
-                    <h4>apr. 2024</h4>
-                </div>
-                <div>
-                    <h4>
-                        <img src="/assets/icons/articles/unimore.svg" alt="University of Modena and Reggio Emilia">
-                        Privacy Preservation in Data Sharing: A Study on Differential Privacy
-                    </h4>
-                    <h4>Master's thesis</h4>
-                    <ul>
-                        <li>An introductory and analytical study of differential privacy as a technique for preserving data confidentiality.</li>
-                        <li>
-                            Read the full thesis
-                            <a href="https://doi.org/10.6084/m9.figshare.26411314" target="_blank" rel="noopener noreferrer">
-                                here &#8599;
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </article>
-        </section>
-
-        <!-- Projects Section -->
-        <h3 id="projects">
-            <img src="/assets/icons/sections/projects.svg" alt="Projects">
-            Projects
-        </h3>
-        <section id="projects-section">
-            <article>
-                <div>
-                    <h4>In development</h4>
-                </div>
-                <div>
-                    <h4>
-                        <img src="/assets/icons/articles/ldp.svg" alt="LDP-lib">
-                        LDP-lib
-                    </h4>
-                    <h4>Local Differential Privacy Library</h4>
-                    <ul>
-                        <li>Designed and implemented a library for applying Local Differential Privacy mechanisms to local databases.</li>
-                    </ul>
-                </div>
-            </article>
-            <p>
-                Explore all my projects
-                <a href="https://github.com/antoniopelusi" target="_blank" rel="noopener noreferrer">
-                    here &#8599;
+            <footer>
+                <a
+                    href="mailto:antoniopelusi2000@gmail.com"
+                    data-tooltip="Email"
+                >
+                    <img src="/assets/icons/links/email.svg" alt="Email" />
                 </a>
-            </p>
-        </section>
+                <a
+                    href="https://linkedin.com/in/antoniopelusi"
+                    data-tooltip="LinkedIn"
+                >
+                    <img
+                        src="/assets/icons/links/linkedin.svg"
+                        alt="LinkedIn"
+                    />
+                </a>
+                <a
+                    href="https://github.com/antoniopelusi"
+                    data-tooltip="GitHub"
+                >
+                    <img src="/assets/icons/links/github.svg" alt="GitHub" />
+                </a>
+            </footer>
+        </aside>
 
-        <!-- Awards Section -->
-        <h3 id="awards">
-            <img src="/assets/icons/sections/awards.svg" alt="Awards">
-            Awards
-        </h3>
-        <section id="awards-section">
-            <article>
-                <div>
-                    <h4>sep. 2023</h4>
-                </div>
-                <div>
-                    <h4>
-                        <img src="/assets/icons/articles/unimore.svg" alt="Green & Digital Transformation two‑day Hackathon">
-                        Winner of Green & Digital Transformation Hackathon
-                    </h4>
-                    <h4>University of Modena and Reggio Emilia &bull; Mantua, Italy</h4>
-                    <ul>
-                        <li>Winner of a hackathon with a machine learning–based predictive model for water consumption optimization.</li>
-                    </ul>
-                </div>
-            </article>
-        </section>
+        <!-- Main Content -->
+        <main>
+            <!-- About Section -->
+            <section id="about-section">
+                <p>
+                    Ph.D. researcher and software developer focused on
+                    Differential Privacy optimization using quantum random
+                    number generation, synthetic data generation, and
+                    privacy-preserving Machine Learning systems.
+                </p>
+                <p>
+                    Combines theoretical privacy research with practical system
+                    development, including production QRNG platforms and
+                    standardized entropy distribution APIs.
+                </p>
+                <p>
+                    Academic credentials include Master's with distinction, CERN
+                    research collaboration, and ongoing industry-academia
+                    partnership investigating true randomness impact on privacy
+                    mechanisms.
+                </p>
+                <p>
+                    Specialized in bridging fundamental research with
+                    enterprise-grade technological solutions.
+                </p>
+                <p>
+                    Read the full CV
+                    <a href="/assets/CV_AntonioPelusi.pdf" target="_blank"
+                        >here &#8599;</a
+                    >
+                </p>
+            </section>
 
-        <!-- Footer -->
-        <footer>
-            <span></span>
-                <button type="button" data-toggle="theme" aria-label="Switch theme">
-                    Switch theme:
-                    <img src="/assets/icons/footer/theme.svg" alt="Switch theme">
-                </button>
-            </span>
+            <!-- Experience Section -->
+            <h3 id="experience">
+                <img
+                    src="/assets/icons/sections/experience.svg"
+                    alt="Experience"
+                />
+                Experience
+            </h3>
+            <section id="experience-section">
+                <article>
+                    <div>
+                        <h4>may 2024 &rarr; Present</h4>
+                    </div>
+                    <div>
+                        <h4>
+                            <img
+                                src="/assets/icons/articles/randompower.svg"
+                                alt="Random Power"
+                            />
+                            Random Power &bull; Startup
+                        </h4>
+                        <h4>Full Stack Developer &bull; Remote</h4>
+                        <ul>
+                            <li>
+                                Developed comprehensive Django-based web client
+                                (backend and frontend) for Random Power’s 64x
+                                Multi‑Generator Board quantum hardware platform,
+                                enabling secure access to true quantum
+                                randomness generation.
+                            </li>
+                            <li>
+                                Built secure user authentication and session
+                                management supporting multiple concurrent users.
+                            </li>
+                            <li>
+                                Built Palo Alto QRNG API-compliant
+                                Entropy-as-a-Service platform supporting 1Gbit/s
+                                quantum random bit distribution with automated
+                                quality assurance and real-time compliance
+                                monitoring.
+                            </li>
+                            <li>
+                                Collaborated on C-based scheduler and TEE
+                                components for secure random bit distribution.
+                            </li>
+                            <li>
+                                Designed and maintained communication interfaces
+                                between hardware and software components,
+                                ensuring reliable and secure data exchange.
+                            </li>
+                        </ul>
+                    </div>
+                </article>
 
-            <p>
-                Built with
-                <img src="/assets/icons/footer/html.svg" alt="HTML"> HTML,
-                <img src="/assets/icons/footer/css.svg" alt="CSS"> CSS,
-                <img src="/assets/icons/footer/js.svg" alt="JS"> JS
-            </p>
+                <article>
+                    <div>
+                        <h4>sep. 2024 &rarr; jul. 2025</h4>
+                    </div>
+                    <div>
+                        <h4>
+                            <img
+                                src="/assets/icons/articles/school.svg"
+                                alt="A. Paradisi High School"
+                            />
+                            A. Paradisi &bull; High School
+                        </h4>
+                        <h4>Computer Science Teacher &bull; Vignola, Italy</h4>
+                        <ul>
+                            <li>
+                                Introduced 75+ high school students to
+                                programming, algorithms, and fundamental
+                                computer concepts using practical exercises and
+                                projects.
+                            </li>
+                        </ul>
+                    </div>
+                </article>
 
-            <p>
-                Typography:
-                <a href="https://rsms.me/inter/">Inter</a>
-                &bull; Icons:
-                <a href="https://github.com/PapirusDevelopmentTeam/papirus-icon-theme/">Papirus</a>
-                &bull; Source:
-                <a href="https://github.com/antoniopelusi/antoniopelusi.com">GitHub</a>
-            </p>
+                <article>
+                    <div>
+                        <h4>sep. 2024 &rarr; dec. 2024</h4>
+                    </div>
+                    <div>
+                        <h4>
+                            <img
+                                src="/assets/icons/articles/unimore.svg"
+                                alt="University of Modena and Reggio Emilia"
+                            />
+                            University of Modena and Reggio Emilia
+                        </h4>
+                        <h4>
+                            Computer Science University Tutor &bull; Modena,
+                            Italy
+                        </h4>
+                        <ul>
+                            <li>
+                                Conducted laboratory sessions, guiding 50+
+                                undergraduate students in programming,
+                                algorithms, and data structures.
+                            </li>
+                            <li>
+                                Provided hands-on support during labs, assisted
+                                with debugging, and facilitated practical
+                                understanding of theoretical concepts.
+                            </li>
+                        </ul>
+                    </div>
+                </article>
 
-            <p>&copy; Antonio Pelusi. All rights reserved.</p>
-        </footer>
-    </main>
-</body>
+                <article>
+                    <div>
+                        <h4>may 2021 &rarr; jul. 2021</h4>
+                    </div>
+                    <div>
+                        <h4>
+                            <img
+                                src="/assets/icons/articles/liferay.svg"
+                                alt="Liferay"
+                            />
+                            Liferay Inc.
+                        </h4>
+                        <h4>Junior Backend Developer &bull; Remote</h4>
+                        <ul>
+                            <li>
+                                Integrated Stripe payment functionality into the
+                                open-source Liferay Portal.
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+            </section>
+
+            <!-- Education Section -->
+            <h3 id="education">
+                <img
+                    src="/assets/icons/sections/education.svg"
+                    alt="Education"
+                />
+                Education
+            </h3>
+            <section id="education-section">
+                <article>
+                    <div>
+                        <h4>nov. 2024 &rarr; Present</h4>
+                    </div>
+                    <div>
+                        <h4>
+                            <img
+                                src="/assets/icons/articles/uninsubria.svg"
+                                alt="University of Insubria"
+                            />
+                            University of Insubria
+                        </h4>
+                        <h4>
+                            Ph.D. in Computer Science and Mathematics of
+                            Computation
+                        </h4>
+                        <ul>
+                            <li>
+                                Researched Differential Privacy frameworks
+                                analyzing how quantum vs. pseudo-random number
+                                generation impacts privacy mechanism
+                                effectiveness.
+                            </li>
+                            <li>
+                                Investigated synthetic data generation
+                                algorithms with DP guarantees, optimizing the
+                                privacy-utility trade-off for machine learning
+                                applications on sensitive datasets.
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article>
+                    <div>
+                        <h4>sep. 2022 &rarr; apr. 2024</h4>
+                    </div>
+                    <div>
+                        <h4>
+                            <img
+                                src="/assets/icons/articles/unimore.svg"
+                                alt="University of Modena and Reggio Emilia"
+                            />
+                            University of Modena and Reggio Emilia
+                        </h4>
+                        <h4>
+                            Master's Degree in Computer Science &bull; 110/110
+                        </h4>
+                        <ul>
+                            <li>
+                                Big Data & Machine Learning: Focus on predictive
+                                modeling, large-scale data analysis, and
+                                advanced machine learning methods.
+                            </li>
+                            <li>
+                                Cybersecurity & Cryptography: Exploration of
+                                theoretical and applied aspects of data security
+                                and cryptographic protocols.
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article>
+                    <div>
+                        <h4>feb. 2023 &rarr; jun. 2023</h4>
+                    </div>
+                    <div>
+                        <h4>
+                            <img
+                                src="/assets/icons/articles/unibo.svg"
+                                alt="University of Bologna"
+                            />
+                            University of Bologna
+                        </h4>
+                        <h4>
+                            Post Graduate Degree CBI.Attract &bull; 30/30 with
+                            Honors
+                        </h4>
+                        <ul>
+                            <li>
+                                Participated in research collaborations at CERN
+                                and AGH University, funded by the EU Attract
+                                Project, contributing to joint investigations on
+                                emerging technologies.
+                            </li>
+                            <li>
+                                Explored technological opportunities through
+                                Design Thinking–based prototyping and testing.
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article>
+                    <div>
+                        <h4>sep. 2018 &rarr; apr. 2022</h4>
+                    </div>
+                    <div>
+                        <h4>
+                            <img
+                                src="/assets/icons/articles/unimore.svg"
+                                alt="University of Modena and Reggio Emilia"
+                            />
+                            University of Modena and Reggio Emilia
+                        </h4>
+                        <h4>Bachelor's Degree in Computer Science</h4>
+                        <ul>
+                            <li>
+                                Computer Science Foundations: Algorithms, data
+                                structures, programming languages, computer
+                                architecture, and operating systems.
+                            </li>
+                            <li>
+                                Mathematical Foundations: Discrete mathematics,
+                                calculus, statistics, and linear algebra.
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+            </section>
+
+            <!-- Publications Section -->
+            <h3 id="publications">
+                <img
+                    src="/assets/icons/sections/publications.svg"
+                    alt="Publications"
+                />
+                Publications
+            </h3>
+            <section id="publications-section">
+                <article>
+                    <div>
+                        <h4>apr. 2024</h4>
+                    </div>
+                    <div>
+                        <h4>
+                            <img
+                                src="/assets/icons/articles/unimore.svg"
+                                alt="University of Modena and Reggio Emilia"
+                            />
+                            Privacy Preservation in Data Sharing: A Study on
+                            Differential Privacy
+                        </h4>
+                        <h4>Master's thesis</h4>
+                        <ul>
+                            <li>
+                                An introductory and analytical study of
+                                differential privacy as a technique for
+                                preserving data confidentiality.
+                            </li>
+                            <li>
+                                Read the full thesis
+                                <a
+                                    href="https://doi.org/10.6084/m9.figshare.26411314"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    here &#8599;
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+            </section>
+
+            <!-- Projects Section -->
+            <h3 id="projects">
+                <img src="/assets/icons/sections/projects.svg" alt="Projects" />
+                Projects
+            </h3>
+            <section id="projects-section">
+                <article>
+                    <div>
+                        <h4>In development</h4>
+                    </div>
+                    <div>
+                        <h4>
+                            <img
+                                src="/assets/icons/articles/ldp.svg"
+                                alt="LDP-lib"
+                            />
+                            LDP-lib
+                        </h4>
+                        <h4>Local Differential Privacy Library</h4>
+                        <ul>
+                            <li>
+                                Designed and implemented a library for applying
+                                Local Differential Privacy mechanisms to local
+                                databases.
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+                <p>
+                    Explore all my projects
+                    <a
+                        href="https://github.com/antoniopelusi"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        here &#8599;
+                    </a>
+                </p>
+            </section>
+
+            <!-- Awards Section -->
+            <h3 id="awards">
+                <img src="/assets/icons/sections/awards.svg" alt="Awards" />
+                Awards
+            </h3>
+            <section id="awards-section">
+                <article>
+                    <div>
+                        <h4>sep. 2023</h4>
+                    </div>
+                    <div>
+                        <h4>
+                            <img
+                                src="/assets/icons/articles/unimore.svg"
+                                alt="Green & Digital Transformation two‑day Hackathon"
+                            />
+                            Winner of Green & Digital Transformation Hackathon
+                        </h4>
+                        <h4>
+                            University of Modena and Reggio Emilia &bull;
+                            Mantua, Italy
+                        </h4>
+                        <ul>
+                            <li>
+                                Winner of a hackathon with a machine
+                                learning–based predictive model for water
+                                consumption optimization.
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+            </section>
+
+            <!-- Footer -->
+            <footer>
+                <span>
+                    <button
+                        type="button"
+                        data-toggle="theme"
+                        aria-label="Switch theme"
+                    >
+                        Switch theme:
+                        <img
+                            src="/assets/icons/footer/theme.svg"
+                            alt="Switch theme"
+                        />
+                    </button>
+                </span>
+
+                <p>
+                    Built with
+                    <img src="/assets/icons/footer/html.svg" alt="HTML" /> HTML,
+                    <img src="/assets/icons/footer/css.svg" alt="CSS" /> CSS,
+                    <img src="/assets/icons/footer/js.svg" alt="JS" /> JS
+                </p>
+
+                <p>
+                    Typography:
+                    <a href="https://rsms.me/inter/">Inter</a>
+                    &bull; Icons:
+                    <a
+                        href="https://github.com/PapirusDevelopmentTeam/papirus-icon-theme/"
+                        >Papirus</a
+                    >
+                    &bull; Source:
+                    <a href="https://github.com/antoniopelusi/antoniopelusi.com"
+                        >GitHub</a
+                    >
+                </p>
+
+                <p>&copy; Antonio Pelusi. All rights reserved.</p>
+            </footer>
+        </main>
+    </body>
 </html>
