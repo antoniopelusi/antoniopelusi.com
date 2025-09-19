@@ -223,9 +223,6 @@ header p span[data-cursor="true"] {
 /* ===== ARTICLES ===== */
 main section p {
     font-size: calc(var(--body) * 0.9);
-}
-
-main section p {
     margin-top: var(--space-s);
     margin-bottom: 0;
 }
