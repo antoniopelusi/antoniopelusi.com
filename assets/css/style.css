@@ -33,10 +33,10 @@
 :root {
     /* Typography */
     --h1: clamp(2.25rem, 4vw, 3rem);
-    --h2: clamp(0.9375rem, 1.75vw, 1rem);
+    --h2: clamp(1.5rem, 3vw, 2rem);
     --h3: clamp(1.1875rem, 2.5vw, 1.25rem);
     --h4: clamp(0.9375rem, 2vw, 1rem);
-    --h5: calc(var(--body) * 1.1);
+    --h5: clamp(0.875rem, 1.8vw, 0.95rem);
     --body: clamp(0.9375rem, 2vw, 1rem);
 
     /* Spacing */
@@ -116,11 +116,6 @@ h1 {
 }
 
 h2 {
-    font-size: var(--h2);
-    font-weight: 400;
-}
-
-h3 {
     font-size: var(--h3);
     display: flex;
     align-items: center;
@@ -135,13 +130,13 @@ h3 {
     margin-bottom: var(--space-xs);
 }
 
-h4 {
+h3 {
     font-size: var(--h4);
     font-weight: 700;
     margin-bottom: var(--space-xs);
 }
 
-h5 {
+h4 {
     font-size: var(--h5);
     font-weight: 700;
     margin-bottom: var(--space-xs);
@@ -149,13 +144,6 @@ h5 {
 
 b {
     color: var(--header);
-}
-
-p,
-ul,
-ol,
-li {
-    margin-bottom: 0;
 }
 
 ul,
@@ -166,6 +154,11 @@ ol {
 li > ul,
 li > ol {
     margin-top: var(--space-s);
+}
+
+label {
+    font-weight: 400;
+    color: var(--header);
 }
 
 /* ===== LINKS ===== */
@@ -196,6 +189,10 @@ main {
 /* ===== HEADER ===== */
 header nav {
     display: none;
+}
+
+header div {
+    margin-bottom: var(--space-s);
 }
 
 header p {
@@ -277,7 +274,7 @@ main article div:first-child {
     padding-bottom: var(--space-xs);
 }
 
-main article div:first-child h4 {
+main article div:first-child h3 {
     font-size: calc(var(--body) * 0.9);
     font-weight: 400;
     color: var(--text);
@@ -289,7 +286,7 @@ main article div:last-child {
     padding-left: 0;
 }
 
-main article div:last-child h4 {
+main article div:last-child h3 {
     display: flex;
     align-items: center;
     gap: var(--space-xs);
@@ -301,13 +298,13 @@ main article div:last-child h4 {
     text-align: left;
 }
 
-main article div:last-child h4:has(img) {
+main article div:last-child h3:has(img) {
     font-size: var(--body);
     color: var(--header);
     margin-bottom: var(--space-xs);
 }
 
-main article div:last-child h4:has(img) img {
+main article div:last-child h3:has(img) img {
     width: 1.3em;
     height: 1.3em;
 }
@@ -329,7 +326,7 @@ main article div:last-child li:last-child {
 
 /* ===== ICONS ===== */
 aside footer img,
-h3 img {
+h2 img {
     width: 100%;
     max-width: calc(var(--body) * 2);
     height: auto;
@@ -485,7 +482,7 @@ body::after {
         flex-direction: row;
     }
 
-    h3 {
+    h2 {
         margin-top: var(--space-xl);
     }
 
@@ -611,8 +608,7 @@ body::after {
         opacity: 1;
     }
 
-    /* Main content */
-    main h3 {
+    main h2 {
         background-color: transparent;
         position: static;
         padding: 0;
