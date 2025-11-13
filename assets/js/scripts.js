@@ -162,17 +162,17 @@ class NavigationHighlighter {
         navLinks.forEach((link) => {
             const href = link.getAttribute("href");
             let element = null;
-            let isAbout = false;
+            let isSummary = false;
 
             if (href === "#") {
                 element = document.body;
-                isAbout = true;
+                isSummary = true;
             } else if (href?.startsWith("#")) {
                 element = document.getElementById(href.substring(1));
             }
 
             if (element) {
-                sections.push({ link, element, isAbout });
+                sections.push({ link, element, isSummary });
             }
         });
 
@@ -183,14 +183,14 @@ class NavigationHighlighter {
         const scrollTop = window.pageYOffset;
         let activeSection = null;
 
-        // Check if we're at the top (About section)
+        // Check if we're at the top (Summary section)
         if (scrollTop < this.threshold) {
-            activeSection = this.sections.find((s) => s.isAbout);
+            activeSection = this.sections.find((s) => s.isSummary);
         } else {
             // Find the current section based on scroll position
             for (let i = this.sections.length - 1; i >= 0; i--) {
                 const section = this.sections[i];
-                if (!section.isAbout) {
+                if (!section.isSummary) {
                     const rect = section.element.getBoundingClientRect();
                     if (rect.top <= this.threshold) {
                         activeSection = section;
@@ -213,17 +213,17 @@ class NavigationHighlighter {
     }
 }
 
-// ===== ABOUT LINK HANDLER =====
-class AboutLinkHandler {
+// ===== SUMMARY LINK HANDLER =====
+class SummaryLinkHandler {
     constructor() {
-        this.aboutLink = Utils.select('aside nav a[href="#"]');
+        this.summaryLink = Utils.select('aside nav a[href="#"]');
         this.init();
     }
 
     init() {
-        if (!this.aboutLink) return;
+        if (!this.summaryLink) return;
 
-        this.aboutLink.addEventListener("click", this.handleClick.bind(this));
+        this.summaryLink.addEventListener("click", this.handleClick.bind(this));
     }
 
     handleClick(e) {
@@ -272,8 +272,8 @@ class App {
         // Theme toggle
         this.components.push(new ThemeToggle());
 
-        // About link handler
-        this.components.push(new AboutLinkHandler());
+        // Summary link handler
+        this.components.push(new SummaryLinkHandler());
 
         // Typing animation (if config available)
         if (config?.typing?.phrases && config?.typing?.options) {

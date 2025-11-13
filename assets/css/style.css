@@ -5,7 +5,7 @@
     font-weight: 400;
     font-style: normal;
     font-display: swap;
-    unicode-range: U+0000-00FF, U+00A9, U+2011, U+2022, U+2192, U+2197;
+    unicode-range: U+0000-00FF, U+00A9, U+2011, U+2022, U+2190, U+2192, U+2197;
 }
 
 @font-face {
@@ -14,7 +14,7 @@
     font-weight: 700;
     font-style: normal;
     font-display: swap;
-    unicode-range: U+0000-00FF, U+00A9, U+2011, U+2022, U+2192, U+2197;
+    unicode-range: U+0000-00FF, U+00A9, U+2011, U+2022, U+2190, U+2192, U+2197;
 }
 
 * {
@@ -79,12 +79,7 @@ html {
 
 body {
     background: var(--bg);
-    font-family:
-        "Inter Local",
-        system-ui,
-        -apple-system,
-        "Segoe UI",
-        sans-serif;
+    font-family: "Inter Local", sans-serif;
     font-size: var(--body);
     line-height: 1.6;
     color: var(--text);
@@ -157,6 +152,7 @@ li > ol {
 }
 
 label {
+    display: block;
     font-weight: 400;
     color: var(--header);
 }
@@ -187,7 +183,7 @@ main {
 }
 
 /* ===== HEADER ===== */
-header nav {
+aside nav {
     display: none;
 }
 
@@ -200,6 +196,26 @@ header p {
     height: 3.4em;
     display: flex;
     align-items: flex-start;
+}
+
+main header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: var(--space);
+}
+
+main header a,
+main header button {
+    padding: var(--space-s);
+    color: var(--text);
+    text-decoration: none;
+    font-weight: 400;
+}
+
+main header a:hover,
+main header button:hover {
+    text-decoration: underline;
 }
 
 /* ===== CURSOR ANIMATION ===== */
@@ -224,10 +240,6 @@ main section p {
     font-size: calc(var(--body) * 0.9);
     margin-top: var(--space-s);
     margin-bottom: 0;
-}
-
-main section p:last-child {
-    margin-top: var(--space);
 }
 
 main article {
@@ -379,7 +391,7 @@ main footer img {
 }
 
 /* ===== THEME TOGGLE ===== */
-[data-toggle="theme"] {
+button {
     padding: 0.6em;
     display: inline-block;
     font-weight: 400;
@@ -394,8 +406,8 @@ main footer img {
     transition: all 0.2s ease;
 }
 
-[data-toggle="theme"]:hover,
-[data-toggle="theme"]:focus {
+button:hover,
+button:focus {
     font-weight: 400;
     text-decoration: none;
     text-decoration-color: transparent;
@@ -404,22 +416,32 @@ main footer img {
     outline: none;
 }
 
-[data-toggle="theme"]:focus-visible {
+button:focus-visible {
     outline: 2px solid var(--header);
     outline-offset: 2px;
 }
 
-[data-toggle="theme"] img {
+button img {
     transition: transform 0.3s ease;
     width: 1.3em;
     height: 1.3em;
 }
 
-[data-theme="dark"] [data-toggle="theme"] img {
+button:hover img {
+    transform: rotate(180deg);
+}
+
+button a {
+    color: var(--text);
+    font-weight: 400;
+    text-decoration: none;
+}
+
+[data-theme="dark"] button img {
     filter: invert(1) brightness(1.2) hue-rotate(200deg);
 }
 
-[data-theme="light"] [data-toggle="theme"] img {
+[data-theme="light"] button img {
     filter: brightness(0.7);
 }
 
@@ -507,7 +529,7 @@ body::after {
     }
 
     /* Navigation */
-    aside header nav {
+    aside nav {
         position: static;
         background-color: transparent;
         padding: 0;
@@ -520,7 +542,7 @@ body::after {
         transition: opacity 0.3s ease;
     }
 
-    aside header nav a {
+    aside nav a {
         color: var(--text);
         text-decoration: none;
         font-size: calc(var(--body) * 0.8);
@@ -533,7 +555,7 @@ body::after {
         opacity: 0.7;
     }
 
-    aside header nav a::before {
+    aside nav a::before {
         content: "";
         position: absolute;
         left: 0;
@@ -546,22 +568,22 @@ body::after {
         border-radius: 1px;
     }
 
-    aside header nav a:hover {
+    aside nav a:hover {
         padding-left: calc(2 * var(--space));
         color: var(--header);
     }
 
-    aside header nav a:hover::before {
+    aside nav a:hover::before {
         background-color: var(--header);
         width: calc(2 * var(--space-s) * 1.5);
     }
 
-    aside header nav a[data-active="true"] {
+    aside nav a[data-active="true"] {
         padding-left: calc(2 * (var(--space) + var(--space-xs)));
         opacity: 1;
     }
 
-    aside header nav a[data-active="true"]::before {
+    aside nav a[data-active="true"]::before {
         background-color: var(--header);
         width: calc(2 * var(--space-s) * 2);
     }
@@ -659,11 +681,6 @@ body::after {
         opacity: 0.5;
     }
 
-    /* Theme toggle */
-    [data-toggle="theme"]:hover img {
-        transform: rotate(180deg);
-    }
-
     /* Background animations */
     body::before,
     body::after {
@@ -672,7 +689,7 @@ body::after {
 
     /* Short screen optimization */
     @media (max-height: 700px) {
-        aside header nav {
+        aside nav {
             opacity: 0;
             max-height: 0;
             margin-top: 0;
