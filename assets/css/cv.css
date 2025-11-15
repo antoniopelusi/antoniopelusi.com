@@ -53,6 +53,7 @@ html {
     background-color: var(--background-color);
 }
 
+main,
 body {
     position: relative;
     display: flex;
