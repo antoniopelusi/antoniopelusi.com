@@ -241,10 +241,7 @@ class SummaryLinkHandler {
 // ===== SERVICE WORKER REGISTRATION HANDLER =====
 class ServiceWorkerRegistrationHandler {
     constructor() {
-        this.deferredPrompt = null;
-        this.installBtn = document.getElementById("installAppBtn");
         this.registerServiceWorker();
-        this.setupInstallPrompt();
     }
 
     registerServiceWorker() {
@@ -253,25 +250,6 @@ class ServiceWorkerRegistrationHandler {
                 navigator.serviceWorker.register("/service-worker.js");
             });
         }
-    }
-
-    setupInstallPrompt() {
-        if (!this.installBtn) return;
-
-        window.addEventListener("beforeinstallprompt", (e) => {
-            console.log("beforeinstallpront");
-            e.preventDefault();
-            this.deferredPrompt = e;
-            this.installBtn.style.display = "block";
-        });
-
-        this.installBtn.addEventListener("click", async () => {
-            if (!this.deferredPrompt) return;
-            this.installBtn.style.display = "none";
-            this.deferredPrompt.prompt();
-            await this.deferredPrompt.userChoice;
-            this.deferredPrompt = null;
-        });
     }
 }
 

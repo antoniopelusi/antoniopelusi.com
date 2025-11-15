@@ -406,10 +406,6 @@ button {
     transition: all 0.2s ease;
 }
 
-button:last-child {
-    display: none;
-}
-
 button:hover,
 button:focus {
     font-weight: 400;
