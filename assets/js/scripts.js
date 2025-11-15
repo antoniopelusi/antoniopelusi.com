@@ -238,6 +238,43 @@ class SummaryLinkHandler {
     }
 }
 
+// ===== SERVICE WORKER REGISTRATION HANDLER =====
+class ServiceWorkerRegistrationHandler {
+    constructor() {
+        this.deferredPrompt = null;
+        this.installBtn = document.getElementById("installAppBtn");
+        this.registerServiceWorker();
+        this.setupInstallPrompt();
+    }
+
+    registerServiceWorker() {
+        if ("serviceWorker" in navigator) {
+            window.addEventListener("load", () => {
+                navigator.serviceWorker.register("/service-worker.js");
+            });
+        }
+    }
+
+    setupInstallPrompt() {
+        if (!this.installBtn) return;
+
+        window.addEventListener("beforeinstallprompt", (e) => {
+            console.log("beforeinstallpront");
+            e.preventDefault();
+            this.deferredPrompt = e;
+            this.installBtn.style.display = "block";
+        });
+
+        this.installBtn.addEventListener("click", async () => {
+            if (!this.deferredPrompt) return;
+            this.installBtn.style.display = "none";
+            this.deferredPrompt.prompt();
+            await this.deferredPrompt.userChoice;
+            this.deferredPrompt = null;
+        });
+    }
+}
+
 // ===== CONFIG LOADER =====
 class ConfigLoader {
     static async load() {
@@ -258,9 +295,6 @@ class App {
     }
 
     async init() {
-        // Mark body as JS-enabled
-        document.body.setAttribute("data-js", "");
-
         // Load configuration
         const config = await ConfigLoader.load();
 
@@ -287,6 +321,9 @@ class App {
 
         // Navigation highlighter
         this.components.push(new NavigationHighlighter());
+
+        // Service Worker Registration
+        this.components.push(new ServiceWorkerRegistrationHandler());
     }
 }
 

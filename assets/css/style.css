@@ -379,7 +379,7 @@ main footer span {
     margin-bottom: var(--space-xs);
 }
 
-body[data-js] main footer span {
+body main footer span {
     visibility: visible;
 }
 
@@ -404,6 +404,10 @@ button {
     cursor: pointer;
     border-radius: 4px;
     transition: all 0.2s ease;
+}
+
+button:last-child {
+    display: none;
 }
 
 button:hover,

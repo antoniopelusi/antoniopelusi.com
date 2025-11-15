@@ -1,21 +1,24 @@
 {
   "name": "antoniopelusi.com",
   "short_name": "antoniopelusi.com",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "theme_color": "#111828",
+  "background_color": "#111828",
+
   "icons": [
     {
       "src": "/assets/icons/favicon/web-app-manifest-192x192.png",
       "sizes": "192x192",
       "type": "image/png",
-      "purpose": "maskable"
+      "purpose": "any maskable"
     },
     {
       "src": "/assets/icons/favicon/web-app-manifest-512x512.png",
       "sizes": "512x512",
       "type": "image/png",
-      "purpose": "maskable"
+      "purpose": "any maskable"
     }
-  ],
-  "theme_color": "#111828",
-  "background_color": "#111828",
-  "display": "standalone"
+  ]
 }
