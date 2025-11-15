@@ -1,9 +1,10 @@
 <!doctype html>
-<html lang="en" data-theme="dark">
+<html lang="en">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+        <!-- Page Info -->
         <title>CV_Antonio_Pelusi</title>
 
         <meta
@@ -52,7 +53,7 @@
                 src: url("/assets/fonts/Roboto-Light.ttf") format("truetype");
                 font-weight: 300;
                 font-style: normal;
-                font-display: block;
+                font-display: swap;
                 unicode-range: U+0020-007F, U+00B7, U+2013;
             }
 
@@ -61,7 +62,7 @@
                 src: url("/assets/fonts/Roboto-Regular.ttf") format("truetype");
                 font-weight: 400;
                 font-style: normal;
-                font-display: block;
+                font-display: swap;
                 unicode-range: U+0020-007F, U+00B7, U+2013;
             }
 
@@ -70,7 +71,7 @@
                 src: url("/assets/fonts/Roboto-Bold.ttf") format("truetype");
                 font-weight: 700;
                 font-style: normal;
-                font-display: block;
+                font-display: swap;
                 unicode-range: U+0020-007F, U+00B7, U+2013;
             }
 
@@ -86,7 +87,7 @@
                 box-sizing: border-box;
                 margin: 0;
                 padding: 0;
-                font-family: "Roboto Local";
+                font-family: "Roboto Local", sans-serif;
                 color: var(--text-color);
                 line-height: 1.25;
                 /*outline: 1px solid red;*/
@@ -124,16 +125,14 @@
                 font-weight: 700;
                 border: none;
                 border-bottom-left-radius: 12px;
-                border-top-right-radius: 12px;
                 background-color: var(--background-color);
                 color: var(--page-color);
                 transition: opacity 0.2s ease;
-                opacity: 0.5;
+                opacity: 0.7;
             }
 
             button:hover {
                 text-decoration: underline;
-                opacity: 0.6;
             }
 
             h1 {
@@ -318,7 +317,7 @@
         </style>
     </head>
     <body>
-        <button type="button" onclick="print()">Print this CV</button>
+        <button type="button" onclick="window.print()">Print this CV</button>
         <div>
             <section>
                 <h1>Antonio Pelusi</h1>
@@ -327,29 +326,42 @@
                     Computation
                 </h2>
                 <nav>
-                    <a href="tel:+393284261797" target="_blank">
-                        <img src="/assets/icons/cv/phone.svg" />
+                    <a
+                        href="tel:+393284261797"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <img src="/assets/icons/cv/phone.svg" alt="Phone" />
                         +39 3284261797
                     </a>
                     <span>|</span>
                     <a
                         href="mailto:antoniopelusi2000@gmail.com"
                         target="_blank"
+                        rel="noopener noreferrer"
                     >
-                        <img src="/assets/icons/cv/email.svg" />
+                        <img src="/assets/icons/cv/email.svg" alt="Email" />
                         antoniopelusi2000@gmail.com
                     </a>
                     <span>|</span>
-                    <a href="https://github.com/antoniopelusi" target="_blank">
-                        <img src="/assets/icons/cv/github.svg" />
+                    <a
+                        href="https://github.com/antoniopelusi"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <img src="/assets/icons/cv/github.svg" alt="Github" />
                         antoniopelusi
                     </a>
                     <span>|</span>
                     <a
                         href="https://www.linkedin.com/in/antoniopelusi"
                         target="_blank"
+                        rel="noopener noreferrer"
                     >
-                        <img src="/assets/icons/cv/linkedin.svg" />
+                        <img
+                            src="/assets/icons/cv/linkedin.svg"
+                            alt="Linkedin"
+                        />
                         antoniopelusi
                     </a>
                 </nav>
