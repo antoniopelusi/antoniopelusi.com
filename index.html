@@ -66,8 +66,8 @@
 
     <body>
         <!-- Sidebar -->
-        <aside>
-            <header>
+        <aside <aside role="complementary" aria-label="Sidebar">
+            <header role="banner">
                 <h1>Antonio Pelusi</h1>
                 <div>
                     <label> Ph.D. student in Computer Science </label>
@@ -76,7 +76,7 @@
                 <p><span></span><span data-cursor="true">|</span></p>
             </header>
 
-            <nav>
+            <nav role="navigation" aria-label="Sidebar navigation">
                 <a href="#">SUMMARY</a>
                 <a href="#experience">EXPERIENCE</a>
                 <a href="#education">EDUCATION</a>
@@ -124,7 +124,7 @@
         </aside>
 
         <!-- Main Content -->
-        <main>
+        <main role="main">
             <!-- Summary Section -->
             <section id="summary-section">
                 <p>
@@ -558,7 +558,7 @@
             </section>
 
             <!-- Footer -->
-            <footer>
+            <footer role="contentinfo">
                 <span>
                     <button
                         type="button"
