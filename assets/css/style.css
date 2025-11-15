@@ -344,6 +344,16 @@ h2 img {
     height: auto;
 }
 
+aside footer img {
+    width: 2em;
+    height: 2em;
+}
+
+h2 img {
+    width: 1.6em;
+    height: 1.6em;
+}
+
 aside footer a {
     display: inline-block;
     transition:
