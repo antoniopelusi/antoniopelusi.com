@@ -35,7 +35,7 @@
         <meta name="apple-mobile-web-app-title" content="antoniopelusi.com" />
 
         <!-- SEO & Social -->
-        <link rel="canonical" href="https://antoniopelusi.com" />
+        <link rel="canonical" href="https://antoniopelusi.com/cv/" />
         <meta
             property="og:title"
             content="Antonio Pelusi - Ph.D. Computer Science"
@@ -45,276 +45,31 @@
             content="Ph.D. student in Computer Science and software developer. Portfolio showcasing research projects, education and open-source contributions."
         />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://antoniopelusi.com" />
+        <meta property="og:url" content="https://antoniopelusi.com/cv/" />
 
-        <style>
-            @font-face {
-                font-family: "Roboto Local";
-                src: url("/assets/fonts/Roboto-Light.ttf") format("truetype");
-                font-weight: 300;
-                font-style: normal;
-                font-display: swap;
-                unicode-range: U+0020-007F, U+00B7, U+2013;
-            }
-
-            @font-face {
-                font-family: "Roboto Local";
-                src: url("/assets/fonts/Roboto-Regular.ttf") format("truetype");
-                font-weight: 400;
-                font-style: normal;
-                font-display: swap;
-                unicode-range: U+0020-007F, U+00B7, U+2013;
-            }
-
-            @font-face {
-                font-family: "Roboto Local";
-                src: url("/assets/fonts/Roboto-Bold.ttf") format("truetype");
-                font-weight: 700;
-                font-style: normal;
-                font-display: swap;
-                unicode-range: U+0020-007F, U+00B7, U+2013;
-            }
-
-            :root {
-                --page-width: min(90vw, calc(90vh * 210 / 297));
-                --background-color: #111828;
-                --text-color: #111828;
-                --page-color: #e2e8f0;
-            }
-
-            * {
-                width: 100%;
-                box-sizing: border-box;
-                margin: 0;
-                padding: 0;
-                font-family: "Roboto Local", sans-serif;
-                color: var(--text-color);
-                line-height: 1.25;
-                /*outline: 1px solid red;*/
-            }
-
-            html {
-                height: auto;
-                width: 100%;
-                display: flex;
-                flex-direction: column;
-                justify-content: flex-start;
-                align-items: center;
-                background-color: var(--background-color);
-            }
-
-            body {
-                position: relative;
-                display: flex;
-                flex-direction: column;
-                justify-content: flex-start;
-                align-items: center;
-                width: var(--page-width);
-                height: auto;
-                margin: calc(var(--page-width) / 20) 0;
-                gap: calc(var(--page-width) / 25);
-            }
-
-            button {
-                position: absolute;
-                width: auto;
-                right: 0;
-                top: 0;
-                padding: calc(var(--page-width) / 70);
-                font-size: calc(var(--page-width) / 60);
-                font-weight: 700;
-                border: none;
-                border-bottom-left-radius: 12px;
-                background-color: var(--background-color);
-                color: var(--page-color);
-                transition: opacity 0.2s ease;
-                opacity: 0.7;
-            }
-
-            button:hover {
-                text-decoration: underline;
-            }
-
-            h1 {
-                font-weight: 700;
-                text-align: center;
-                font-size: calc(var(--page-width) / 25);
-            }
-
-            h2 {
-                font-weight: 400;
-                text-align: center;
-                font-size: calc(var(--page-width) / 70);
-            }
-
-            h3 {
-                display: flex;
-                font-weight: 700;
-                font-size: calc(var(--page-width) / 40);
-                border-bottom: solid 1px var(--text-color);
-            }
-
-            h4 {
-                width: auto;
-                font-weight: 700;
-                font-size: calc(var(--page-width) / 70);
-            }
-
-            h5 {
-                font-weight: 700;
-                font-size: calc(var(--page-width) / 70);
-            }
-
-            h6 {
-                font-weight: 700;
-                font-size: calc(var(--page-width) / 70);
-            }
-
-            p {
-                font-weight: 300;
-                font-size: calc(var(--page-width) / 70);
-                text-decoration: none;
-            }
-
-            ul {
-                display: flex;
-                flex-direction: column;
-                align-items: start;
-                justify-content: center;
-                list-style-position: inside;
-                gap: calc(var(--page-width) / 400);
-            }
-
-            li {
-                font-weight: 300;
-                font-size: calc(var(--page-width) / 70);
-                text-decoration: none;
-            }
-
-            small {
-                width: auto;
-                font-weight: 400;
-                font-size: calc(var(--page-width) / 80);
-                text-decoration: none;
-            }
-
-            strong {
-                width: auto;
-                font-weight: 700;
-                font-size: calc(var(--page-width) / 70);
-                text-decoration: none;
-            }
-
-            label {
-                width: auto;
-                font-weight: 300;
-                font-size: calc(var(--page-width) / 70);
-                text-decoration: none;
-            }
-
-            a {
-                width: auto;
-                font-weight: 400;
-                font-size: calc(var(--page-width) / 70);
-                text-decoration: none;
-            }
-
-            nav {
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                justify-content: center;
-                gap: calc(var(--page-width) / 100);
-            }
-
-            nav span {
-                width: auto;
-                font-weight: 300;
-                font-size: calc(var(--page-width) / 70);
-                text-decoration: none;
-            }
-
-            nav a {
-                width: auto;
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                justify-content: center;
-                font-weight: 400;
-                font-size: calc(var(--page-width) / 70);
-                text-decoration: none;
-                gap: calc(var(--page-width) / 200);
-            }
-
-            nav a img {
-                height: calc(var(--page-width) / 70);
-                width: calc(var(--page-width) / 70);
-            }
-
-            section {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                gap: calc(var(--page-width) / 200);
-            }
-
-            div {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: flex-start;
-                page-break-inside: avoid;
-                break-inside: avoid;
-                padding: calc(var(--page-width) / 20);
-                gap: calc(var(--page-width) / 100);
-                background-color: var(--page-color);
-                border-radius: 12px;
-                box-shadow: 0 4px 12px var(--text-color);
-                min-height: calc(var(--page-width) * 297 / 210);
-            }
-
-            article {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                gap: calc(var(--page-width) / 400);
-            }
-
-            span {
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                justify-content: space-between;
-                font-weight: 300;
-                font-size: calc(var(--page-width) / 75);
-                text-decoration: none;
-            }
-
-            @media print {
-                @page {
-                    size: A4 portrait;
-                    margin: 0;
-                }
-
-                button {
-                    display: none;
-                }
-
-                html,
-                body,
-                div {
-                    --page-width: 210mm;
-                    --text-color: #000000;
-                    background-color: #ffffff;
-                    border-radius: 0;
-                    margin: 0;
-                    box-shadow: none;
-                    min-height: auto;
-                }
-            }
-        </style>
+        <!-- Styles -->
+        <link
+            rel="preload"
+            href="/assets/fonts/Roboto-Light.ttf"
+            as="font"
+            type="font/ttf"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="preload"
+            href="/assets/fonts/Roboto-Regular.ttf"
+            as="font"
+            type="font/ttf"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="preload"
+            href="/assets/fonts/Roboto-Bold.ttf"
+            as="font"
+            type="font/ttf"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="/assets/css/cv.css" />
     </head>
     <body role="main">
         <button type="button" onclick="window.print()">Print this CV</button>
