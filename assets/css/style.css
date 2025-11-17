@@ -41,7 +41,7 @@
     --h3: clamp(1.1875rem, 2.5vw, 1.25rem);
     --h4: clamp(0.9375rem, 2vw, 1rem);
     --h5: clamp(0.875rem, 1.8vw, 0.95rem);
-    --body: clamp(0.9375rem, 2vw, 1rem);
+    --body: clamp(0.97rem, 2vw, 1.05rem);
 
     /* Spacing */
     --space-xs: clamp(0.25rem, 1vw, 0.5rem);
@@ -78,7 +78,6 @@
 
 html {
     scroll-behavior: smooth;
-    overscroll-behavior-y: none;
 }
 
 body {
@@ -512,6 +511,10 @@ body::after {
 
 /* ===== DESKTOP STYLES ===== */
 @media (min-width: 1024px) {
+    html {
+        overscroll-behavior-y: none;
+    }
+
     body {
         flex-direction: row;
     }
