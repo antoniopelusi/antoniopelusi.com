@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
 
         <!-- Page Info -->
         <title>CV_Antonio_Pelusi</title>
@@ -51,10 +51,17 @@
         <link rel="stylesheet" href="/assets/css/cv.css" />
     </head>
     <body>
+        <nav role="navigation">
+            <a href="/">
+                <button type="button">Go back</button>
+            </a>
+            <a>
+                <button type="button" onclick="window.print()">
+                    Print this CV
+                </button>
+            </a>
+        </nav>
         <main role="main">
-            <button type="button" onclick="window.print()">
-                Print this CV
-            </button>
             <div>
                 <section role="banner">
                     <h1>Antonio Pelusi</h1>
@@ -62,7 +69,7 @@
                         Ph.D. student in Computer Science and Mathematics of
                         Computation
                     </h2>
-                    <nav role="navigation">
+                    <header>
                         <a
                             href="tel:+393284261797"
                             target="_blank"
@@ -108,7 +115,7 @@
                             <p>Linkedin:</p>
                             antoniopelusi
                         </a>
-                    </nav>
+                    </header>
                 </section>
                 <section>
                     <h3>Summary</h3>
@@ -436,14 +443,14 @@
                 <section>
                     <h3>Skills</h3>
                     <p>
-                        <strong>Back-end:</strong>
+                        <strong>Backend:</strong>
                         <label>
                             C, C++, Java, Kotlin, Python - Django, Android SDK -
                             SQL (PostgreSQL, SQLite), NoSQL (MongoDB, Neo4j)
                         </label>
                     </p>
                     <p>
-                        <strong>Front-end:</strong>
+                        <strong>Frontend:</strong>
                         <label>HTML, CSS, JavaScript, ImGui, JavaFX</label>
                     </p>
                     <p>
