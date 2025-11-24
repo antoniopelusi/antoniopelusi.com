@@ -57,14 +57,16 @@ nav * {
     /*outline: 1px solid orangered;*/
 }
 
+body {
+    gap: 5mm;
+}
+
 nav {
-    height: fit-content;
-    width: 100%;
-    max-width: 21cm;
     flex-direction: row;
-    align-items: center;
+    width: 21cm;
+    max-width: none;
+    min-width: 21cm;
     justify-content: space-between;
-    padding: 2mm;
     margin: 0 auto;
 }
 
@@ -74,6 +76,7 @@ button {
     border: none;
     background-color: color-mix(in srgb, var(--dark-color) 90%, white);
     color: var(--light-color);
+    border-radius: 8px;
 }
 
 button:hover {
@@ -83,9 +86,8 @@ button:hover {
 main {
     height: calc(100dvh - 2mm - 2mm - 1lh - 4mm);
     justify-content: flex-start;
-    overflow: auto;
+    overflow: visible;
     gap: 5mm;
-    padding: 5mm;
 }
 
 section {
@@ -231,7 +233,6 @@ img {
 
     main {
         height: auto;
-        padding: 0;
         gap: 0;
     }
 
