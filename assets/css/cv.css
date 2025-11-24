@@ -122,7 +122,8 @@ header {
 span {
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: left;
+    gap: 2mm;
 }
 
 ul {
