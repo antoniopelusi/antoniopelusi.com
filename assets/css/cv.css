@@ -34,6 +34,8 @@
 
 /* ===== HTML STYLING ===== */
 html {
+    min-height: fit-content;
+    min-width: fit-content;
     background-color: var(--dark-color);
 }
 
@@ -58,33 +60,50 @@ nav * {
 }
 
 body {
+    height: fit-content;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 5mm;
     gap: 5mm;
 }
 
 nav {
+    position: absolute;
     flex-direction: row;
     width: 21cm;
     max-width: none;
     min-width: 21cm;
     justify-content: space-between;
     margin: 0 auto;
+    padding: 2mm;
 }
 
 button {
     padding: 2mm;
-    border-radius: 8px;
     border: none;
-    background-color: color-mix(in srgb, var(--dark-color) 90%, white);
+    background-color: var(--dark-color);
     color: var(--light-color);
-    border-radius: 8px;
+    border-radius: 3px;
+    transition: 0.2s ease;
+}
+
+nav a:first-of-type button {
+    border-top-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+nav a:last-of-type button {
+    border-top-right-radius: 12px;
+    border-bottom-left-radius: 12px;
 }
 
 button:hover {
-    background-color: color-mix(in srgb, var(--dark-color) 95%, white);
+    opacity: 0.8;
 }
 
 main {
-    height: calc(100dvh - 2mm - 2mm - 1lh - 4mm);
+    height: fit-content;
+    width: fit-content;
     justify-content: flex-start;
     overflow: visible;
     gap: 5mm;
@@ -227,12 +246,16 @@ img {
         --light-color: #ffffff;
     }
 
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
     nav {
         display: none;
     }
 
     main {
-        height: auto;
         gap: 0;
     }
 
