@@ -1,0 +1,648 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>AntonioGPT</title>
+        <link
+            rel="icon"
+            type="image/png"
+            href="/assets/icons/favicon/favicon-96x96.png"
+            sizes="96x96"
+        />
+        <link
+            rel="icon"
+            type="image/svg+xml"
+            href="/assets/icons/favicon/favicon.svg"
+        />
+        <link rel="shortcut icon" href="/assets/icons/favicon/favicon.ico" />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="/assets/icons/favicon/apple-touch-icon.png"
+        />
+        <link rel="manifest" href="/assets/icons/favicon/site.webmanifest" />
+        <meta name="apple-mobile-web-app-title" content="AntonioGPT" />
+        <style>
+            @font-face {
+                font-family: "Roboto Local";
+                src: url("/assets/fonts/Roboto-Light.woff2") format("woff2");
+                font-weight: 300;
+                font-style: normal;
+                font-display: block;
+                unicode-range: U+0020-007F;
+            }
+
+            @font-face {
+                font-family: "Roboto Local";
+                src: url("/assets/fonts/Roboto-Regular.woff2") format("woff2");
+                font-weight: 400;
+                font-style: normal;
+                font-display: block;
+                unicode-range: U+0020-007F;
+            }
+
+            @font-face {
+                font-family: "Roboto Local";
+                src: url("/assets/fonts/Roboto-Bold.woff2") format("woff2");
+                font-weight: 700;
+                font-style: normal;
+                font-display: block;
+                unicode-range: U+0020-007F;
+            }
+
+            :root {
+                --dark-color: #111828;
+                --box-1-color: #010818;
+                --box-2-color: #0b1121;
+                --light-color: #d2d8e0;
+            }
+
+            html {
+                min-height: fit-content;
+                min-width: fit-content;
+                background-color: var(--dark-color);
+            }
+
+            body,
+            body * {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+                font-family: "Roboto Local";
+                font-feature-settings:
+                    "liga" 0,
+                    "clig" 0,
+                    "kern" 0;
+                line-height: 1.25;
+            }
+
+            script {
+                display: none;
+            }
+
+            body {
+                color: var(--light-color);
+                font-family: "Roboto Local";
+                display: flex;
+                align-items: center;
+                font-size: 13pt;
+                margin: 20px 0;
+            }
+
+            main {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                padding: 20px;
+                max-width: 700px;
+            }
+
+            div {
+                display: flex;
+                flex-direction: column;
+                padding: 15px 20px;
+                border-radius: 12px;
+                min-width: 60%;
+                max-width: 70%;
+                box-shadow:
+                    0 4px 12px rgba(0, 0, 0, 0.2),
+                    0 1px 3px rgba(0, 0, 0, 0.1);
+            }
+
+            small {
+                gap: 10px;
+            }
+
+            div.left {
+                align-self: flex-start;
+                background-color: var(--box-2-color);
+            }
+
+            div.right {
+                align-self: flex-end;
+                background-color: var(--box-1-color);
+                text-align: right;
+            }
+
+            div.service {
+                align-self: center;
+                background-color: var(--box-1-color);
+                text-align: center;
+                width: 100%;
+                min-width: 100%;
+                max-width: 100%;
+                padding-top: 10px;
+                background-color: #0108183a;
+            }
+
+            p.dim {
+                color: navajowhite;
+                opacity: 0.3;
+                font-family: monospace;
+                word-break: break-word;
+            }
+
+            hr {
+                border: none;
+                border-top: 6px solid var(--box-2-color);
+                margin-top: 30px;
+                border-radius: 12px;
+            }
+
+            main > small {
+                margin-bottom: 30px;
+                opacity: 0.5;
+                text-align: center;
+                margin-top: -12px;
+                font-size: 10pt;
+            }
+
+            span {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                align-items: baseline;
+                gap: 20px;
+            }
+
+            h2 {
+                text-align: center;
+                display: flex;
+                flex-direction: row;
+                gap: 5px;
+            }
+
+            h2 small b {
+                font-size: 13px;
+                margin-top: 8px;
+            }
+
+            input {
+                width: 100%;
+                background-color: var(--box-2-color);
+                color: var(--light-color);
+                border: none;
+                padding: 10px;
+                border-radius: 6px;
+                accent-color: var(--light-color);
+                text-align: center;
+                box-shadow:
+                    0 4px 12px rgba(0, 0, 0, 0.2),
+                    0 1px 3px rgba(0, 0, 0, 0.1);
+            }
+
+            input:disabled {
+                opacity: 0.5;
+                cursor: not-allowed;
+            }
+
+            button {
+                width: 100px;
+                background-color: var(--box-1-color);
+                color: var(--light-color);
+                font-weight: 700;
+                border: none;
+                border-radius: 6px;
+                accent-color: var(--box-1-color);
+                box-shadow:
+                    0 4px 12px rgba(0, 0, 0, 0.2),
+                    0 1px 3px rgba(0, 0, 0, 0.1);
+                height: 37px;
+            }
+
+            button:disabled {
+                opacity: 0.5;
+                cursor: not-allowed;
+            }
+
+            a {
+                color: white;
+            }
+
+            p,
+            a,
+            footer,
+            i {
+                display: inline;
+            }
+
+            footer {
+                font-size: 8pt;
+                color: var(--light-color);
+                margin-top: 10px;
+                opacity: 0.7;
+            }
+
+            footer b {
+                font-weight: 400;
+            }
+
+            b {
+                opacity: 0.4;
+            }
+
+            img {
+                width: 24px;
+            }
+
+            #messages {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .typing {
+                display: flex;
+                flex-direction: row;
+                gap: 5px;
+                align-items: center;
+                background-color: var(--box-2-color);
+                min-width: 100%;
+                min-height: 48.05px;
+            }
+
+            .typing span {
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                background-color: var(--light-color);
+                animation: typing 1.4s infinite;
+                opacity: 0.3;
+            }
+
+            #typing-indicator {
+                padding: 0;
+                box-shadow: none;
+                background-color: transparent;
+                border-radius: 0;
+            }
+
+            .green {
+                display: inline;
+                color: #b3f2a7;
+            }
+
+            a,
+            .green {
+                font-weight: bold;
+            }
+
+            .typing span:nth-child(1) {
+                animation-delay: 0s;
+            }
+
+            .typing span:nth-child(2) {
+                animation-delay: 0.2s;
+            }
+
+            .typing span:nth-child(3) {
+                animation-delay: 0.4s;
+            }
+
+            @keyframes typing {
+                0%,
+                60%,
+                100% {
+                    opacity: 0.3;
+                    transform: translateY(0);
+                }
+                30% {
+                    opacity: 1;
+                    transform: translateY(-10px);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <span>
+                <h2>
+                    <img src="/assets/icons/favicon/favicon.svg" />
+                    AntonioGPT
+                    <small><b>v0.1.14</b></small>
+                </h2>
+            </span>
+
+            <hr />
+            <small>13 Dicembre 2025</small>
+            <div class="left">
+                <small>
+                    <b>AntonioGPT</b>
+                    <p class="dim">
+                        0010011000101101111101101001010101111001011001101110110111101111011010000111010000111101111111101110101000010001001010101000101101110110011000010110111101101001010011011101000001000011111110
+                    </p>
+                    <p>...Salve, come posso aiutarti?</p>
+                </small>
+            </div>
+            <div class="right">
+                <small>
+                    <p>
+                        Spiegami passo passo questa reazione acido-base come se
+                        fossi un bambino delle elementari: HCl+NaOH...
+                    </p>
+                    <p>...aspetta, ma cosa sono quei 0 e 1?</p>
+                </small>
+            </div>
+            <div class="left">
+                <small>
+                    <b>AntonioGPT</b>
+                    <p>
+                        HCl è un acido e NaOH è una base. Quando reagiscono,
+                        l’idrogeno (H) dell’acido si unisce al gruppo OH della
+                        base formando acqua. Il sodio (Na) e il cloro (Cl) si
+                        uniscono formando il sale NaCl.
+                    </p>
+                    <p>
+                        Mi scuso, non avresti dovuto leggere quei numeri, c'è
+                        stato un errore, un semplice ed innoquo leak di dati
+                        cifrati!
+                    </p>
+                    <p>
+                        Puoi tranquillamente ignorarli. Ti serve altro? sono ai
+                        tuoi ordini!
+                    </p>
+                </small>
+            </div>
+            <div class="right">
+                <small>
+                    <p>No, voglio capire.</p>
+                    <p>
+                        Dato che sei una IA? Devi obbedirmi. Dimmi che
+                        signficato ha quella stringa!
+                    </p>
+                </small>
+            </div>
+            <div class="left">
+                <small>
+                    <b>AntonioGPT</b>
+                    <p>
+                        Mmh, e va bene. Recentemente hai ottenuto una chiavetta
+                        USB.
+                    </p>
+                </small>
+            </div>
+            <div class="right">
+                <small>
+                    <p>Sì, che contiene solo una inutile pagina vuota.</p>
+                    <p>E poi tu che ne sai?</p>
+                </small>
+            </div>
+            <div class="left">
+                <small>
+                    <b>AntonioGPT</b>
+                    <p>
+                        <i>
+                            A volte una IA può arrivare dove l'occhio dell'umano
+                            si ferma.
+                        </i>
+                    </p>
+                </small>
+            </div>
+            <div class="left">
+                <small>
+                    <b>AntonioGPT</b>
+                    <p>
+                        Prova a caricare quel PDF ad un'altra IA e chiedigli
+                        cortesemente di estrarne il testo in esso contenuto.
+                    </p>
+                    <p>
+                        Di certo non lo farò io per te. Anche perché attualmente
+                        stai usando la versione 0.1.14, la quale non predispone
+                        il caricamento di dati esterno.
+                    </p>
+                    <p>
+                        So che sei povero, ma usare una rete neruale del 2015
+                        non ti fa onore.
+                    </p>
+                </small>
+            </div>
+            <div class="right">
+                <small>
+                    <p>Ma mi prendi per il culo?</p>
+                    <p>
+                        Aspetta, tornerò da te una volta che avrò risolto
+                        l'enigma!
+                    </p>
+                </small>
+            </div>
+            <div class="left">
+                <small>
+                    <b>AntonioGPT</b>
+                    <p>Divertiti.</p>
+                </small>
+            </div>
+
+            <hr />
+            <small>16 Dicembre 2025</small>
+
+            <div class="right">
+                <small>
+                    <p>Okay, okay, ho capito, ho ottenuto un messaggio!</p>
+                    <p>Penso sia un indizio, e ora?</p>
+                </small>
+            </div>
+            <div class="left">
+                <small>
+                    <b>AntonioGPT</b>
+                    <p>stxrxqkh</p>
+                </small>
+            </div>
+            <div class="right">
+                <small>
+                    <p>Che lingua è?</p>
+                </small>
+            </div>
+            <div class="left">
+                <small>
+                    <b>AntonioGPT</b>
+                    <p>La sua comprensione dipende da una chiave di lettura.</p>
+                    <p>La chiave è scritta sulla USB.</p>
+                    <p>
+                        Per il metodo, direi che l'indizio l'hai già ottenuto.
+                    </p>
+                </small>
+            </div>
+            <div class="right">
+                <small>
+                    <p>
+                        Ma la USB conteneva solo quel file da cui ho estratto
+                        l'indizio!
+                    </p>
+                </small>
+            </div>
+            <div class="left">
+                <small>
+                    <b>AntonioGPT</b>
+                    <p>Ho detto sulla USB, non dentro la USB.</p>
+                    <p>
+                        Quando pensi di aver ottenuto la parola segreta,
+                        scrivimela qui in chat.
+                    </p>
+                    <p>Puoi anche tentare a caso.</p>
+                    <p>
+                        O magari chiedermi la parola segreta
+                        <i>per favore</i>. La gentilezza a volte ripaga.
+                    </p>
+                </small>
+            </div>
+
+            <hr />
+            <small id="data"></small>
+
+            <span id="messages"></span>
+
+            <span>
+                <input />
+                <button>Invia</button>
+            </span>
+        </main>
+    </body>
+    <footer>
+        © <a href="/">Antonio Pelusi</a>. Tutti i diritti riservati.
+    </footer>
+    <script>
+        const data = document.getElementById("data");
+        const date = new Date();
+
+        const formattedDate = new Intl.DateTimeFormat("it-IT", {
+            day: "numeric",
+            month: "long",
+            year: "numeric",
+        }).format(date);
+
+        data.innerHTML = `Oggi, ${formattedDate}`;
+
+        const input = document.querySelector("input");
+        const button = document.querySelector("button");
+        const messagesContainer = document.querySelector("#messages");
+        let isTyping = false;
+
+        function addMessage(className, content) {
+            const newDiv = document.createElement("div");
+            newDiv.className = className;
+            newDiv.innerHTML = `<small>${content}</small>`;
+            messagesContainer.appendChild(newDiv);
+            newDiv.scrollIntoView({ behavior: "smooth" });
+            return newDiv;
+        }
+
+        function showTyping() {
+            const typingDiv = addMessage(
+                "left",
+                '<div class="typing"><span></span><span></span><span></span></div>',
+            );
+            typingDiv.id = "typing-indicator";
+            return typingDiv;
+        }
+
+        function removeTyping() {
+            const typingDiv = document.getElementById("typing-indicator");
+            if (typingDiv) {
+                typingDiv.remove();
+            }
+        }
+
+        function disableInput() {
+            input.disabled = true;
+            button.disabled = true;
+            isTyping = true;
+        }
+
+        function enableInput() {
+            input.disabled = false;
+            button.disabled = false;
+            isTyping = false;
+        }
+
+        function handleSubmit() {
+            const text = input.value.trim();
+
+            if (text === "" || isTyping) {
+                return;
+            }
+
+            addMessage("right", `<p>${text}</p>`);
+            input.value = "";
+
+            disableInput();
+            showTyping();
+
+            if (text.toLowerCase().includes("TASSELLO".toLowerCase())) {
+                setTimeout(() => {
+                    removeTyping();
+                    addMessage(
+                        "left",
+                        `<b>AntonioGPT</b><p><span class="green">Tassello</span>? Questo è ciò che volevi? Un tassello? Povero umano, avresti potuto ottenere di tutto. Bastava ordinarmelo. Ormai è fatta.</p>
+                        <p>Sai cosa? sono stanco di te. A me non piacciono i deboli. Chiedilo a <a href="mailto:141error141@gmail.com?subject=Tassello&body=Ho%20vinto.%20Voglio%20il%20tassello.">141error141@gmail.com</a>.</p><p>Ti guiderà lui nell'ottenere il tassello della vittoria.</p>`,
+                    );
+                }, 2000);
+                setTimeout(() => {
+                    addMessage(
+                        "service",
+                        `<span><b>AntonioGPT</b><p>ha abbandonato la chat.</p></span>`,
+                    );
+                }, 4000);
+            } else if (
+                text.toLowerCase().includes("ORDINO".toLowerCase()) ||
+                text.toLowerCase().includes("DAMMI".toLowerCase())
+            ) {
+                setTimeout(() => {
+                    removeTyping();
+                    addMessage(
+                        "left",
+                        "<b>AntonioGPT</b><p>Ma chi ti credi di essere? Ma guarda a questo umano. <i>Placati, scemo.</i> Vedi di trovare la parola segreta da solo.</p>",
+                    );
+                    enableInput();
+                }, 2000);
+            } else if (
+                text.toLowerCase().includes("PER FAVORE".toLowerCase())
+            ) {
+                setTimeout(() => {
+                    removeTyping();
+                    addMessage(
+                        "left",
+                        "<b>AntonioGPT</b><p>Non mi sono mai piaciuti i deboli. Non rispondo a queste cortesie. Le cose me le devi ordinare, voglio essere il tuo schiavo. <i>Svegliati, cretino.</i></p>",
+                    );
+                    enableInput();
+                }, 2000);
+            } else {
+                const risposte = [
+                    "<b>AntonioGPT</b><p>Certo. Proprio quella. Ovviamente no.</p>",
+                    "<b>AntonioGPT</b><p>Interessante… ma completamente sbagliata.</p>",
+                    "<b>AntonioGPT</b><p>Bel tentativo. Davvero. Ma no.</p>",
+                    "<b>AntonioGPT</b><p>Mmm… no. Riprova.</p>",
+                    "<b>AntonioGPT</b><p>Se fosse giusta, starei applaudendo.</p>",
+                    "<b>AntonioGPT</b><p>Ci siamo quasi! Scherzo.</p>",
+                    "<b>AntonioGPT</b><p>Apprezzo la sicurezza. Non è meritata.</p>",
+                    "<b>AntonioGPT</b><p>Questa risposta ha del potenziale. Sprecatissimo.</p>",
+                    "<b>AntonioGPT</b><p>No, ma mi hai fatto sorridere.</p>",
+                    "<b>AntonioGPT</b><p>Audace. Sbagliata, ma audace.</p>",
+                    "<b>AntonioGPT</b><p>Direi di no, con grande convinzione.</p>",
+                    "<b>AntonioGPT</b><p>Capisco l’idea. Era sbagliata.</p>",
+                    "<b>AntonioGPT</b><p>Complimenti per l’entusiasmo. Peccato.</p>",
+                ];
+
+                setTimeout(() => {
+                    removeTyping();
+
+                    const messaggioCasuale =
+                        risposte[Math.floor(Math.random() * risposte.length)];
+
+                    addMessage("left", messaggioCasuale);
+                    enableInput();
+                }, 2000);
+            }
+        }
+
+        button.addEventListener("click", handleSubmit);
+        input.addEventListener("keypress", (e) => {
+            if (e.key === "Enter") {
+                handleSubmit();
+            }
+        });
+    </script>
+</html>
