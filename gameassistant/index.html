@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="robots" content="noindex, nofollow" />
+        <title>Game Assistant</title>
+        <link rel="stylesheet" href="/assets/css/gameassistant.css" />
+        <script src="/assets/js/gameassistant.js" defer></script>
+    </head>
+    <body>
+        <main>
+            <nav>
+                <button id="random" onclick="random()">
+                    <img src="/assets/icons/gameassistant/hexagon-dice.svg" />
+                    Random player
+                </button>
+                <button id="add" onclick="add()">
+                    <img src="/assets/icons/gameassistant/user-plus.svg" />
+                    Add player
+                </button>
+                <button id="reset" data-id="reset" onclick="reset()">
+                    <img src="/assets/icons/gameassistant/restart.svg" />
+                    Reset match
+                </button>
+            </nav>
+            <div id="list"></div>
+        </main>
+    </body>
+</html>
