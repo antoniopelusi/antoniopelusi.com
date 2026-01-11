@@ -24,7 +24,9 @@ function danger(id, action) {
         action();
     } else {
         clearPending();
-        document.querySelector(`[data-id="${id}"]`)?.classList.add("pending");
+        document
+            .querySelector(`[data-action="${id}"]`)
+            ?.classList.add("pending");
         pending = id;
         timeout = setTimeout(clearPending, 1000);
     }
@@ -36,33 +38,35 @@ function getRank(i) {
 }
 
 function getRankClass(rank) {
-    if (rank === 1) return "gold";
-    if (rank === 2) return "silver";
-    if (rank === 3) return "bronze";
-    return "";
+    return rank === 1
+        ? "gold"
+        : rank === 2
+          ? "silver"
+          : rank === 3
+            ? "bronze"
+            : "";
 }
 
 function playerHTML(p, i) {
     const rank = getRank(i);
     const noname = p.name.trim() ? "" : " noname";
     return `
-        <div id="p${i}" class="${noname}">
-            <span class="rank ${getRankClass(rank)}">${rank}</span>
-            <input type="text" value="${p.name}" oninput="players[${i}].name=this.value;save();updateNoname(${i})" placeholder="Name" enterkeyhint="done">
-            <span class="score-group">
-                <button class="score-minus" onclick="players[${i}].score--;save();updateScore(${i})"><img src="/assets/icons/gameassistant/minus.svg"></button>
-                <input type="number" value="${p.score}" oninput="players[${i}].score=+this.value;save();updateRanks()" onfocus="this.select()" enterkeyhint="done">
-                <button class="score-plus" onclick="players[${i}].score++;save();updateScore(${i})"><img src="/assets/icons/gameassistant/plus.svg"></button>
+        <article id="p${i}" class="${noname}">
+            <output class="${getRankClass(rank)}">${rank}</output>
+            <input type="text" value="${p.name}" placeholder="Name" enterkeyhint="done" data-index="${i}">
+            <span>
+                <button data-score="-" data-index="${i}"><img src="/assets/icons/gameassistant/minus.svg"></button>
+                <input type="number" value="${p.score}" data-index="${i}" enterkeyhint="done">
+                <button data-score="+" data-index="${i}"><img src="/assets/icons/gameassistant/plus.svg"></button>
             </span>
-            <button data-id="del${i}" onclick="del(${i})"><img src="/assets/icons/gameassistant/user-xmark.svg"></button>
-        </div>
+            <button data-action="del${i}"><img src="/assets/icons/gameassistant/user-xmark.svg"></button>
+        </article>
     `;
 }
 
 function updateNoname(i) {
     const el = $("p" + i);
-    if (players[i].name.trim()) el.classList.remove("noname");
-    else el.classList.add("noname");
+    el.classList.toggle("noname", !players[i].name.trim());
     updateButtons();
 }
 
@@ -70,14 +74,14 @@ function updateButtons() {
     const named = players.filter((p) => p.name.trim()).length;
     $("random").disabled = named < 2;
     $("add").disabled = players.length >= 100;
-    $("reset").disabled = named < 1;
+    $("reset").disabled = players.length < 1;
 }
 
 function updateRanks() {
-    document.querySelectorAll(".rank").forEach((el, j) => {
+    document.querySelectorAll("#list output").forEach((el, j) => {
         const rank = getRank(j);
         el.textContent = rank;
-        el.className = "rank " + getRankClass(rank);
+        el.className = getRankClass(rank);
     });
 }
 
@@ -86,28 +90,19 @@ function updateScore(i) {
     updateRanks();
 }
 
-const emptyLines = [
-    "Game Assistant",
-    "Double click to reset the match or delete a player",
-    "Add players to start",
-];
-
 function render() {
     updateButtons();
     $("list").innerHTML = players.length
         ? players.map((p, i) => playerHTML(p, i)).join("")
-        : `<span class="empty"><p>${emptyLines[0]}</p>${emptyLines
-              .slice(1)
-              .map((l) => `<span>${l}</span>`)
-              .join("")}</span>`;
+        : `<aside class="fadeIn"><p>Game Assistant</p><span>Double click to reset the match or delete a player.</span><span>Add players to start!</span></aside>`;
 }
 
 function add() {
     if (players.length >= 100) return;
     clearPending();
-    const empty = $("list").querySelector(".empty");
+    const empty = $("list").querySelector("aside");
     if (empty) {
-        empty.classList.add("emptyFadeOut");
+        empty.classList.add("fadeOut");
         setTimeout(() => empty.remove(), 200);
     }
     players.push({ name: "", score: 0 });
@@ -134,10 +129,10 @@ function del(i) {
 }
 
 function reset() {
-    if (!players.filter((p) => p.name.trim()).length) return;
+    if (!players.length) return;
     danger("reset", () => {
         document
-            .querySelectorAll("#list > div")
+            .querySelectorAll("#list > article")
             .forEach((el) => el.classList.add("fadeOut"));
         setTimeout(() => {
             players = [];
@@ -155,7 +150,7 @@ function random() {
     clearPending();
     clearTimeout(randomTimeout);
     document
-        .querySelectorAll("#list > div")
+        .querySelectorAll("#list > article")
         .forEach((el) => el.classList.remove("highlight"));
     const { i } = named[Math.floor(Math.random() * named.length)];
     const el = $("p" + i);
@@ -165,10 +160,48 @@ function random() {
 }
 
 document.addEventListener("DOMContentLoaded", render);
+
 document.addEventListener("click", (e) => {
-    if (!e.target.closest("[data-id]") && !e.target.closest("#reset"))
-        clearPending();
+    const target = e.target.closest("button");
+    if (!target) {
+        if (!e.target.closest("[data-action]")) clearPending();
+        return;
+    }
+
+    if (target.id === "random") random();
+    else if (target.id === "add") add();
+    else if (target.id === "reset") reset();
+    else if (target.dataset.action?.startsWith("del"))
+        del(+target.dataset.action.replace("del", ""));
+    else if (target.dataset.score) {
+        const i = +target.dataset.index;
+        players[i].score += target.dataset.score === "+" ? 1 : -1;
+        save();
+        updateScore(i);
+    }
 });
+
+document.addEventListener("input", (e) => {
+    const i = +e.target.dataset.index;
+    if (e.target.type === "text") {
+        players[i].name = e.target.value;
+        save();
+        updateNoname(i);
+    } else if (e.target.type === "number") {
+        players[i].score = +e.target.value;
+        save();
+        updateRanks();
+    }
+});
+
 document.addEventListener("keydown", (e) => {
     if (e.key === "Enter" && e.target.tagName === "INPUT") e.target.blur();
 });
+
+document.addEventListener(
+    "focus",
+    (e) => {
+        if (e.target.type === "number") e.target.select();
+    },
+    true,
+);

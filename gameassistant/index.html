@@ -1,17 +1,10 @@
 <!doctype html>
-<html lang="en" data-theme="dark">
+<html lang="en">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="robots" content="noindex, nofollow" />
         <title>Game Assistant</title>
-
-        <meta
-            name="description"
-            content="Antonio Pelusi - Ph.D. student in Computer Science and software developer. Portfolio showcasing research projects, education and open-source contributions."
-        />
-        <meta name="author" content="Antonio Pelusi" />
-
         <link
             rel="icon"
             type="image/png"
@@ -31,39 +24,33 @@
         />
         <link rel="manifest" href="/assets/icons/favicon/site.webmanifest" />
         <meta name="apple-mobile-web-app-title" content="antoniopelusi.com" />
-
-        <link rel="canonical" href="https://antoniopelusi.com/gameassistant/" />
-        <meta property="og:title" content="Game Assistant" />
-        <meta
-            property="og:description"
-            content="Score tracker and random player selection"
-        />
-        <meta property="og:type" content="website" />
-        <meta
-            property="og:url"
-            content="https://antoniopelusi.com/gameassistant/"
-        />
-
         <link rel="stylesheet" href="/assets/css/gameassistant.css" />
         <script src="/assets/js/gameassistant.js" defer></script>
     </head>
     <body>
         <main>
             <nav>
-                <button id="random" onclick="random()">
-                    <img src="/assets/icons/gameassistant/hexagon-dice.svg" />
+                <button id="random">
+                    <img
+                        src="/assets/icons/gameassistant/hexagon-dice.svg"
+                        alt=""
+                    />
                     Random player
                 </button>
-                <button id="add" onclick="add()">
-                    <img src="/assets/icons/gameassistant/user-plus.svg" />
+                <button id="add">
+                    <img
+                        src="/assets/icons/gameassistant/user-plus.svg"
+                        alt=""
+                    />
                     Add player
                 </button>
-                <button id="reset" data-id="reset" onclick="reset()">
-                    <img src="/assets/icons/gameassistant/restart.svg" />
+                <button id="reset" data-action="reset">
+                    <img src="/assets/icons/gameassistant/restart.svg" alt="" />
                     Reset match
                 </button>
             </nav>
-            <div id="list"></div>
+            <section id="list"></section>
         </main>
+        <footer>© Antonio Pelusi. All rights reserved.</footer>
     </body>
 </html>
