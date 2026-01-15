@@ -1,37 +1,16 @@
-/* ===== FONTS ===== */
-@font-face {
-    font-family: "Roboto Local";
-    src: url("/assets/fonts/Roboto-Regular.woff2") format("woff2");
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-    unicode-range: U+0020-007F, U+00A9;
-}
-
-@font-face {
-    font-family: "Roboto Local";
-    src: url("/assets/fonts/Roboto-Bold.woff2") format("woff2");
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap;
-    unicode-range: U+0020-007F;
-}
-
 /* ===== CSS VARIABLES ===== */
 * {
+    visibility: visible;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: "Roboto Local", sans-serif;
-    font-feature-settings:
-        "liga" 0,
-        "clig" 0;
     transition:
         background-color 0.2s ease,
         color 0.2s ease,
         border-color 0.2s ease,
         text-decoration-color 0.2s ease,
         opacity 0.2s ease;
+    /*outline: 1px solid orangered;*/
 }
 
 :root {
@@ -49,24 +28,13 @@
     --space: clamp(1rem, 4vw, 2rem);
     --space-l: clamp(1.5rem, 6vw, 3rem);
     --space-xl: clamp(3rem, 8vw, 6rem);
-}
 
-/* Theme Variables */
-[data-theme="dark"] {
+    /* Colors */
     --bubble: #739bd0;
     --bg: #111828;
     --header: #e2e8f0;
     --text: #a2afc1;
     --article: #a2afc110;
-    --article-box: #0000001a;
-}
-
-[data-theme="light"] {
-    --bubble: #485470;
-    --bg: #e2e8f0;
-    --header: #111828;
-    --text: #2d323d;
-    --article: #2d323d10;
     --article-box: #0000001a;
 }
 

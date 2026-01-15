@@ -1,6 +1,5 @@
 // ===== UTILITIES =====
 const Utils = {
-    // DOM element selector with existence check
     select(selector) {
         return document.querySelector(selector);
     },
@@ -9,7 +8,6 @@ const Utils = {
         return document.querySelectorAll(selector);
     },
 
-    // Throttle function for performance optimization
     throttle(func, delay) {
         let timeoutId;
         let lastExecTime = 0;
@@ -31,35 +29,6 @@ const Utils = {
         };
     },
 };
-
-// ===== THEME TOGGLE =====
-class ThemeToggle {
-    constructor() {
-        this.toggleButton = Utils.select('[data-toggle="theme"]');
-        this.currentTheme = localStorage.getItem("theme") || "dark";
-
-        this.init();
-    }
-
-    init() {
-        if (!this.toggleButton) return;
-
-        this.toggleButton.addEventListener("click", (e) => {
-            e.preventDefault();
-            this.toggle();
-        });
-    }
-
-    toggle() {
-        this.currentTheme = this.currentTheme === "dark" ? "light" : "dark";
-        this.apply(this.currentTheme);
-        localStorage.setItem("theme", this.currentTheme);
-    }
-
-    apply(theme) {
-        document.documentElement.setAttribute("data-theme", theme);
-    }
-}
 
 // ===== TYPING ANIMATION =====
 class TypingAnimation {
@@ -183,11 +152,9 @@ class NavigationHighlighter {
         const scrollTop = window.pageYOffset;
         let activeSection = null;
 
-        // Check if we're at the top (Summary section)
         if (scrollTop < this.threshold) {
             activeSection = this.sections.find((s) => s.isSummary);
         } else {
-            // Find the current section based on scroll position
             for (let i = this.sections.length - 1; i >= 0; i--) {
                 const section = this.sections[i];
                 if (!section.isSummary) {
@@ -200,7 +167,6 @@ class NavigationHighlighter {
             }
         }
 
-        // Update active states
         this.sections.forEach((section) => {
             const isActive = section === activeSection;
 
@@ -229,11 +195,9 @@ class SummaryLinkHandler {
     handleClick(e) {
         e.preventDefault();
 
-        // Clean URL
         const cleanUrl = window.location.origin + window.location.pathname;
         window.history.replaceState(null, null, cleanUrl);
 
-        // Smooth scroll to top
         window.scrollTo({ top: 0, behavior: "smooth" });
     }
 }
@@ -273,21 +237,14 @@ class App {
     }
 
     async init() {
-        // Load configuration
         const config = await ConfigLoader.load();
 
-        // Initialize components
         this.initializeComponents(config);
     }
 
     initializeComponents(config) {
-        // Theme toggle
-        this.components.push(new ThemeToggle());
-
-        // Summary link handler
         this.components.push(new SummaryLinkHandler());
 
-        // Typing animation (if config available)
         if (config?.typing?.phrases && config?.typing?.options) {
             this.components.push(
                 new TypingAnimation(
@@ -297,10 +254,8 @@ class App {
             );
         }
 
-        // Navigation highlighter
         this.components.push(new NavigationHighlighter());
 
-        // Service Worker Registration
         this.components.push(new ServiceWorkerRegistrationHandler());
     }
 }

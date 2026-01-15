@@ -47,18 +47,9 @@
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://antoniopelusi.com" />
 
-        <!-- Theme Script (inline for performance) -->
-        <script>
-            const savedTheme = localStorage.getItem("theme");
-            if (savedTheme) {
-                document.documentElement.setAttribute("data-theme", savedTheme);
-            } else {
-                localStorage.setItem("theme", "dark");
-            }
-        </script>
-
         <!-- Styles -->
         <link rel="stylesheet" href="/assets/css/main.css" />
+        <link rel="stylesheet" href="/assets/css/fonts.css" />
 
         <!-- Scripts -->
         <script src="/assets/js/main.js" defer></script>
@@ -533,7 +524,10 @@
                             </li>
                             <li>
                                 Try the extension
-                                <a href="https://antoniopelusi.github.io/ToolsTab/">here</a>.
+                                <a
+                                    href="https://antoniopelusi.github.io/ToolsTab/"
+                                    >here</a
+                                >.
                             </li>
                         </ul>
                     </div>
@@ -575,20 +569,6 @@
 
             <!-- Footer -->
             <footer role="contentinfo">
-                <span>
-                    <button
-                        type="button"
-                        data-toggle="theme"
-                        aria-label="Switch theme"
-                    >
-                        Switch theme:
-                        <img
-                            src="/assets/icons/footer/theme.svg"
-                            alt="Switch theme"
-                        />
-                    </button>
-                </span>
-
                 <p>
                     Built with
                     <img src="/assets/icons/footer/html.svg" alt="HTML" /> HTML,

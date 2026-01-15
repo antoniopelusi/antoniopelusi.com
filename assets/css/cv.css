@@ -1,31 +1,3 @@
-/* ===== FONTS ===== */
-@font-face {
-    font-family: "Roboto Local";
-    src: url("/assets/fonts/Roboto-Light.woff2") format("woff2");
-    font-weight: 300;
-    font-style: normal;
-    font-display: block;
-    unicode-range: U+0020-007F;
-}
-
-@font-face {
-    font-family: "Roboto Local";
-    src: url("/assets/fonts/Roboto-Regular.woff2") format("woff2");
-    font-weight: 400;
-    font-style: normal;
-    font-display: block;
-    unicode-range: U+0020-007F;
-}
-
-@font-face {
-    font-family: "Roboto Local";
-    src: url("/assets/fonts/Roboto-Bold.woff2") format("woff2");
-    font-weight: 700;
-    font-style: normal;
-    font-display: block;
-    unicode-range: U+0020-007F;
-}
-
 /* ===== CSS VARIABLES ===== */
 :root {
     --dark-color: #111828;
@@ -33,6 +5,11 @@
 }
 
 /* ===== HTML STYLING ===== */
+::selection {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+}
+
 html {
     min-height: fit-content;
     min-width: fit-content;
@@ -49,11 +26,6 @@ nav * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: "Roboto Local";
-    font-feature-settings:
-        "liga" 0,
-        "clig" 0,
-        "kern" 0;
     color: var(--dark-color);
     line-height: 1.25;
     /*outline: 1px solid orangered;*/
