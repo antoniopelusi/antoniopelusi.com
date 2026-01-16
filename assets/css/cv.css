@@ -28,6 +28,11 @@ nav * {
     padding: 0;
     color: var(--dark-color);
     line-height: 1.25;
+    font-family: "Roboto Local";
+    font-feature-settings:
+        "liga" 0,
+        "clig" 0,
+        "kern" 0;
     /*outline: 1px solid orangered;*/
 }
 

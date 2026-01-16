@@ -4,7 +4,7 @@
     src: url("/assets/fonts/Roboto-Light.woff2") format("woff2");
     font-weight: 300;
     font-style: normal;
-    font-display: swap;
+    font-display: block;
     unicode-range: U+0020-007F;
 }
 
@@ -13,7 +13,7 @@
     src: url("/assets/fonts/Roboto-Regular.woff2") format("woff2");
     font-weight: 400;
     font-style: normal;
-    font-display: swap;
+    font-display: block;
     unicode-range: U+0020-007F, U+00A9;
 }
 
@@ -22,15 +22,6 @@
     src: url("/assets/fonts/Roboto-Bold.woff2") format("woff2");
     font-weight: 700;
     font-style: normal;
-    font-display: swap;
+    font-display: block;
     unicode-range: U+0020-007F;
-}
-
-body,
-nav * {
-    font-family: "Roboto Local";
-    font-feature-settings:
-        "liga" 0,
-        "clig" 0,
-        "kern" 0;
 }
